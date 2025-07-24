@@ -1,3 +1,6 @@
+<img width="514" height="451" alt="image" src="https://github.com/user-attachments/assets/9ce99588-f486-4b3e-a207-bd10f5c2c74a" />
+
+
 CICSA WRO 2025 - Future Engineers
 
 Coach Sergio Iván Hernández Ruiz
