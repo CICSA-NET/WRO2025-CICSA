@@ -29,6 +29,31 @@ Engineering materials
 
 This repository contains engineering materials of a self-driven vehicle's model participating in the WRO Future Engineers competition in the season 2025.
 
+Quantity	Component	Link
+1	Raspberry Pi 5	Amazon.com: Raspberry Pi 5 (16GB) : Electronics
+
+1	Esp-Wroom-32	Amazon.com: ESP-WROOM-32 ESP32 ESP-32S Development Board 2.4GHz Dual-Mode WiFi + Bluetooth Dual Cores Microcontroller Processor Integrated with Antenna RF AMP Filter AP STA Compatible with Arduino IDE (3PCS) : Electronics
+
+1	Freenove 8MP camera	Amazon.com: Freenove 8MP Camera for Raspberry Pi 5 4 B 3 B+ A+ Zero 2 W Jetson Nano with Adjustable Holder and Ribbon Cable, 120° Viewing Angle, 1080P 720P Output : Electronics
+
+1	L298N motor driver	Amazon.com: JTAREA L298N H Bridge Stepper Motor Driver Module DC Motors Drivers Dual H-Bridge for Arduino Smart Car Power UNO MEGA R3 Mega2560 (Pack of 2pcs) : Industrial & Scientific
+
+1	16Amp AC/DC 48V 2x12 Position Terminal Block OONO D-1410GP	16Amp AC/DC 48V 2x12 Position Terminal Block Distribution Module. OONO D-1410GP: Amazon.com: Industrial & Scientific
+
+2	SoloGood 5V 5A module 2s 3s 4s	Amazon.com: SoloGood 2Pcs RC BEC UBEC 5V 5A Step Down UBEC Module 2S 3S 4S for FPV Quadcopter Airplane Servo Car Boat Model : Toys & Games
+
+1	HOOVO 11.1V 3s LiPo Battery 5200mAh 60c	Amazon.com: HOOVO 3S LiPo Battery 11.1V 5200mAh 60C TR Plug Softcase RC Battery for RC Car RC Truck Airplane Helicopter Boat Racing RC Hobby : Toys & Games
+
+1	Car Chasis with S3003 metal servo:
+	4WD RC Smart Car Chassis with S3003 Metal Servo & Bearing Kit for Arduino
+
+Various	Jumper and Cables	Amazon.com: ELEGOO 120pcs Multicolored Dupont Wire 40pin Male to Female, 40pin Male to Male, 40pin Female to Female Breadboard Jumper Ribbon Cables Kit Compatible with Arduino Projects : Electronics
+
+PUDKLE 24 Gauge Wire 157ft,Stranded Silicone Electrical Wire Spool 24 AWG,26.2ft/8m 6 Colors,Flexible Tinned Copper Hook up Wire Kit for LED,RC Models,DIY Projects,Electrical Wiring,Automotive,200°C: Amazon.com: Tools & Home Improvement
+
+		
+
+
 ## Content
 
 * `t-photos` contains 2 photos of the team (an official one and one funny photo with all team members)
