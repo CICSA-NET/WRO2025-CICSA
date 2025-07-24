@@ -29,12 +29,18 @@ Engineering materials
 
 This repository contains engineering materials of a self-driven vehicle's model participating in the WRO Future Engineers competition in the season 2025.
 
-  | Sensor       | Tipo         | Microcontrolador | Protocolo  | Comentario                      |
-|--------------|--------------|------------------|------------|---------------------------------|
-| HC-SR04      | Ultrasónico  | ESP32 / RP Pico  | Digital    | Buen rendimiento en superficies claras |
-| LM35         | Temperatura  | ESP32            | Analógico  | Preciso, fácil de calibrar      |
-| URM37        | Ultrasónico  | ESP32            | Serial / PWM | Alta precisión, incluye filtro |
-| TOF10120     | Láser (TOF)  | RP Pico          | I2C        | Recomendado para objetos oscuros |
+| Cantidad | Componente                       | Enlace                                                                                                                                                                                                                     |
+|----------|----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1        | Raspberry Pi 5 (16GB)            | [Amazon](https://www.amazon.com/dp/B0CJQV8KNZ)                                                                                                                                                                              |
+| 1        | ESP-WROOM-32                     | [Amazon](https://www.amazon.com/dp/B086MHSH5T)                                                                                                                                                                              |
+| 1        | Cámara Freenove 8MP              | [Amazon](https://www.amazon.com/dp/B0BW7TYJX2)                                                                                                                                                                              |
+| 1        | Driver de motor L298N            | [Amazon](https://www.amazon.com/dp/B07BJ6B19Y)                                                                                                                                                                              |
+| 1        | Terminal Block OONO D-1410GP     | [Amazon](https://www.amazon.com/dp/B09VTF52C2)                                                                                                                                                                              |
+| 2        | Módulo SoloGood 5V 5A (2s/3s/4s) | [Amazon](https://www.amazon.com/dp/B08J7RSJZM)                                                                                                                                                                              |
+| 1        | Batería LiPo HOOVO 11.1V 3S 5200mAh 60C | [Amazon](https://www.amazon.com/dp/B07T6N7R8Y)                                                                                                                                                                          |
+| 1        | Chasis de auto 4WD + servo S3003 | [Sin enlace directo] 4WD RC Smart Car Chassis with S3003 Metal Servo & Bearing Kit for Arduino                                                                                                                             |
+| Varios   | Jumper y cables                  | [Amazon](https://www.amazon.com/dp/B01EV6LJ7G)                                                                                                                                                                              |
+| 1        | Cable 24 AWG PUDKLE (157ft)      | [Amazon](https://www.amazon.com/dp/B0C6LZBDY4)                                                                                                                                                                              |
 
 
 ## Content
