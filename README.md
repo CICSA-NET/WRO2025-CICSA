@@ -57,7 +57,7 @@ This repository contains engineering materials of a self-driven vehicle's model 
 
 Objective:
 Design and build a mobile robot capable of autonomous navigation using: 
-* Image recognition for object or line detection.
+* Image recognition for object detection.
 * PID control to maintain a safe distance from obstacles using ultrasonic sensors.
 * Communication between Raspberry Pi 5 and ESP32 to divide tasks between heavy processing (vision) and real-time control (motors and sensors).
 
