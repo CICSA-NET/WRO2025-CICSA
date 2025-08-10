@@ -75,6 +75,7 @@ Design and build a mobile robot capable of autonomous navigation using:
 | Voltage Regulator    | Stabilizes voltage for sensitive components       |
 | UART Communication   | Link between Raspberry Pi and ESP32               |
 | 2WD / 4WD Chassis    | Physical structure of the robot                   |
+| Servo motor          | Controls steering direction                       | 
 
 ## How to prepare the repo based on the template
 
