@@ -90,6 +90,17 @@ Software & Libraries Overview
 |                     | Custom PID class                 | Smooth motor and servo control                   |
 
 
+Workflow Table
+|    Module           |    Function / Task                                      |
+|---------------------|---------------------------------------------------------|
+| Raspberry Pi 5      | Captures image via camera                               |
+|                     | Processes image using OpenCV (line, color, shape, etc.) |
+|                     | Determines direction or action                          |
+|                     | Sends commands to ESP32 via UART                        |
+| ESP32               | Receives commands from Raspberry Pi                     |
+|                     | Reads ultrasonic sensor data                            |
+|                     | Applies PID control to maintain safe distance           |
+|                     | Controls motors and servo using PWM                     |
 
 ## How to prepare the repo based on the template
 
