@@ -62,6 +62,19 @@ Design and build a mobile robot capable of autonomous navigation using:
 * PID control to maintain a safe distance from obstacles using ultrasonic sensors.
 * Communication between Raspberry Pi 5 and ESP32 to divide tasks between heavy processing (vision) and real-time control (motors and sensors).
 
+| 🧩 Componente       | ⚙️ Función / Descripción                          |
+|---------------------|---------------------------------------------------|
+| Raspberry Pi 5      | Procesamiento de imágenes y lógica de navegación |
+| ESP32               | Control de motores y sensores en tiempo real     |
+| Cámara CSI / USB    | Captura de imágenes para visión por computadora  |
+| HC-SR04 (x2)        | Medición de distancia para evitar obstáculos     |
+| Driver L298N        | Control de motores DC                            |
+| Motores DC (x2)     | Movimiento del robot                             |
+| Batería Li-ion      | Fuente de energía portátil                       |
+| Regulador de voltaje| Estabiliza voltaje para componentes sensibles    |
+| Comunicación UART   | Enlace entre Raspberry Pi y ESP32                |
+| Chasis 2WD / 4WD    | Estructura física del robot                      |
+
 ## How to prepare the repo based on the template
 
 _Remove this section before the first commit to the repository_
