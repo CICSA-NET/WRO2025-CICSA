@@ -88,11 +88,6 @@ Software & Libraries Overview
 | ESP32 (MicroPython) | MicroPython                      | Lightweight firmware for real-time control       |
 |                     | machine, time, ustruct           | Sensor reading, PWM generation, UART handling    |
 |                     | Custom PID class                 | Smooth motor and servo control                   |
-| ESP32 (Arduino)     | Arduino C++                      | Alternative firmware with robust libraries       |
-|                     | NewPing / Ultrasonic             | HC-SR04 sensor integration                       |
-|                     | Servo.h / analogWrite            | Servo and motor PWM control                      |
-|                     | PID_v1                           | PID implementation for speed or steering         |
-|                     | HardwareSerial                   | UART communication with Raspberry Pi             |
 
 
 
