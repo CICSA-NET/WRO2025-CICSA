@@ -77,6 +77,25 @@ Design and build a mobile robot capable of autonomous navigation using:
 | 2WD / 4WD Chassis    | Physical structure of the robot                   |
 | Servo motor          | Controls steering direction                       | 
 
+
+Software & Libraries Overview
+|    Platform         |   Language / Frameworks          |   Key Functions / Roles                          |
+|---------------------|----------------------------------|--------------------------------------------------|
+| Raspberry Pi 5      | Python 3                         | Main control logic, image processing             |
+|                     | OpenCV                           | Computer vision (line following, object tracking)|
+|                     | pyserial                         | UART communication with ESP32                    |
+|                     | numpy, imutils                   | Math operations, image transformations           |
+| ESP32 (MicroPython) | MicroPython                      | Lightweight firmware for real-time control       |
+|                     | machine, time, ustruct           | Sensor reading, PWM generation, UART handling    |
+|                     | Custom PID class                 | Smooth motor and servo control                   |
+| ESP32 (Arduino)     | Arduino C++                      | Alternative firmware with robust libraries       |
+|                     | NewPing / Ultrasonic             | HC-SR04 sensor integration                       |
+|                     | Servo.h / analogWrite            | Servo and motor PWM control                      |
+|                     | PID_v1                           | PID implementation for speed or steering         |
+|                     | HardwareSerial                   | UART communication with Raspberry Pi             |
+
+
+
 ## How to prepare the repo based on the template
 
 _Remove this section before the first commit to the repository_
