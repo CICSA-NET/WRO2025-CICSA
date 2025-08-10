@@ -62,7 +62,7 @@ Design and build a mobile robot capable of autonomous navigation using:
 * PID control to maintain a safe distance from obstacles using ultrasonic sensors.
 * Communication between Raspberry Pi 5 and ESP32 to divide tasks between heavy processing (vision) and real-time control (motors and sensors).
 
-| 🧩 Componente       | ⚙️ Función / Descripción                          |
+|    Componente       |   Función / Descripción                          |
 |---------------------|---------------------------------------------------|
 | Raspberry Pi 5      | Procesamiento de imágenes y lógica de navegación |
 | ESP32               | Control de motores y sensores en tiempo real     |
