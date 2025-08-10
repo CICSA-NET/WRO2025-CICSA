@@ -43,7 +43,7 @@ This repository contains engineering materials of a self-driven vehicle's model 
 | 1        | Cable 24 AWG PUDKLE (157ft)      |[Amazon](https://www.amazon.com/dp/B0DK57KRCT?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)                                                                                                                                                                   |
 | 3        | Ultrasonic sensors URM37V5.0     |[DigiKey](https://www.digikey.com/en/products/detail/dfrobot/SEN0001/6588449)      |
 
-| 1        | USB to TTL Converter             |[Amazon] (https://www.amazon.com/DSD-TECH-SH-U09C5-Converter-Support/dp/B07WX2DSVB/ref=sr_1_1_sspa?crid=2QX262TSU2971&dib=eyJ2IjoiMSJ9.D0amzFmzxb2ADgV4_ep2_cNsHofmse9FrT0i3YgPbkkxw9dDBUytrt0npuovbHnL_3S6v23XzdO_asu_QGvTb2Xjt8cJP9msCvWRym4dC-NQ5NTpSmg1KoBVbtpjXTKzSdeGcnmmJXYL0MKO4YnP0BkdedFIRCeQRcUuI0so7kzy4gRZetXyXEyAKVydX322o3dGYQZDO36bSsJFr7-PYeHAkOIlBLjA0B6oDqn0qCY.4Iuq8Gj72bw3DYdHWGSINCcQwrmvXEQQxcY40qAGySw&dib_tag=se&keywords=uart+to+usb.3v&qid=1754865582&sprefix=uart+to+usb.3%2Caps%2C240&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)
+| 1        | USB to TTL Converter             |[Amazon] (https://www.amazon.com/DSD-TECH-SH-U09C5-Converter-Support/dp/B07WX2DSVB/ref=sr_1_1_sspa?crid=2QX262TSU2971&dib=eyJ2IjoiMSJ9.D0amzFmzxb2ADgV4_ep2_cNsHofmse9FrT0i3YgPbkkxw9dDBUytrt0npuovbHnL_3S6v23XzdO_asu_QGvTb2Xjt8cJP9msCvWRym4dC-NQ5NTpSmg1KoBVbtpjXTKzSdeGcnmmJXYL0MKO4YnP0BkdedFIRCeQRcUuI0so7kzy4gRZetXyXEyAKVydX322o3dGYQZDO36bSsJFr7-PYeHAkOIlBLjA0B6oDqn0qCY.4Iuq8Gj72bw3DYdHWGSINCcQwrmvXEQQxcY40qAGySw&dib_tag=se&keywords=uart+to+usb.3v&qid=1754865582&sprefix=uart+to+usb.3%2Caps%2C240&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)            |
 
 ## Content
 
