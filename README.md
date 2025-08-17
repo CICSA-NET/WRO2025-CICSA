@@ -235,11 +235,7 @@ Sensors are selected based on the challenges the robot must overcome. Each senso
 
 | Sensor       | Purpose                     | Protocol | Power Notes         |
 |--------------|-----------------------------|----------|----------------------|
-| HC-SR04 / URM37 | Distance measurement        | Digital  | Low consumption      |
-| AS5600       | Angular position (steering) | I2C      | Requires stable 3.3V |
-| LM35         | Temperature monitoring       | Analog   | Minimal draw         |
-| A3144E       | RPM / magnetic detection     | Digital  | Low consumption      |
-| TOF10120     | Precision distance sensing   | I2C      | Moderate draw        |
+| 3.- URM37V5.0    | Distance measurement        | Digital  | Low consumption      |
 
 ###  System Integration Overview
 
