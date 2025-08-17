@@ -10,22 +10,10 @@ This directory contain code for control software which is used by the vehicle to
 - Modular code structure with functions.
 - Basic error handling.
 
-### v1.1.0 – Sensor Expansion
-- Added support for URM37 and TOF10120 sensors
-- Implemented Kalman filtering for noisy data
-- Improved abstraction and reusable modules
+### v1.1.0 – Sensor Expansion and PID control.
+- Added support for URM37 sensors.
+- Improved abstraction and reusable modules.
+- Implemented PID control for steering.
+- Real-time PID parameter adjustment.
+- Improved trajectory stability and response time.
 
-### v1.2.0 – OTA Programming & Diagnostics
-- Enabled OTA updates via Wi-Fi (MicroPython + Arduino IDE)
-- Added diagnostic logging and fault recovery routines
-- Markdown documentation for setup and usage
-
-### v1.3.0 – F1 Mobile Robot Integration
-- Full integration with mobile robot platform
-- Real-time sensor fusion and motor control
-- Sponsorship-ready documentation and visuals
-
-### v1.4.0 – Web Interface & Remote Monitoring
-- Basic web dashboard for sensor data visualization
-- Remote control via HTTP requests
-- Optimized memory usage and performance
