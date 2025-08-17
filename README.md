@@ -209,3 +209,43 @@ These components include:
 >  All files are provided in `.STL` format and are ready for slicing and printing. Designed for compatibility with standard FDM printers and PLA/ABS materials.
 
 Feel free to modify or remix these models to suit your specific configuration. Contributions and improvements are welcome!
+
+##  Power and Sensor Management
+
+Efficient energy and sensor management are essential for reliable vehicle performance. This section outlines the power strategy, sensor selection, and system integration used in the robot.
+
+###  Power Supply Strategy
+
+The power system is designed to support motors, servos, microcontrollers, and sensors simultaneously. Key considerations include:
+
+- **Voltage and current requirements**  
+  - JGA25-370 motor: 12V, 0.3–1.2 A  
+  - MG996R servo: 4.8–7.2V, up to 2.5 A peak
+
+- **Battery type**  
+  - Li-ion 18650 or 3S LiPo with integrated BMS
+
+- **Power regulation**  
+  - Buck converters or dedicated power rails to prevent voltage drops and protect sensitive components
+
+###  Sensor Selection and Justification
+
+Sensors are selected based on the challenges the robot must overcome. Each sensor contributes to navigation, obstacle detection, or environmental awareness:
+
+| Sensor       | Purpose                     | Protocol | Power Notes         |
+|--------------|-----------------------------|----------|----------------------|
+| HC-SR04 / URM37 | Distance measurement        | Digital  | Low consumption      |
+| AS5600       | Angular position (steering) | I2C      | Requires stable 3.3V |
+| LM35         | Temperature monitoring       | Analog   | Minimal draw         |
+| A3144E       | RPM / magnetic detection     | Digital  | Low consumption      |
+| TOF10120     | Precision distance sensing   | I2C      | Moderate draw        |
+
+###  System Integration Overview
+
+A wiring diagram and bill of materials (BOM) will be included to illustrate:
+
+- **Power distribution** across all components
+- **Voltage regulation and filtering**
+- **Microcontroller pin mapping**
+- **Sensor interconnections and shielding**
+
