@@ -192,10 +192,8 @@ A commercial chassis was selected to optimize structural integrity, motor compat
 Complementary 3D-printed parts used to enhance the commercial chassis are included in the `models/` folder located at the top level of this repository.
 
 These components include:
-- **Sensor mounts** (ultrasonic, IR, TOF)
-- **Servo brackets** compatible with MG996
-- **Battery holders** and cable guides
-- **Custom wheel hubs** for JGA25-370 motors
+- **Sensor mounts** (ultrasonic)
+- **Battery holders**
 - **Structural reinforcements** and expansion adapters
 
 >  All files are provided in `.STL` format and are ready for slicing and printing. Designed for compatibility with standard FDM printers and PLA/ABS materials.
