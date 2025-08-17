@@ -186,6 +186,16 @@ A commercial chassis was selected to optimize structural integrity, motor compat
 > - Chosen for its modularity and ease of integration with ESP32 and Raspberry 5.
 > - Provides stable base for F1-style mobility and sensor calibration.
 > - Lightweight yet durable, ideal for competition and field testing.
+>
+
+###  Engineering Principles Applied
+
+The design and implementation are grounded in core engineering concepts:
+
+- **Angular velocity**: Used to calculate linear displacement from motor rpm.
+- **Torque**: Determines traction force and load capacity.
+- **Power**: Guides battery selection and motor efficiency.
+- **Mass distribution**: Ensures stability and maneuverability.
 
 ##  3D Printed Components
 
