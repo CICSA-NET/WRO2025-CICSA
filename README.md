@@ -221,6 +221,7 @@ The power system is designed to support motors, servos, microcontrollers, and se
 - **Voltage and current requirements**  
   - JGA25-370 motor: 12V, 0.3–1.2 A  
   - MG996R servo: 4.8–7.2V, up to 2.5 A peak
+  - Raspberry Pi 5 up to 5 A
 
 - **Battery type**  
   - Battery LiPo HOOVO 11.1V 3S 5200mAh 60C
