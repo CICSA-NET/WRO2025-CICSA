@@ -102,5 +102,50 @@ Workflow Table
 |                     | Applies PID control to maintain safe distance           |
 |                     | Controls motors and servo using PWM                     |
 
+# 🚗 Mobility Management
 
+Mobility is a critical aspect of robotic performance, especially in dynamic environments such as competitive arenas or real-world obstacle courses. This document outlines the design rationale, implementation strategies, and performance considerations behind the mobility system of our robot.
+
+## 🎯 Design Objectives
+
+The mobility system was engineered to achieve the following goals:
+
+- **Agility**: Enable precise turns and rapid directional changes.
+- **Stability**: Maintain balance and traction across varied surfaces.
+- **Efficiency**: Optimize energy consumption during movement.
+- **Adaptability**: Respond effectively to unexpected terrain or obstacles.
+
+These objectives guided the selection of motors, wheels, chassis geometry, and control algorithms.
+
+## ⚙️ Hardware Configuration
+
+- **Drive System**: Differential drive powered by high-torque DC motors for smooth linear and rotational movement.
+- **Wheel Selection**: Rubberized wheels for improved grip and shock absorption.
+- **Chassis Design**: Lightweight, rigid frame to reduce energy loss and support sensor placement.
+
+## 🧠 Software Control
+
+- **Motion Algorithms**: PID control ensures smooth acceleration and deceleration, minimizing overshoot during turns.
+- **Sensor Feedback**: Real-time data from encoders and IMUs dynamically adjust motor output.
+- **Error Handling**: Mobility routines include fallback behaviors for sensor failure or terrain anomalies.
+
+## 📊 Performance Evaluation
+
+Mobility was tested under various conditions:
+
+- **Obstacle-rich environments**: Successful navigation using ultrasonic and TOF sensors.
+- **Speed trials**: Calibrated velocity for optimal responsiveness and control.
+- **Battery endurance**: Monitored power consumption for sustained operation.
+
+## 🚀 Future Improvements
+
+Planned upgrades include:
+
+- Integration of omnidirectional wheels for enhanced maneuverability.
+- Adaptive path planning using machine learning.
+- Real-time terrain classification to adjust mobility parameters dynamically.
+
+---
+
+> This mobility system reflects a balance between mechanical capability, software intelligence, and strategic intent—essential for success in competitive robotics.
 
