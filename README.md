@@ -102,50 +102,50 @@ Workflow Table
 |                     | Applies PID control to maintain safe distance           |
 |                     | Controls motors and servo using PWM                     |
 
-# Mobility Management
 
-Mobility is a critical aspect of robotic performance, especially in dynamic environments such as competitive arenas or real-world obstacle courses. This document outlines the design rationale, implementation strategies, and performance considerations behind the mobility system of our robot.
+#  Mobility Management
+
+Mobility is a key factor in robotic performance, especially in competitive environments where precision, stability, and adaptability are essential. This document outlines the mechanical and software strategies used to manage the robot's mobility, featuring a gear-based transmission system and directional control via a servomotor.
 
 ##  Design Objectives
 
-The mobility system was engineered to achieve the following goals:
+The mobility system was designed to meet the following goals:
 
-- **Agility**: Enable precise turns and rapid directional changes.
+- **Precision**: Achieve controlled movement and accurate steering.
 - **Stability**: Maintain balance and traction across varied surfaces.
-- **Efficiency**: Optimize energy consumption during movement.
-- **Adaptability**: Respond effectively to unexpected obstacles.
+- **Mechanical Efficiency**: Use gear ratios to optimize torque and speed.
+- **Adaptability**: Respond effectively to terrain changes and obstacles.
 
-These objectives guided the selection of motors, wheels, chassis geometry, and control algorithms.
+##  Mechanical Configuration
 
-##  Hardware Configuration
+- **Gear Transmission**: Power is delivered from the motors to the wheels through a custom gear system. Gear ratios were selected to enhance torque for low-speed control and obstacle negotiation.
+- **Directional Control**: A high-precision servomotor is used to steer the front axle, allowing for smooth and responsive turns. This setup mimics real-world vehicle steering and improves maneuverability in tight spaces.
+- **Chassis Design**: The gear system and steering mechanism are integrated into a compact, rigid frame that supports sensor placement and structural integrity.
 
-- **Drive System**: Differential drive powered by high-torque DC motors for smooth linear and rotational movement.
-- **Wheel Selection**: Rubberized wheels for improved grip and shock absorption.
-- **Chassis Design**: Lightweight, rigid frame to reduce energy loss and support sensor placement.
+##  Software Integration
 
-## Software Control
+- **Motor Control**: PWM signals regulate motor speed, while gear ratios provide mechanical tuning. The servomotor is controlled via angle commands for directional adjustments.
+- **Sensor Feedback**: Encoders and IMUs provide real-time data for motion correction and stability. Steering angle is monitored to ensure accurate path tracking.
+- **Error Handling**: The system includes routines to detect gear misalignment, servo overload, or terrain anomalies, triggering corrective actions when needed.
 
-- **Motion Algorithms**: PID control ensures smooth acceleration and deceleration, minimizing overshoot during turns.
-- **Sensor Feedback**: Real-time data from encoders and IMUs dynamically adjust motor output.
-- **Error Handling**: Mobility routines include fallback behaviors for sensor failure or terrain anomalies.
-
-## Performance Evaluation
+##  Performance Evaluation
 
 Mobility was tested under various conditions:
 
-- **Obstacle-rich environments**: Successful navigation using ultrasonic and TOF sensors.
-- **Speed trials**: Calibrated velocity for optimal responsiveness and control.
-- **Battery endurance**: Monitored power consumption for sustained operation.
+- **Obstacle Navigation**: The robot demonstrated reliable steering and movement over uneven surfaces and around barriers.
+- **Turning Radius**: The servomotor-based steering allowed for tighter turns compared to differential drive systems.
+- **Load Testing**: Gear ratios and servo torque were validated under different payloads to ensure consistent performance.
+- **Energy Efficiency**: Power consumption was monitored to balance torque output, steering precision, and battery endurance.
 
-## Future Improvements
+##  Future Improvements
 
 Planned upgrades include:
 
-- Integration of omnidirectional wheels for enhanced maneuverability.
-- Adaptive path planning using machine learning.
-- Real-time terrain classification to adjust mobility parameters dynamically.
+- Modular gearboxes for quick ratio adjustments.
+- Closed-loop servo control using feedback from steering encoders.
+- Real-time terrain adaptation using sensor fusion and AI-based path planning.
 
 ---
 
-> This mobility system reflects a balance between mechanical capability, software intelligence, and strategic intent—essential for success in competitive robotics.
+> This mobility system reflects a deliberate balance between mechanical design and software intelligence, tailored for high-performance robotics in competitive settings.
 
