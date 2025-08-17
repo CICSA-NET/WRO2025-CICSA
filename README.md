@@ -113,7 +113,7 @@ The mobility system was engineered to achieve the following goals:
 - **Agility**: Enable precise turns and rapid directional changes.
 - **Stability**: Maintain balance and traction across varied surfaces.
 - **Efficiency**: Optimize energy consumption during movement.
-- **Adaptability**: Respond effectively to unexpected terrain or obstacles.
+- **Adaptability**: Respond effectively to unexpected obstacles.
 
 These objectives guided the selection of motors, wheels, chassis geometry, and control algorithms.
 
