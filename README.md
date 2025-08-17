@@ -125,7 +125,6 @@ The mobility system was designed to meet the following goals:
 ##  Software Integration
 
 - **Motor Control**: PWM signals regulate motor speed, while gear ratios provide mechanical tuning. The servomotor is controlled via angle commands for directional adjustments.
-- **Sensor Feedback**: Encoders and IMUs provide real-time data for motion correction and stability. Steering angle is monitored to ensure accurate path tracking.
 - **Error Handling**: The system includes routines to detect gear misalignment, servo overload, or terrain anomalies, triggering corrective actions when needed.
 
 ##  Performance Evaluation
