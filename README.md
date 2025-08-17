@@ -166,7 +166,17 @@ Mobility was tested under various conditions:
 
 ---
 
-##  Selected Commercial Chassis
+### Chassis Selection and Custom Adaptations
+
+This project utilizes a **commercial chassis** with custom structural modifications to support advanced robotics integration. The chassis has been adapted to include:
+
+- **Sensor mounting base** – for ultrasonic sensors
+- **Connector interface base** – for clean wiring and modular component swaps
+- **ESP32 microcontroller base** – optimized for MicroPython deployment and GPIO access
+- **Camera module base** – compatible with vision systems
+- **Raspberry Pi 5 integration base** – for high-level processing, remote monitoring, and AI tasks
+
+These adaptations ensure modularity, scalability, and ease of maintenance during competition and development phases.
 
 A commercial chassis was selected to optimize structural integrity, motor compatibility, and sensor placement for the mobile robot platform. Below are its key specifications:
 
