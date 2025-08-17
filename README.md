@@ -223,7 +223,7 @@ The power system is designed to support motors, servos, microcontrollers, and se
   - MG996R servo: 4.8–7.2V, ~500–900 mA
   - Raspberry Pi 5: 5V, ~1.2–1.5 A
   - ESP32: 5V, 80–160 mA
-  - 3x Sensor URM37V5, 5V, 60 mA
+  - 3x Sensor URM37V5: 5V, 60 mA
 
 - **Battery type**  
   - Battery LiPo HOOVO 11.1V 3S 5200mAh 60C
