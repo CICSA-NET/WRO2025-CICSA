@@ -178,9 +178,8 @@ A commercial chassis was selected to optimize structural integrity, motor compat
 | **Motor Mounts**         | Compatible with JGA25-370 gear motors  |
 | **Servo Mounts**         | Integrated brackets for MG996 servo    |
 | **Sensor Slots**         | Front and side slots for ultrasonic sensors |
-| **Battery Compartment**  | Supports 2S/3S Li-ion or 6xAA holder    |
-| **Weight Capacity**      | ~2.5 kg payload                        |
-| **Expansion Ports**      | Multiple M3/M4 threaded holes for modular attachments |
+| **Battery Compartment**  | Supports 2S/3S Battery LiPo HOOVO 11.1V 3S 5200m    |
+| **Weight Capacity**      | ~1.5 kg payload                        |
 | **Shock Absorption**     | Rubber dampers included                |
 
 >  **Design Rationale**:
