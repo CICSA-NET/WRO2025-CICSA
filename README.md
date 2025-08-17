@@ -165,3 +165,26 @@ Mobility was tested under various conditions:
 > - Ideal for traction, drive systems, or actuator applications with PWM control.
 
 ---
+
+##  Selected Commercial Chassis
+
+A commercial chassis was selected to optimize structural integrity, motor compatibility, and sensor placement for the mobile robot platform. Below are its key specifications:
+
+| Feature                  | Specification                          |
+|--------------------------|----------------------------------------|
+| **Material**             | Aluminum alloy / ABS plastic           |
+| **Dimensions (L×W×H)**   | 220 mm × 160 mm × 60 mm                |
+| **Wheel Type**           | 2WD with rubber tires (65 mm diameter) |
+| **Motor Mounts**         | Compatible with JGA25-370 gear motors  |
+| **Servo Mounts**         | Integrated brackets for MG996 servo    |
+| **Sensor Slots**         | Front and side slots for ultrasonic, IR, or TOF sensors |
+| **Battery Compartment**  | Supports 2S/3S Li-ion or 6xAA holder    |
+| **Weight Capacity**      | ~2.5 kg payload                        |
+| **Expansion Ports**      | Multiple M3/M4 threaded holes for modular attachments |
+| **Shock Absorption**     | Rubber dampers included                |
+
+>  **Design Rationale**:
+> - Chosen for its modularity and ease of integration with ESP32 and Raspberry Pi Pico.
+> - Provides stable base for F1-style mobility and sensor calibration.
+> - Lightweight yet durable, ideal for competition and field testing.
+
