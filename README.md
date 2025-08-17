@@ -136,5 +136,17 @@ Mobility was tested under various conditions:
 - **Load Testing**: Gear ratios and servo torque were validated under different payloads to ensure consistent performance.
 - **Energy Efficiency**: Power consumption was monitored to balance torque output, steering precision, and battery endurance.
 
-> This mobility system reflects a deliberate balance between mechanical design and software intelligence, tailored for high-performance robotics in competitive settings.
+##  Motor and Servo Specifications
+
+| Parameter         | JGA25-370 Gear Motor (12V)           | MG996 Servo Motor (6V)             |
+|------------------|--------------------------------------|------------------------------------|
+| **Operating Voltage** | 6V / 12V / 24V DC                    | 4.8V – 6V DC                        |
+| **No-Load Speed**     | 12 – 1350 rpm (depends on gear ratio) | 0.14 s/60° (≈ 428°/s)              |
+| **Rated Speed**       | 9 – 1000 rpm                        | Controlled via PWM (0°–180°)       |
+| **Stall Torque**      | Up to 9 kg·cm (gear ratio dependent) | 11 kg·cm                            |
+| **Rated Torque**      | 0.6 – 9 kg·cm                        | ~2.5 – 9.4 kg·cm (typical range)   |
+| **Power Output**      | 1.6W – 3W                            | ~2.5W (estimated)                  |
+| **Current Draw**      | ≤0.25A rated / ≤3A stall             | ~500mA running / 2.5A stall        |
+| **Rotation Range**    | Continuous                          | 0° to 180°                         |
+| **Control Method**    | PWM + gear ratio                    | PWM signal (50Hz, 1–2ms pulse)     |
 
