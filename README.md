@@ -183,7 +183,7 @@ A commercial chassis was selected to optimize structural integrity, motor compat
 | **Shock Absorption**     | Rubber dampers included                |
 
 >  **Design Rationale**:
-> - Chosen for its modularity and ease of integration with ESP32 and Raspberry Pi Pico.
+> - Chosen for its modularity and ease of integration with ESP32 and Raspberry 5.
 > - Provides stable base for F1-style mobility and sensor calibration.
 > - Lightweight yet durable, ideal for competition and field testing.
 
