@@ -6,9 +6,9 @@ This directory contain code for control software which is used by the vehicle to
 ## Version History
 
 ### v1.0.0 – Initial Release
-- Basic sensor integration (HC-SR04, LM35) with ESP32 using MicroPython
-- Modular code structure with OOP principles
-- Basic error handling and serial output
+- Basic sensor integration (vl53l0x) with ESP32 using MicroPython
+- Modular code structure with functions.
+- Basic error handling.
 
 ### v1.1.0 – Sensor Expansion
 - Added support for URM37 and TOF10120 sensors
