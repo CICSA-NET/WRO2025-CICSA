@@ -168,7 +168,7 @@ Mobility was tested under various conditions:
 
 ---
 
-### Chassis Selection and Custom Adaptations
+# Chassis Selection and Custom Adaptations
 
 This project utilizes a commercial chassis with **custom structural own modifications** to support advanced robotics integration. The chassis has been adapted to include:
 
