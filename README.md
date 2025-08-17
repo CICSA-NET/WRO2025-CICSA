@@ -219,7 +219,7 @@ Efficient energy and sensor management are essential for reliable vehicle perfor
 The power system is designed to support motors, servos, microcontrollers, and sensors simultaneously. Key considerations include:
 
 - **Voltage and current requirements**  
-  - JGA25-370 motor: 12V, 0.3–1.2 A  
+  - JGA25-370 motor: 12V, 0.3–0.6 A  
   - MG996R servo: 4.8–7.2V, up to 2.5 A peak
   - Raspberry Pi 5 ~1.2–1.5 A
 
