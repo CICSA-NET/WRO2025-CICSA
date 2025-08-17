@@ -150,3 +150,18 @@ Mobility was tested under various conditions:
 | **Rotation Range**    | Continuous                          | 0° to 180°                         |
 | **Control Method**    | PWM + gear ratio                    | PWM signal (50Hz, 1–2ms pulse)     |
 
+##  JGA25-370 Motor Specifications by Voltage
+
+| Voltage (V) | No-load Speed (rpm) | Rated Torque (kg·cm) | Power (W) | Load Speed (rpm) | Load Current (A) | Stall Torque (kg·cm) |
+|-------------|----------------------|------------------------|-----------|-------------------|-------------------|------------------------|
+| 3V          | 323                  | 0.18                   | 0.75      | 258               | 0.4               | 1.4                    |
+| 6V          | 646                  | 0.23                   | 1.5       | 516               | 0.8               | 2.0                    |
+| 12V         | 592                  | 0.23                   | 2.3       | 475               | 0.6               | 2.0                    |
+| 24V         | 409                  | 0.15                   | 1.0       | 347               | 0.5               | 1.3                    |
+
+>  **Technical Notes**:
+> - Best performance observed at **12V**, offering solid torque and peak power.
+> - Stall torque values are useful for defining load limits and implementing software protection.
+> - Ideal for traction, drive systems, or actuator applications with PWM control.
+
+---
