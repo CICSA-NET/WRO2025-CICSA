@@ -223,7 +223,7 @@ The power system is designed to support motors, servos, microcontrollers, and se
   - MG996R servo: 4.8–7.2V, up to 2.5 A peak
 
 - **Battery type**  
-  - Li-ion 18650 or 3S LiPo with integrated BMS
+  - Battery LiPo HOOVO 11.1V 3S 5200mAh 60C
 
 - **Power regulation**  
   - Buck converters or dedicated power rails to prevent voltage drops and protect sensitive components
