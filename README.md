@@ -136,15 +136,5 @@ Mobility was tested under various conditions:
 - **Load Testing**: Gear ratios and servo torque were validated under different payloads to ensure consistent performance.
 - **Energy Efficiency**: Power consumption was monitored to balance torque output, steering precision, and battery endurance.
 
-##  Future Improvements
-
-Planned upgrades include:
-
-- Modular gearboxes for quick ratio adjustments.
-- Closed-loop servo control using feedback from steering encoders.
-- Real-time terrain adaptation using sensor fusion and AI-based path planning.
-
----
-
 > This mobility system reflects a deliberate balance between mechanical design and software intelligence, tailored for high-performance robotics in competitive settings.
 
