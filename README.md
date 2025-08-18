@@ -88,7 +88,7 @@ Software & Libraries Overview
 |                     | OpenCV                           | Computer vision (line following, object tracking)|
 |                     | pyserial                         | UART communication with ESP32                    |
 |                     | numpy, imutils                   | Math operations, image transformations           |
-| ESP32 (MicroPython) | MicroPython                      | Lightweight firmware for real-time control       |
+| ESP32               | MicroPython                      | Lightweight firmware for real-time control       |
 |                     | machine, time, ustruct           | Sensor reading, PWM generation, UART handling    |
 |                     | PID function                     | Servo control                                    |
 
