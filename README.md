@@ -90,7 +90,7 @@ Software & Libraries Overview
 |                     | numpy, imutils                   | Math operations, image transformations           |
 | ESP32 (MicroPython) | MicroPython                      | Lightweight firmware for real-time control       |
 |                     | machine, time, ustruct           | Sensor reading, PWM generation, UART handling    |
-|                     | Custom PID class                 | Smooth motor and servo control                   |
+|                     | PID function                     | Servo control                                    |
 
 
 Workflow Table
