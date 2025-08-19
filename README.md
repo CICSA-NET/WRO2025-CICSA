@@ -229,17 +229,24 @@ Feel free to modify or remix these models to suit your specific configuration. C
 Efficient energy and sensor management are essential for reliable vehicle performance. This section outlines the power strategy, sensor selection, and system integration used in the robot.
 Three sensors were used to provide the microcontroller (ESP32) with the necessary information to navigate the track and overcome various challenges. One sensor is mounted on the right side of the vehicle to work in conjunction with the PID controller, maintaining a specific distance from the wall. Another sensor is placed on the left side, performing the same function on the opposite side. A third sensor is positioned facing forward to monitor when the robot approaches the front wall.
 
+## Current Consumption Analysis – Robotic System
+
+| Component               | Quantity | Voltage (V) | Current per unit (A) | Total current (A) | Max total current (A) |
+|------------------------|----------|-------------|-----------------------|--------------------|------------------------|
+| JGA25-370 Motor        | 1        | 11          | 0.6                   | 0.6                | 0.6                    |
+| MG996R Servo           | 1        | 5.0         | 0.5                   | 0.5                | 1.0                    |
+| Raspberry Pi 5         | 1        | 5           | 1.2                   | 1.2                | 4.5                    |
+| ESP32                  | 1        | 5           | 0.08                  | 0.08               | 0.08                  |
+| URM37V5 Sensor         | 3        | 5           | 0.02                  | 0.06               | 0.06                   |
+| L298N (logic circuit)  | 1        | 5           | 0.05                  | 0.05               | 0.05                   |
+| **Estimated Total**    | —        | —           | —                     | **2.49 A**         | **6.29 A**             |
+
 ###  Power Supply Strategy
 
-The power system is designed to support motors, servos, microcontrollers, and sensors simultaneously. Key considerations include:
-
-- **Voltage and current requirements**  
-  - JGA25-370 motor: 11V, 0.3–0.6 A  
-  - MG996R servo: 4.8–7.2V, ~500–900 mA
-  - Raspberry Pi 5: 5V, ~1.2–1.5 A
-  - ESP32: 5V, 80–160 mA
-  - 3x Sensor URM37V5: 5V, 60 mA
-  - L298N (logic circuit): ~50–60 mA
+The power system is designed to support motors, servos, microcontrollers, and sensors simultaneously. Key considerations includes two challenges, each powered by a different voltage source.
+For the open challenge, the system is powered by a battery that supplies 5200 mA.
+For the obstacle challenge, which requires increased processing from the Raspberry Pi 5, a battery providing 8200 mA is used.
+Detailed battery specifications are provided below
 
 - **Battery type**  
   - Battery LiPo HOOVO 11.1V 3S 5200mAh 60C
@@ -249,12 +256,19 @@ The power system is designed to support motors, servos, microcontrollers, and se
   - Buck converters or dedicated power rails to prevent voltage drops and protect sensitive components
 
 ###  Sensor Selection and Justification
+Three sensors were selected to provide the robot with positioning information on the track.
+They were mounted on the front of the robot: one on the right side, one on the left side, and one in the center.
+This configuration allows the robot to detect lateral boundaries and maintain alignment during navigation.
 
-Sensors are selected based on the challenges the robot must overcome. Each sensor contributes to navigation, obstacle detection, or environmental awareness:
+The side-mounted sensors provide the system with distance measurements between the robot and the lateral walls.
+A PID control algorithm was implemented to maintain a consistent, predefined distance from these walls during navigation.
+The center sensor supplies data regarding the robot’s proximity to the front wall, enabling forward obstacle detection and alignment.
+Each sensor contributes to navigation, obstacle detection, or environmental awareness:
 
 | Sensor       | Purpose                     | Protocol | Power Notes         |
 |--------------|-----------------------------|----------|----------------------|
 | 3.- URM37V5.0    | Distance measurement        | Digital  | Low consumption      |
+
 
 ###  System Integration Overview
 
