@@ -107,7 +107,7 @@ Workflow Table
 |                     | Controls motors and servo using PWM                     |
 
 
-#  Mobility Management
+#  1. Mobility Management
 
 Mobility is a key factor in robotic performance, especially in competitive environments where precision, stability, and adaptability are essential. This document outlines the mechanical and software strategies used to manage the robot's mobility, featuring a gear-based transmission system and directional control via a servomotor.
 
