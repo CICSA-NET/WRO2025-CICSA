@@ -279,3 +279,4 @@ A wiring diagram and bill of materials (BOM) will be included to illustrate:
 - **Microcontroller pin mapping**
 - **Sensor interconnections and shielding**
 
+# References
