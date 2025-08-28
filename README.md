@@ -280,3 +280,6 @@ A wiring diagram and bill of materials (BOM) will be included to illustrate:
 - **Sensor interconnections and shielding**
 
 # References
+[1] Alouache A., Wu Q., "Genetic Algorithms for Trajectory Tracking of Mobile Robot Based on PID Controller". 2018 IEEE 14th International Conference on Intelligent Computer Communication and Processing (ICCP). DOI: 10.1109/ICCP.2018.8516587. IEEE. ISBN:978-1-5386-8446-7.
+[2] Qi Z., Yang H., Li M., Li J., "Research on Fractional Order PID Controller in Servo Control System". 2019 IEEE 3rd Conference on Energy Internet and Energy System Integration (EI2). DOI: 10.1109/EI247390.2019.9062032. IEEE. ISBN:978-1-7281-3138-2.
+[3] Luo Z., Li W., "Tracking of Mobile Robot Expert PID Controller Design and Simulation". 2014 International Symposium on Computer, Consumer and Control. IEEE.  2014 International Symposium on Computer, Consumer and Control. DOI: 10.1109/IS3C.2014.154. Electronic ISBN:978-1-4799-5277-9. 
