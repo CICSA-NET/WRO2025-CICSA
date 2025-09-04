@@ -249,7 +249,7 @@ Detailed battery specifications are provided below
 
 - **Battery type**  
   - Battery LiPo HOOVO 11.1V 3S 5200mAh 60C
-  - SUNPADOW 3S 11.1V Lipo Battery with EC5 Connector 8200mAh 100C
+  - OVONIC LiPo Battery 3S 11.1V 6000mAh 60C RC Battery with Dean-Style T T Plug.
 
 - **Power regulation**  
   - Buck converters or dedicated power rails to prevent voltage drops and protect sensitive components
