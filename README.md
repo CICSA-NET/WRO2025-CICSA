@@ -273,7 +273,7 @@ Each sensor contributes to navigation, obstacle detection, or environmental awar
 
 A wiring diagram and bill of materials (BOM) will be included to illustrate:
 
-- Power distribution** across all components.
+- Power distribution across all components.
 - Voltage regulation.
 - Microcontroller pin mapping.
 - Sensor interconnections and shielding.
