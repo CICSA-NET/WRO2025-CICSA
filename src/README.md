@@ -17,3 +17,7 @@ This directory contain code for control software which is used by the vehicle to
 - Real-time PID parameter adjustment.
 - Improved trajectory stability and response time.
 
+### v1.2.0 – Final release free challenge.
+- Improvements were added to the startup routine to detect which direction to turn.
+
+
