@@ -27,5 +27,8 @@ This directory contain code for control software which is used by the vehicle to
 ### v2.1.0 – Final release challenge obstacles (ESP-32).
 - This code is for the ESP-32 in charge of carrying out the obstacle course, it communicates via serial with the Raspberry Pi 5,   receives commands to control the robot, and contains a PID to navigate the track.
 
+### v2.2.0 – Final release challenge obstacles (ESP-32).
+- Final Program with comments..
+
 ### v3.1.0 – Final release challenge obstacles (Raspberry Pi 5).
 - This is the main code installed on the Raspberry Pi 5, which contains the cv2, numpy, serial, time, and picamera2 libraries. To detect obstacles, it communicates with the ESP-32 to control the robot.
