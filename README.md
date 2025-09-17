@@ -278,6 +278,10 @@ A wiring diagram and bill of materials (BOM) will be included to illustrate:
 - Microcontroller pin mapping.
 - Sensor interconnections and shielding.
 
+  #  3. Obstacle management.
+
+  
+
 # References
 [1] Alouache A., Wu Q., "Genetic Algorithms for Trajectory Tracking of Mobile Robot Based on PID Controller". 2018 IEEE 14th International Conference on Intelligent Computer Communication and Processing (ICCP). DOI: 10.1109/ICCP.2018.8516587. IEEE. ISBN:978-1-5386-8446-7.
 
