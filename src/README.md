@@ -20,4 +20,5 @@ This directory contain code for control software which is used by the vehicle to
 ### v1.2.0 – Final release free challenge.
 - Improvements were added to the startup routine to detect which direction to turn.
 
-
+### v2.1.0 – Final release challenge obstacles.
+- This code is for the ESP-32 in charge of carrying out the obstacle course, it communicates via serial with the Raspberry Pi 5,   receives commands to control the robot, and contains a PID to navigate the track.
