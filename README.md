@@ -281,7 +281,8 @@ A wiring diagram and bill of materials (BOM) will be included to illustrate:
 #  3. Obstacle management.
 
 This system pairs a Raspberry Pi 5 vision producer with an ESP32 motion controller for WRO 2025. On the Pi 5, WRO_headless.py captures frames via Picamera2, crops a horizontal ROI to focus compute, converts to HSV, and segments red (two hue bands for wraparound) and green. A 5×5 morphological opening suppresses noise; external contours are extracted and the largest blobs are measured. Detections below a minimum area are ignored; exceeding a “critical” area flags an immediate pillar. The Pi compares critical red vs green and sends a single byte—'R', 'G', or 'C'—over UART at 115200 baud. The ESP32 (MicroPython) reads this on UART2 (TX=GPIO17, RX=GPIO16), drives motors with LEDC PWM, and positions the steering servo at calibrated LEFT/CENTER/RIGHT bounds. Ultrasonic distances (HC-SR04 style via time_pulse_us) refresh continuously. A wall-following PID (tunable KP/KI/KD, DT) steers each cycle; on 'R'/'G', a lane-change primitive boosts speed, steers diagonally with a minimum hold, requires a lateral distance delta or times out, then counter-turns and recovers before PID resumes. A debounced corner routine triggers when front distance stays below threshold. Calibrate HSV, ROI, area gates, PID gains, and maneuver timings.
-The connection diagram is shown in section XXX
+The connection diagram is shown in section schemes.
+The source code is in section src.
   
 
 # References
