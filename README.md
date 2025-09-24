@@ -4,6 +4,15 @@
 
 This is the official repository of the Team CICSA for the international final of the WRO2025 season in Panamá.
 
+## Contents
+**Folders**
+- [📁 Models](./models/)
+- [📁 Schemes](./schemes/)
+- [📁 Src](./src/)
+- [📁 T-photos](./t-photos/)
+- [📁 V-photos](./v-photos/)
+- [📁 Video](./video/)
+
 ##  Index
 
 - [The team](#The-team)
@@ -11,9 +20,7 @@ This is the official repository of the Team CICSA for the international final of
 - [Robot Overview](#Robot-Overview)
 - [💻 Código Fuente](#código-fuente)
 - [📝 Documentación](#documentación)
-- [📁 Código fuente](./src/)
-- [📁 Diagramas](./hardware/)
-- [📁 Documentación técnica](./docs/)
+
 ___
 ## The team.
 CICSA WRO 2025 - Future Engineers
