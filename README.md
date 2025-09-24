@@ -56,7 +56,7 @@ ___
 
 ## Robot Overview.
 
-| ![Foto 1](ruta/imagen1.jpg) | ![Foto 2](ruta/imagen2.jpg) | ![Foto 3](ruta/imagen3.jpg) |
+| ![Foto 1](C:\Users\sihrt\OneDrive\Documents\SI\Cicsa\WRO\2025\FE\Video_Fotos\Robot_back.jpg) | ![Foto 2](ruta/imagen2.jpg) | ![Foto 3](ruta/imagen3.jpg) |
 |----------------------------|----------------------------|----------------------------|
 | MITOS                     | Gabriela                   | Alejandro                  |
 
