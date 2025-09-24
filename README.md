@@ -1,6 +1,7 @@
 
 
 <img width="842" height="468" alt="image" src="https://github.com/user-attachments/assets/f008d91d-e2a0-4c5f-97a4-c56cfcc7fe91" />
+#This is the official repository of the Team CICSA for the international final of the WRO2025 season.
 
 ##  Index
 
