@@ -40,15 +40,16 @@ ___
 
 The WRO Future Engineers challenge pushes students to create fully autonomous self-driving vehicles. Each robot must:
 
-Navigate a dynamically randomized track
-Detect and avoid colored obstacles (green/red blocks)
-Execute a parallel parking maneuver
-Scoring is based on:
+- Navigate a dynamically randomized track.
+- Detect and avoid colored obstacles (green/red blocks).
+- Execute a parallel parking maneuver.
 
-Performance on track
-Obstacle handling
-Documentation quality
-Innovation and engineering rigor
+Scoring is based on:
+- Performance on track.
+- Obstacle handling.
+- Documentation quality.
+- Innovation and engineering rigor.
+- 
 For more indo visit: WRO Official Site
 
 
