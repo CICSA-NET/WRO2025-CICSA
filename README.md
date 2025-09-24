@@ -18,7 +18,7 @@ This is the official repository of the Team CICSA for the international final of
 - [The team](#The-team)
 - [The Challenge.](#The-Challenge)
 - [Robot Overview](#Robot-Overview)
-- [💻 Código Fuente](#código-fuente)
+- [Hardware design](#Hardware-design)
 - [📝 Documentación](#documentación)
 
 ___
@@ -80,6 +80,10 @@ ___
 
 **Robot top.**
 ![Robot_Top](https://github.com/user-attachments/assets/f198b1b7-5f49-4fff-a55b-2679f68a8a17)
+
+___
+
+## Hardware design.
 
 
 Engineering materials
