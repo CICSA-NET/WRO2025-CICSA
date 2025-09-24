@@ -2,11 +2,18 @@
 
 <img width="842" height="468" alt="image" src="https://github.com/user-attachments/assets/f008d91d-e2a0-4c5f-97a4-c56cfcc7fe91" />
 
+##  Index
+
+- 1. [The team](## 1. The team.)
+- [⚙️ Especificaciones Técnicas](#especificaciones-técnicas)
+- [📦 Componentes](#componentes)
+- [💻 Código Fuente](#código-fuente)
+- [📝 Documentación](#documentación)
 - [📁 Código fuente](./src/)
 - [📁 Diagramas](./hardware/)
 - [📁 Documentación técnica](./docs/)
 
-
+## 1. The team.
 CICSA WRO 2025 - Future Engineers
 
 Coach Sergio Iván Hernández Ruiz
