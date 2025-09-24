@@ -12,7 +12,7 @@
 - [📁 Código fuente](./src/)
 - [📁 Diagramas](./hardware/)
 - [📁 Documentación técnica](./docs/)
-
+___
 ## The team.
 CICSA WRO 2025 - Future Engineers
 
