@@ -56,7 +56,9 @@ ___
 
 ## Robot Overview.
 
-
+| ![Foto 1](ruta/imagen1.jpg) | ![Foto 2](ruta/imagen2.jpg) | ![Foto 3](ruta/imagen3.jpg) |
+|----------------------------|----------------------------|----------------------------|
+| MITOS                     | Gabriela                   | Alejandro                  |
 
 
 Engineering materials
