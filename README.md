@@ -13,7 +13,7 @@
 - [📁 Diagramas](./hardware/)
 - [📁 Documentación técnica](./docs/)
 
-## 1. The team.
+## The team.
 CICSA WRO 2025 - Future Engineers
 
 Coach Sergio Iván Hernández Ruiz
