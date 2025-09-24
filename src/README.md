@@ -5,7 +5,7 @@ This directory contain code for control software which is used by the vehicle to
 
 ## Version History
 
-### pid_esp.py – First version of the code.
+### pid_esp.py – First version of the code (ESP-32).
 
 ### v1.0.0 – Initial Release (ESP-32).
 - Basic sensor integration (vl53l0x) with ESP32 using MicroPython
