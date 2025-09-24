@@ -56,12 +56,8 @@ ___
 
 ## Robot Overview.
 
+Robot back.
 ![Robot_back](https://github.com/user-attachments/assets/5b9b59dc-89ff-4563-9fd3-ec57d076fd61)
-
-
-| ![Foto 1](C:\Users\sihrt\OneDrive\Documents\SI\Cicsa\WRO\2025\FE\Video_Fotos\Robot_back.jpg) | ![Foto 2](ruta/imagen2.jpg) | ![Foto 3](ruta/imagen3.jpg) |
-|----------------------------|----------------------------|----------------------------|
-| MITOS                     | Gabriela                   | Alejandro                  |
 
 
 Engineering materials
