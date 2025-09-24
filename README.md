@@ -243,13 +243,11 @@ Three sensors were used to provide the microcontroller (ESP32) with the necessar
 ###  Power Supply Strategy
 
 The power system is designed to support motors, servos, microcontrollers, and sensors simultaneously. Key considerations includes two challenges, each powered by a different voltage source.
-For the open challenge, the system is powered by a battery that supplies 5200 mA.
-For the obstacle challenge, which requires increased processing from the Raspberry Pi 5, a battery providing 8200 mA is used.
+For the open challenge and the obstacle challenge, the system is powered by a battery that supplies 5200 mA.
 Detailed battery specifications are provided below
 
 - **Battery type**  
   - Battery LiPo HOOVO 11.1V 3S 5200mAh 60C
-  - OVONIC LiPo Battery 3S 11.1V 6000mAh 60C RC Battery with Dean-Style T T Plug.
 
 - **Power regulation**  
   - Buck converters or dedicated power rails to prevent voltage drops and protect sensitive components
