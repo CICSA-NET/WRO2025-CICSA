@@ -7,7 +7,7 @@ This is the official repository of the Team CICSA for the international final of
 ##  Index
 
 - [The team](#The-team)
-- [⚙️ Especificaciones Técnicas](#Content)
+- [The Challenge.](#The-Challenge)
 - [📦 Componentes](#componentes)
 - [💻 Código Fuente](#código-fuente)
 - [📝 Documentación](#documentación)
@@ -35,6 +35,8 @@ Xiara Gabriela Alcantar Dorame, she is 19 years old, studies Mechatronics Engine
 <img width="222" height="315" alt="image" src="https://github.com/user-attachments/assets/0967d148-6391-4b47-a9ea-2ec88d4f37e1" />
 
 ___
+
+## The Challenge.
   
 Engineering materials
 ====
