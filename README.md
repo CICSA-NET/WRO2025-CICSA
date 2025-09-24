@@ -49,8 +49,8 @@ Scoring is based on:
 - Obstacle handling.
 - Documentation quality.
 - Innovation and engineering rigor.
-- 
-For more indo visit: WRO Official Site
+
+For more indo visit: [WRO Official Site](https://wro-association.org/)
 
 
   
