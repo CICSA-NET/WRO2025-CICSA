@@ -31,7 +31,9 @@ Sergio Amid Hernández Gónzalez, at 19 years old, he studies Software Engineeri
 Xiara Gabriela Alcantar Dorame, she is 19 years old, studies Mechatronics Engineering at the Universidad Tecnológica de Nogales, in 2020 she was part of the CICSA team that would represent CICSA in the regional competition, but the pandemic prevented the event from taking place, for 2025 she will be part of the CICSA representative in the National competition in Rosarito, Baja California, México.
 
 <img width="222" height="315" alt="image" src="https://github.com/user-attachments/assets/0967d148-6391-4b47-a9ea-2ec88d4f37e1" />
+
 ___
+
 ## Content
 
 * `t-photos` contains 2 photos of the team (an official one and one funny photo with all team members)
