@@ -4,7 +4,7 @@
 
 ##  Index
 
-- [The team](#1.-The-team)
+- [1. The team](#1.-The-team)
 - [⚙️ Especificaciones Técnicas](#Content)
 - [📦 Componentes](#componentes)
 - [💻 Código Fuente](#código-fuente)
