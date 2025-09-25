@@ -22,6 +22,7 @@ This is the official repository of the Team CICSA for the international final of
 - [Mobility Management](#Mobility-Management)
 - [Power and Sensor Management](#Power-and-Sensor-Management)
 - [Obstacle management](#Obstacle-management)
+- [References](#References)
 
 ___
 ## The team.
@@ -332,7 +333,9 @@ The connection diagram is shown in section schemes.
 The source code is in section src.
   
 
-# References
+## References.
+====
+
 [1] Alouache A., Wu Q., "Genetic Algorithms for Trajectory Tracking of Mobile Robot Based on PID Controller". 2018 IEEE 14th International Conference on Intelligent Computer Communication and Processing (ICCP). DOI: 10.1109/ICCP.2018.8516587. IEEE. ISBN:978-1-5386-8446-7.
 
 [2] Qi Z., Yang H., Li M., Li J., "Research on Fractional Order PID Controller in Servo Control System". 2019 IEEE 3rd Conference on Energy Internet and Energy System Integration (EI2). DOI: 10.1109/EI247390.2019.9062032. IEEE. ISBN:978-1-7281-3138-2.
