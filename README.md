@@ -21,7 +21,7 @@ This is the official repository of the Team CICSA for the international final of
 - [Engineering materials](#Engineering-materials)
 - [Mobility Management](#Mobility-Management)
 - [Power and Sensor Management](#Power-and-Sensor-Management)
-  
+- [Obstacle management](#Obstacle-management) 
 ___
 ## The team.
 ====
@@ -275,7 +275,7 @@ Feel free to modify or remix these models to suit your specific configuration. C
 Efficient energy and sensor management are essential for reliable vehicle performance. This section outlines the power strategy, sensor selection, and system integration used in the robot.
 Three sensors were used to provide the microcontroller (ESP32) with the necessary information to navigate the track and overcome various challenges. One sensor is mounted on the right side of the vehicle to work in conjunction with the PID controller, maintaining a specific distance from the wall. Another sensor is placed on the left side, performing the same function on the opposite side. A third sensor is positioned facing forward to monitor when the robot approaches the front wall.
 
-## Current Consumption Analysis – Robotic System
+**Current Consumption Analysis – Robotic System**
 
 | Component               | Quantity | Voltage (V) | Current per unit (A) | Total current (A) | Max total current (A) |
 |------------------------|----------|-------------|-----------------------|--------------------|------------------------|
@@ -287,7 +287,7 @@ Three sensors were used to provide the microcontroller (ESP32) with the necessar
 | L298N (logic circuit)  | 1        | 5           | 0.05                  | 0.05               | 0.05                   |
 | **Estimated Total**    | —        | —           | —                     | **2.49 A**         | **6.29 A**             |
 
-###  Power Supply Strategy
+**Power Supply Strategy**
 
 The power system is designed to support motors, servos, microcontrollers, and sensors simultaneously. Key considerations includes two challenges, each powered by a different voltage source.
 For the open challenge and the obstacle challenge, the system is powered by a battery that supplies 5200 mA.
@@ -299,7 +299,7 @@ Detailed battery specifications are provided below
 - **Power regulation**  
   - Buck converters or dedicated power rails to prevent voltage drops and protect sensitive components
 
-###  Sensor Selection and Justification
+**Sensor Selection and Justification**
 Three sensors were selected to provide the robot with positioning information on the track.
 They were mounted on the front of the robot: one on the right side, one on the left side, and one in the center.
 This configuration allows the robot to detect lateral boundaries and maintain alignment during navigation.
@@ -314,7 +314,7 @@ Each sensor contributes to navigation, obstacle detection, or environmental awar
 | 3.- URM37V5.0    | Distance measurement        | Digital  | Low consumption      |
 
 
-###  System Integration Overview
+**System Integration Overview**
 
 A wiring diagram and bill of materials (BOM) will be included to illustrate:
 
@@ -323,7 +323,8 @@ A wiring diagram and bill of materials (BOM) will be included to illustrate:
 - Microcontroller pin mapping.
 - Sensor interconnections and shielding.
 
-#  3. Obstacle management.
+## Obstacle management.
+====
 
 This system pairs a Raspberry Pi 5 vision producer with an ESP32 motion controller for WRO 2025. On the Pi 5, WRO_headless.py captures frames via Picamera2, crops a horizontal ROI to focus compute, converts to HSV, and segments red (two hue bands for wraparound) and green. A 5×5 morphological opening suppresses noise; external contours are extracted and the largest blobs are measured. Detections below a minimum area are ignored; exceeding a “critical” area flags an immediate pillar. The Pi compares critical red vs green and sends a single byte—'R', 'G', or 'C'—over UART at 115200 baud. The ESP32 (MicroPython) reads this on UART2 (TX=GPIO17, RX=GPIO16), drives motors with LEDC PWM, and positions the steering servo at calibrated LEFT/CENTER/RIGHT bounds. Ultrasonic distances (HC-SR04 style via time_pulse_us) refresh continuously. A wall-following PID (tunable KP/KI/KD, DT) steers each cycle; on 'R'/'G', a lane-change primitive boosts speed, steers diagonally with a minimum hold, requires a lateral distance delta or times out, then counter-turns and recovers before PID resumes. A debounced corner routine triggers when front distance stays below threshold. Calibrate HSV, ROI, area gates, PID gains, and maneuver timings.
 The connection diagram is shown in section schemes.
