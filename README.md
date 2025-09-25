@@ -162,7 +162,12 @@ Mobility is a key factor in robotic performance, especially in competitive envir
 
 <img width="841" height="316" alt="image" src="https://github.com/user-attachments/assets/7f6f4bb1-04b4-4737-a7f4-04a1430fb224" />
 
+The gear transmission is a mechanical system that allows for the modification of angular velocity and torque between two connected shafts. This is achieved by coupling two gears: a driving gear (coupled to the motor) and a driven gear (coupled to the load or wheel).
 
+Based on the previous terms, we use them in the robot as follows:
+
+1. For the free challenge, it is required that the robot has more speed than torque, which is why the driven gear has XX teeth in relation to the driving gear of XX. If we apply the principle of conservation of mechanical power, where:XXXXXXXXX
+2. For the obstacle challenge, it is required that the robot moves slowly and with more torque, resulting in the driven gear for this particular challenge having XX teeth and the driving gear having XX, so that by applying the principle of conservation of power, a decrease in speed is obtained, but torque increases in the following proportion:XXXXXXXX
 
 **Design Objectives**
 
