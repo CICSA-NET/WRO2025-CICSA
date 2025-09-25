@@ -160,6 +160,10 @@ Mobility is a key factor in robotic performance, especially in competitive envir
 
 <img width="886" height="300" alt="image" src="https://github.com/user-attachments/assets/eefbba07-8c55-4ca0-945b-d09acaefd093" />
 
+<img width="804" height="406" alt="image" src="https://github.com/user-attachments/assets/e0f9f0db-bb45-4966-a21e-9d01857a978b" />
+
+
+
 
 ***Design Objectives**
 
