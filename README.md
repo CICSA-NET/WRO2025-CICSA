@@ -17,7 +17,7 @@ This is the official repository of the Team CICSA for the international final of
 - [The team](#The-team)
 - [The Challenge.](#The-Challenge)
 - [Robot Overview](#Robot-Overview)
-- [Hardware design](#Hardware-design)
+- [Engineering materials](#Engineering-materials)
 - [📝 Documentación](#documentación)
 
 ___
@@ -72,10 +72,7 @@ ___
 
 ___
 
-## Hardware design.
-
-
-Engineering materials
+## Engineering materials.
 ====
 
 This repository contains engineering materials of a self-driven vehicle's model participating in the WRO Future Engineers competition in the season 2025.
