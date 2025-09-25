@@ -65,11 +65,11 @@ ___
 
 | Front | Back | Top |
 |---------------|---------------|----------------|
-| ![](images/Robot_Front.jpeg) | ![](images/Robot_back.jpeg) | ![](images/Robot_Top.jpeg) |
+| ![](v-photos/Robot_Front.jpeg) | ![](v-photos/Robot_back.jpeg) | ![](v-photos/Robot_Top.jpeg) |
 
 | Bottom | Left | Right |
 |---------------|---------------|----------------|
-| ![](images/Robot_Bottom.jpeg) | ![](images/Robot_Left.jpeg) | ![](images/Robot_Right.jpeg) |
+| ![](v-photos/Robot_Bottom.jpeg) | ![](v-photos/Robot_Left.jpeg) | ![](v-photos/Robot_Right.jpeg) |
 
 ___
 
