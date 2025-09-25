@@ -21,7 +21,8 @@ This is the official repository of the Team CICSA for the international final of
 - [Engineering materials](#Engineering-materials)
 - [Mobility Management](#Mobility-Management)
 - [Power and Sensor Management](#Power-and-Sensor-Management)
-- [Obstacle management](#Obstacle-management) 
+- [Obstacle management](#Obstacle-management)
+
 ___
 ## The team.
 ====
