@@ -158,6 +158,9 @@ Workflow Table
 
 Mobility is a key factor in robotic performance, especially in competitive environments where precision, stability, and adaptability are essential. This document outlines the mechanical and software strategies used to manage the robot's mobility, featuring a gear-based transmission system and directional control via a servomotor.
 
+<img width="886" height="300" alt="image" src="https://github.com/user-attachments/assets/eefbba07-8c55-4ca0-945b-d09acaefd093" />
+
+
 ***Design Objectives**
 
 The mobility system was designed to meet the following goals:
