@@ -19,10 +19,12 @@ This is the official repository of the Team CICSA for the international final of
 - [The Challenge.](#The-Challenge)
 - [Robot Overview](#Robot-Overview)
 - [Engineering materials](#Engineering-materials)
-- [📝 Documentación](#documentación)
+- [Mobility Management](#Mobility-Management)
 
 ___
 ## The team.
+====
+
 CICSA WRO 2025 - Future Engineers
 
 Coach Sergio Iván Hernández Ruiz
@@ -44,6 +46,7 @@ Xiara Gabriela Alcantar Dorame, she is 19 years old, studies Mechatronics Engine
 ___
 
 ## The Challenge.
+====
 
 The WRO Future Engineers challenge pushes students to create fully autonomous self-driving vehicles. Each robot must:
 
@@ -146,7 +149,8 @@ Workflow Table
 |                     | Controls motors and servo using PWM                     |
 
 
-#  1. Mobility Management
+## Mobility Management.
+====
 
 Mobility is a key factor in robotic performance, especially in competitive environments where precision, stability, and adaptability are essential. This document outlines the mechanical and software strategies used to manage the robot's mobility, featuring a gear-based transmission system and directional control via a servomotor.
 
