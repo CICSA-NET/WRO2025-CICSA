@@ -63,10 +63,9 @@ ___
 
 ## Robot Overview.
 
-| Vista frontal                  | Vista lateral                  | Vista inferior                  |
-|--------------------------------|--------------------------------|---------------------------------|
-| ![Frontal]([images/front.jpg](https://github.com/user-attachments/assets/bbf26bb7-032a-4310-9fb0-73b40f601902))  | ![Lateral]([images/side.jpg](https://github.com/user-attachments/assets/2899f79c-1778-48ac-97cc-dd3acbfc9ea5))    | ![Inferior]([images/bottom.jpg](https://github.com/user-attachments/assets/f198b1b7-5f49-4fff-a55b-2679f68a8a17)) |
-
+| Front | Back | Top |
+|---------------|---------------|----------------|
+| ![](images/Robot_Front.jpeg) | ![](images/Robot_back.jpeg) | ![](images/Robot_Top.jpeg) |
 
 **Robot back.**
 ![Robot_back](https://github.com/user-attachments/assets/5b9b59dc-89ff-4563-9fd3-ec57d076fd61)
