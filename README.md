@@ -20,7 +20,8 @@ This is the official repository of the Team CICSA for the international final of
 - [Robot Overview](#Robot-Overview)
 - [Engineering materials](#Engineering-materials)
 - [Mobility Management](#Mobility-Management)
-
+- [Power and Sensor Management](#Power-and-Sensor-Management)
+  
 ___
 ## The team.
 ====
@@ -155,7 +156,7 @@ Workflow Table
 
 Mobility is a key factor in robotic performance, especially in competitive environments where precision, stability, and adaptability are essential. This document outlines the mechanical and software strategies used to manage the robot's mobility, featuring a gear-based transmission system and directional control via a servomotor.
 
-##  Design Objectives
+***Design Objectives**
 
 The mobility system was designed to meet the following goals:
 
@@ -164,18 +165,18 @@ The mobility system was designed to meet the following goals:
 - **Mechanical Efficiency**: Use gear ratios to optimize torque and speed.
 - **Adaptability**: Respond effectively to terrain changes and obstacles.
 
-##  Mechanical Configuration
+**Mechanical Configuration**
 
 - **Gear Transmission**: Power is delivered from the motors to the wheels through a custom gear system. Gear ratios were selected to enhance torque for low-speed control and obstacle negotiation.
 - **Directional Control**: A high-precision servomotor is used to steer the front axle, allowing for smooth and responsive turns. This setup mimics real-world vehicle steering and improves maneuverability in tight spaces.
 - **Chassis Design**: The gear system and steering mechanism are integrated into a compact, rigid frame that supports sensor placement and structural integrity.
 
-##  Software Integration
+**Software Integration**
 
 - **Motor Control**: PWM signals regulate motor speed, while gear ratios provide mechanical tuning. The servomotor is controlled via angle commands for directional adjustments.
 - **Error Handling**: The system includes routines to detect gear misalignment, servo overload, or terrain anomalies, triggering corrective actions when needed.
 
-##  Performance Evaluation
+**Performance Evaluation**
 
 Mobility was tested under various conditions:
 
@@ -184,7 +185,7 @@ Mobility was tested under various conditions:
 - **Load Testing**: Gear ratios and servo torque were validated under different payloads to ensure consistent performance.
 - **Energy Efficiency**: Power consumption was monitored to balance torque output, steering precision, and battery endurance.
 
-##  Motor and Servo Specifications
+**Motor and Servo Specifications**
 
 | Parameter         | JGA25-370 Gear Motor (12V)           | MG996 Servo Motor (6V)             |
 |------------------|--------------------------------------|------------------------------------|
@@ -198,7 +199,7 @@ Mobility was tested under various conditions:
 | **Rotation Range**    | Continuous                          | 0° to 180°                         |
 | **Control Method**    | PWM + gear ratio                    | PWM signal (50Hz, 1–2ms pulse)     |
 
-##  JGA25-370 Motor Specifications by Voltage
+**JGA25-370 Motor Specifications by Voltage**
 
 | Voltage (V) | No-load Speed (rpm) | Rated Torque (kg·cm) | Power (W) | Load Speed (rpm) | Load Current (A) | Stall Torque (kg·cm) |
 |-------------|----------------------|------------------------|-----------|-------------------|-------------------|------------------------|
@@ -214,7 +215,7 @@ Mobility was tested under various conditions:
 
 ---
 
-## Chassis Selection and Custom Adaptations
+**Chassis Selection and Custom Adaptations**
 
 This project utilizes a commercial chassis with **custom structural own modifications** to support advanced robotics integration. The chassis has been adapted to include:
 
@@ -246,7 +247,7 @@ A commercial chassis was selected to optimize structural integrity, motor compat
 > - Lightweight yet durable, ideal for competition and field testing.
 >
 
-###  Engineering Principles Applied
+**Engineering Principles Applied**
 
 The design and implementation are grounded in core engineering concepts:
 
@@ -255,7 +256,7 @@ The design and implementation are grounded in core engineering concepts:
 - **Power**: Guides battery selection and motor efficiency.
 - **Mass distribution**: Ensures stability and maneuverability.
 
-##  3D Printed Components
+**3D Printed Components**
 
 Complementary 3D-printed parts used to enhance the commercial chassis are included in the `models/` folder located at the top level of this repository.
 
@@ -268,7 +269,7 @@ These components include:
 
 Feel free to modify or remix these models to suit your specific configuration. Contributions and improvements are welcome!
 
-#  2. Power and Sensor Management
+## Power and Sensor Management.
 
 Efficient energy and sensor management are essential for reliable vehicle performance. This section outlines the power strategy, sensor selection, and system integration used in the robot.
 Three sensors were used to provide the microcontroller (ESP32) with the necessary information to navigate the track and overcome various challenges. One sensor is mounted on the right side of the vehicle to work in conjunction with the PID controller, maintaining a specific distance from the wall. Another sensor is placed on the left side, performing the same function on the opposite side. A third sensor is positioned facing forward to monitor when the robot approaches the front wall.
