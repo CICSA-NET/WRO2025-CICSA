@@ -56,6 +56,12 @@ Scoring is based on:
 - Documentation quality.
 - Innovation and engineering rigor.
 
+Objective:
+Design and build a mobile robot capable of autonomous navigation using: 
+* Image recognition for object detection.
+* PID control to maintain a safe distance from obstacles using ultrasonic sensors.
+* Communication between Raspberry Pi 5 and ESP32 to divide tasks between heavy processing (vision) and real-time control (motors and sensors).
+
 For more indo visit: [WRO Official Site](https://wro-association.org/)
 
 ___
@@ -98,13 +104,6 @@ This repository contains engineering materials of a self-driven vehicle's model 
 
 Estimated total cost ==> $ 327.00 US dollars.
 
-## Introduction
-
-Objective:
-Design and build a mobile robot capable of autonomous navigation using: 
-* Image recognition for object detection.
-* PID control to maintain a safe distance from obstacles using ultrasonic sensors.
-* Communication between Raspberry Pi 5 and ESP32 to divide tasks between heavy processing (vision) and real-time control (motors and sensors).
 
 |    Component         |   Function / Description                          |
 |----------------------|----------------------------------------------------|
