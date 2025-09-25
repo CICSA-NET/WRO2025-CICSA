@@ -113,7 +113,7 @@ Estimated total cost ==> $ 327.00 US dollars.
 | ARM37V5 (x3)         | Distance measurement for obstacle avoidance       |
 | L298N Motor Driver   | Controls DC motors                                |
 | DC Motor             | Robot movement                                    |
-| Li-ion Battery       | Portable power source                             |
+| Lipo Battery         | Portable power source                             |
 | Voltage Regulator    | Stabilizes voltage for sensitive components       |
 | UART Communication   | Link between Raspberry Pi and ESP32               |
 | 2WD / 4WD Chassis    | Physical structure of the robot                   |
