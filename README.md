@@ -13,7 +13,7 @@ This is the official repository of the Team CICSA for the international final of
 - [📁 V-photos](./v-photos/)
 - [📁 Video](./video/)
 
-##  Index
+**Index**
 
 - [The team](#The-team)
 - [The Challenge.](#The-Challenge)
