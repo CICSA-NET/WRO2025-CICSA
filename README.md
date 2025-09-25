@@ -106,9 +106,9 @@ Estimated total cost ==> $ 327.00 US dollars.
 
 
 |    Component         |   Function / Description                          |
-|----------------------|----------------------------------------------------|
+|----------------------|---------------------------------------------------|
 | Raspberry Pi 5       | Image processing and navigation logic             |
-| ESP32                | Real-time motor and sensor control                |
+| ESP32                | Real-time servo control with PID algorithms and read sensors          |
 | Camera               | Captures images for computer vision               |
 | ARM37V5 (x3)         | Distance measurement for obstacle avoidance       |
 | L298N Motor Driver   | Controls DC motors                                |
