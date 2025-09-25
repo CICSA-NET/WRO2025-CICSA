@@ -5,7 +5,6 @@ This is the official repository of the Team CICSA for the international final of
 
 ## Contents
 **Folders**
-- [📁 Images](./images/)
 - [📁 Models](./models/)
 - [📁 Schemes](./schemes/)
 - [📁 Src](./src/)
