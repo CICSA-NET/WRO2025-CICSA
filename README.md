@@ -1,22 +1,6 @@
-flowchart TD
-    A[Inicio] --> B[Inicializar sistema<br>Microcontrolador, sensores, actuadores]
-    B --> C[Verificar estado de sensores y actuadores]
-    C -->|Error| D[Mostrar código de error<br>Detener sistema]
-    C -->|OK| E[Leer sensores<br>(distancia, línea, IMU)]
-    E --> F[Procesar datos]
-    F --> G{¿Obstáculo detectado?}
-    G -->|Sí| H[Ejecutar maniobra evasiva<br>(giro, retroceso)]
-    G -->|No| I{¿Está sobre la línea?}
-    I -->|Sí| J[Seguir línea]
-    I -->|No| K[Buscar línea<br>(barrido lateral)]
-    J --> L[Actualizar motores y servos]
-    K --> L
-    L --> M[Guardar datos (telemetría/log)]
-    M --> N{¿Fin del recorrido?}
-    N -->|No| E
-    N -->|Sí| O[Detener robot]
-    O --> P[Fin]
-
+| Vista frontal                  | Vista lateral                  | Vista inferior                  |
+|--------------------------------|--------------------------------|---------------------------------|
+| ![Frontal](images/front.jpg)  | ![Lateral](images/side.jpg)    | ![Inferior](images/bottom.jpg) |
 <img width="842" height="468" alt="image" src="https://github.com/user-attachments/assets/f008d91d-e2a0-4c5f-97a4-c56cfcc7fe91" />
 
 This is the official repository of the Team CICSA for the international final of the WRO2025 season in Panamá.
