@@ -200,25 +200,6 @@ Based on the previous terms, we use them in the robot as follows:
 
 <img width="1010" height="271" alt="image" src="https://github.com/user-attachments/assets/add06f32-cd43-4ca6-af2d-0291b82927d2" />
 
-
-
-
-- **Chassis Design**: The gear system and steering mechanism are integrated into a compact, rigid frame that supports sensor placement and structural integrity.
-
-**Software Integration**
-
-- **Motor Control**: PWM signals regulate motor speed, while gear ratios provide mechanical tuning. The servomotor is controlled via angle commands for directional adjustments.
-- **Error Handling**: The system includes routines to detect gear misalignment, servo overload, or terrain anomalies, triggering corrective actions when needed.
-
-**Performance Evaluation**
-
-Mobility was tested under various conditions:
-
-- **Obstacle Navigation**: The robot demonstrated reliable steering and movement over uneven surfaces and around barriers.
-- **Turning Radius**: The servomotor-based steering allowed for tighter turns compared to differential drive systems.
-- **Load Testing**: Gear ratios and servo torque were validated under different payloads to ensure consistent performance.
-- **Energy Efficiency**: Power consumption was monitored to balance torque output, steering precision, and battery endurance.
-
 **Motor and Servo Specifications**
 
 | Parameter         | JGA25-370 Gear Motor (12V)           | MG996 Servo Motor (6V)             |
@@ -246,6 +227,22 @@ Mobility was tested under various conditions:
 > - Best performance observed at **12V**, offering solid torque and peak power.
 > - Stall torque values are useful for defining load limits and implementing software protection.
 > - Ideal for traction, drive systems, or actuator applications with PWM control.
+
+- **Chassis Design**: The gear system and steering mechanism are integrated into a compact, rigid frame that supports sensor placement and structural integrity.
+
+**Software Integration**
+
+- **Motor Control**: PWM signals regulate motor speed, while gear ratios provide mechanical tuning. The servomotor is controlled via angle commands for directional adjustments.
+- **Error Handling**: The system includes routines to detect gear misalignment, servo overload, or terrain anomalies, triggering corrective actions when needed.
+
+**Performance Evaluation**
+
+Mobility was tested under various conditions:
+
+- **Obstacle Navigation**: The robot demonstrated reliable steering and movement over uneven surfaces and around barriers.
+- **Turning Radius**: The servomotor-based steering allowed for tighter turns compared to differential drive systems.
+- **Load Testing**: Gear ratios and servo torque were validated under different payloads to ensure consistent performance.
+- **Energy Efficiency**: Power consumption was monitored to balance torque output, steering precision, and battery endurance
 
 ---
 
