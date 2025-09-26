@@ -48,7 +48,7 @@ Sergio Iván has been the director of the CICSA robotics academy since 2015 and 
 
 
 
-- [Menu](#Contents)
+[Menu](#Contents)
 
 ___
 
@@ -76,7 +76,7 @@ Design and build a mobile robot capable of autonomous navigation using:
 For more indo visit: [WRO Official Site](https://wro-association.org/)
 
 
-- [Menu](#Contents)
+[Menu](#Contents)
 ___
 
 ## Robot Overview.
@@ -91,7 +91,7 @@ ___
 | ![](v-photos/Robot_Bottom.jpeg) | ![](v-photos/Robot_Left.jpeg) | ![](v-photos/Robot_Right.jpeg) |
 
 
-- [Menu](#Contents)
+[Menu](#Contents)
 ___
 
 ## Engineering materials.
@@ -162,7 +162,7 @@ Workflow Table
 
 
 
-- [Menu](#Contents)
+[Menu](#Contents)
 ___
 
 
@@ -315,7 +315,7 @@ These components include:
 Feel free to modify or remix these models to suit your specific configuration. Contributions and improvements are welcome!
 
 
-- [Menu](#Contents)
+[Menu](#Contents)
 ___
 
 ## Power and Sensor Management.
@@ -373,7 +373,7 @@ A wiring diagram and bill of materials (BOM) will be included to illustrate:
 - Sensor interconnections and shielding.
 
 
-- [Menu](#Contents)
+[Menu](#Contents)
 ___
 
 ## Obstacle management.
@@ -384,7 +384,7 @@ The connection diagram is shown in section schemes.
 The source code is in section src.
 
 
-- [Menu](#Contents)
+[Menu](#Contents)
 ___
 
 
@@ -400,6 +400,6 @@ ___
 [4] Schtchikov Y., Sokolova S., "Technical Vision for Object Recognition", 2024 International Conference on Industrial Engineering, Applications and Manufacturing (ICIEAM), DOI: 10.1109/ICIEAM60818.2024.10553791, Electronic ISBN:979-8-3503-9501-3.
 
 
-- [Menu](#Contents)
+[Menu](#Contents)
 ___
 
