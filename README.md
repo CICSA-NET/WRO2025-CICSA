@@ -191,6 +191,7 @@ Based on the previous terms, we use them in the robot as follows:
     XXXXXXXX
 
 
+
 **Directional Control**: A high-precision servomotor is used to steer the front axle, allowing for smooth and responsive turns. This setup mimics real-world vehicle steering and improves maneuverability in tight spaces.
 
 <img width="941" height="372" alt="image" src="https://github.com/user-attachments/assets/5a6086d7-6189-4b04-94b4-430630bc0873" />
