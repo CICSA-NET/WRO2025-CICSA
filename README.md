@@ -46,6 +46,8 @@ Sergio Iván has been the director of the CICSA robotics academy since 2015 and 
 
 <img width="222" height="315" alt="image" src="https://github.com/user-attachments/assets/0967d148-6391-4b47-a9ea-2ec88d4f37e1" />
 
+
+
 - [Menu](#Contents)
 
 ___
@@ -73,6 +75,8 @@ Design and build a mobile robot capable of autonomous navigation using:
 
 For more indo visit: [WRO Official Site](https://wro-association.org/)
 
+
+- [Menu](#Contents)
 ___
 
 ## Robot Overview.
@@ -86,6 +90,8 @@ ___
 |---------------|---------------|----------------|
 | ![](v-photos/Robot_Bottom.jpeg) | ![](v-photos/Robot_Left.jpeg) | ![](v-photos/Robot_Right.jpeg) |
 
+
+- [Menu](#Contents)
 ___
 
 ## Engineering materials.
@@ -153,6 +159,12 @@ Workflow Table
 |                     | Reads ultrasonic sensor data                            |
 |                     | Applies PID control to maintain safe distance           |
 |                     | Controls motors and servo using PWM                     |
+
+
+
+- [Menu](#Contents)
+___
+
 
 
 ## Mobility Management.
