@@ -174,6 +174,8 @@ Mobility is a key factor in robotic performance, especially in competitive envir
 
 <img width="841" height="316" alt="image" src="https://github.com/user-attachments/assets/7f6f4bb1-04b4-4737-a7f4-04a1430fb224" />
 
+
+
 The gear transmission is a mechanical system that allows for the modification of angular velocity and torque between two connected shafts. This is achieved by coupling two gears: a driving gear (coupled to the motor) and a driven gear (coupled to the load or wheel).
 
 Based on the previous terms, we use them in the robot as follows:
@@ -196,11 +198,6 @@ Based on the previous terms, we use them in the robot as follows:
 <img width="743" height="414" alt="image" src="https://github.com/user-attachments/assets/e593d6eb-0339-429c-9243-569fbea22d5e" />
 
 <img width="1010" height="271" alt="image" src="https://github.com/user-attachments/assets/add06f32-cd43-4ca6-af2d-0291b82927d2" />
-
-
-
-
-
 
 
 
