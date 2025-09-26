@@ -156,6 +156,18 @@ Workflow Table
 ## Mobility Management.
 ====
 
+**Design Objectives**
+
+The mobility system was designed to meet the following goals:
+
+- **Precision**: Achieve controlled movement and accurate steering.
+- **Stability**: Maintain balance and traction across varied surfaces.
+- **Mechanical Efficiency**: Use gear ratios to optimize torque and speed.
+- **Adaptability**: Respond effectively to terrain changes and obstacles.
+
+
+**Gear Transmission**: Power is delivered from the motors to the wheels through a custom gear system. Gear ratios were selected to enhance torque for low-speed control and obstacle negotiation.
+
 Mobility is a key factor in robotic performance, especially in competitive environments where precision, stability, and adaptability are essential. This document outlines the mechanical and software strategies used to manage the robot's mobility, featuring a gear-based transmission system and directional control via a servomotor.
 
 <img width="886" height="300" alt="image" src="https://github.com/user-attachments/assets/eefbba07-8c55-4ca0-945b-d09acaefd093" />
@@ -177,19 +189,22 @@ Based on the previous terms, we use them in the robot as follows:
     XXXXXXXX
 
 
-**Design Objectives**
-
-The mobility system was designed to meet the following goals:
-
-- **Precision**: Achieve controlled movement and accurate steering.
-- **Stability**: Maintain balance and traction across varied surfaces.
-- **Mechanical Efficiency**: Use gear ratios to optimize torque and speed.
-- **Adaptability**: Respond effectively to terrain changes and obstacles.
-
-**Mechanical Configuration**
-
-- **Gear Transmission**: Power is delivered from the motors to the wheels through a custom gear system. Gear ratios were selected to enhance torque for low-speed control and obstacle negotiation.
 - **Directional Control**: A high-precision servomotor is used to steer the front axle, allowing for smooth and responsive turns. This setup mimics real-world vehicle steering and improves maneuverability in tight spaces.
+
+<img width="941" height="372" alt="image" src="https://github.com/user-attachments/assets/5a6086d7-6189-4b04-94b4-430630bc0873" />
+
+<img width="743" height="414" alt="image" src="https://github.com/user-attachments/assets/e593d6eb-0339-429c-9243-569fbea22d5e" />
+
+<img width="1010" height="271" alt="image" src="https://github.com/user-attachments/assets/add06f32-cd43-4ca6-af2d-0291b82927d2" />
+
+
+
+
+
+
+
+
+
 - **Chassis Design**: The gear system and steering mechanism are integrated into a compact, rigid frame that supports sensor placement and structural integrity.
 
 **Software Integration**
