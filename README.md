@@ -245,7 +245,9 @@ Based on the previous terms, we use them in the robot as follows:
 > - Ideal for traction, drive systems, or actuator applications with PWM control.
 
 
+
 **Chassis Design**: The gear system and steering mechanism are integrated into a compact, rigid frame that supports sensor placement and structural integrity.
+
 
 
 **Software Integration**
