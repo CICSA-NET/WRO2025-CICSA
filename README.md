@@ -265,6 +265,8 @@ Based on the previous terms, we use them in the robot as follows:
 
 ![turn_robot](https://github.com/user-attachments/assets/a11d5da2-e261-4628-8072-73cda4d6c313)
 
+![pid](https://github.com/user-attachments/assets/e41df90c-652f-4877-9b12-4f1181881fed)
+
 
 
 
