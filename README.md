@@ -255,6 +255,9 @@ Based on the previous terms, we use them in the robot as follows:
 - **Motor Control**: PWM signals regulate motor speed, while gear ratios provide mechanical tuning. The servomotor is controlled via angle commands for directional adjustments.
 - **Error Handling**: The system includes routines to detect gear misalignment, servo overload, or terrain anomalies, triggering corrective actions when needed.
 
+![GeneralProgramOpen](https://github.com/user-attachments/assets/3c89ec7e-4f5e-468b-badf-5f88ac1e12d4)
+
+
 **Performance Evaluation**
 
 Mobility was tested under various conditions:
