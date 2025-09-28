@@ -212,10 +212,6 @@ def pid(ref, condition, vel, sensor):
     led.value(1)
     in1.off()
     in2.on() 
-    if sensor == "left":
-        ref2 = distance_left
-    elif sensor == "right":
-        ref2 = distance_right
     enable.duty_u16(vel)
     
     while count <= condition:
@@ -270,4 +266,5 @@ try:
     
 except KeyboardInterrupt:
     turn_servo(CENTER)   # Center
+
 
