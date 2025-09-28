@@ -263,6 +263,9 @@ Based on the previous terms, we use them in the robot as follows:
 
 ![turn_servo](https://github.com/user-attachments/assets/b4824778-0cdc-4403-8423-9ba04be3e97c)
 
+![turn_robot](https://github.com/user-attachments/assets/a11d5da2-e261-4628-8072-73cda4d6c313)
+
+
 
 
 
