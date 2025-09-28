@@ -261,6 +261,9 @@ Based on the previous terms, we use them in the robot as follows:
 
 ![get_distance](https://github.com/user-attachments/assets/ea045c30-431b-46f1-bb69-cf1e2c8eb504)
 
+![turn_servo](https://github.com/user-attachments/assets/b4824778-0cdc-4403-8423-9ba04be3e97c)
+
+
 
 
 
