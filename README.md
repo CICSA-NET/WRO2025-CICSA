@@ -257,6 +257,12 @@ Based on the previous terms, we use them in the robot as follows:
 
 ![GeneralProgramOpen](https://github.com/user-attachments/assets/3c89ec7e-4f5e-468b-badf-5f88ac1e12d4)
 
+![get_data](https://github.com/user-attachments/assets/9a877113-cd5c-475c-989b-8628b9331b69)
+
+![get_distance](https://github.com/user-attachments/assets/ea045c30-431b-46f1-bb69-cf1e2c8eb504)
+
+
+
 
 **Performance Evaluation**
 
