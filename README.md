@@ -208,6 +208,24 @@ Based on the previous terms, we use them in the robot as follows:
    where:  RT =   driven gear teeth / driving gear teeth = 32 / 54 = **0.59**
 
 
+The motor is controlled using the pulse width modulation technique. Pulse Width Modulation (PWM) is a widely used technique for controlling the speed of DC motors by adjusting the effective voltage applied to the motor terminals. Instead of varying the actual supply voltage, PWM rapidly switches the motor’s power on and off at a fixed frequency, modulating the duration of the “on” time within each cycle—this is known as the duty cycle. The motor’s speed is directly influenced by the duty cycle of the PWM signal. A higher duty cycle means the motor receives power for a greater portion of each cycle, resulting in a higher average voltage and increased rotational speed. Conversely, a lower duty cycle reduces the average voltage and slows the motor down. The configuration parameters are shown below:
+
+
+enable = PWM(Pin(21), freq=1000)        # Motor PWM enable
+enable.duty_u16(35000)                  # Set duty cycle to ~53.4%
+
+
+- Pin(21): Refers to GPIO pin 21 on the microcontroller (ESP32). This pin is physically connected to the motor driver’s (L298N) enable input, which expects a PWM signal.
+- PWM(...): Initializes a PWM object on that pin.
+- freq=1000: Sets the PWM frequency to 1000 Hz (1 kHz), meaning the signal completes 1000 cycles per second.
+- duty_u16(...): Sets the duty cycle using a 16-bit value (range: 0 to 65535).
+- 35000: Represents the “on” time of the PWM signal. The duty cycle percentage is:
+\text{Duty Cycle} = \frac{35000}{65535} \times 100 \approx 53.4\%
+- This means the signal is high (ON) for 53.4% of each cycle and low (OFF) for the remaining 46.6%.
+- Average Voltage: The motor receives approximately 53.4% of the supply voltage. If V_{\text{max}} = 6V, then:
+V_{\text{avg}} = 6V \times 0.534 \approx 3.2V
+- Motor Speed: The angular velocity of the motor shaft is roughly proportional to V_{\text{avg}}, assuming constant load and linear response.
+
 
 **Directional Control**: A high-precision servomotor is used to steer the front axle, allowing for smooth and responsive turns. This setup mimics real-world vehicle steering and improves maneuverability in tight spaces.
 
