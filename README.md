@@ -538,7 +538,7 @@ Formulas were used to perform PID calculations using the discrete method.
 
 Aug 2, 2025
 
-The part used as a base to support the robot was designed in solidworxs and printed. File name: base_robot_v2.STL
+The part used as a base to support the robot was designed in solidworks and printed. File name: base_robot_v2.STL
 
 Aug 4, 2025
 
