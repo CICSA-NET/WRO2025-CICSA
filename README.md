@@ -212,8 +212,8 @@ The motor is controlled using the pulse width modulation technique. Pulse Width 
 
 
 enable = PWM(Pin(21), freq=1000)        # Motor PWM enable
-
 enable.duty_u16(35000)                  # Set duty cycle to ~53.4%
+
 
 
 - Pin(21): Refers to GPIO pin 21 on the microcontroller (ESP32). This pin is physically connected to the motor driver’s (L298N) enable input, which expects a PWM signal.
@@ -221,7 +221,7 @@ enable.duty_u16(35000)                  # Set duty cycle to ~53.4%
 - freq=1000: Sets the PWM frequency to 1000 Hz (1 kHz), meaning the signal completes 1000 cycles per second.
 - duty_u16(...): Sets the duty cycle using a 16-bit value (range: 0 to 65535).
 - 35000: Represents the “on” time of the PWM signal. The duty cycle percentage is:
-\text{Duty Cycle} = \frac{35000}{65535} \times 100 \approx 53.4\%
+  Duty Cycle(%) = (PWM / 65535) * 100                approx 53.4\%
 - This means the signal is high (ON) for 53.4% of each cycle and low (OFF) for the remaining 46.6%.
 - Average Voltage: The motor receives approximately 53.4% of the supply voltage. If V_{\text{max}} = 6V, then:
 V_{\text{avg}} = 6V \times 0.534 \approx 3.2V
