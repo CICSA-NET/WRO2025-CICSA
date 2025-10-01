@@ -212,6 +212,7 @@ The motor is controlled using the pulse width modulation technique. Pulse Width 
 
 
 enable = PWM(Pin(21), freq=1000)        # Motor PWM enable
+
 enable.duty_u16(35000)                  # Set duty cycle to ~53.4%
 
 
