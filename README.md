@@ -196,15 +196,15 @@ The gear transmission is a mechanical system that allows for the modification of
 
 Based on the previous terms, we use them in the robot as follows:
 
-1. For the free challenge, it is required that the robot has more speed than torque, which is why the driven gear has XX teeth in relation to the driving gear of XX. If we apply the principle of conservation of mechanical power,
+1. For the free challenge, it is required that the robot has more speed than torque, which is why the driven gear has 54 teeth in relation to the driving gear of 32. If we apply the principle of conservation of mechanical power,
   
-   where:XXXXXXXXX
+   where:  RT =   driven gear teeth / driving gear teeth = 54 / 32 = **1.68**
 
    
-2. For the obstacle challenge, it is required that the robot moves slowly and with more torque, resulting in the driven gear for this particular challenge having XX teeth and the driving gear having XX, so that by applying the principle of conservation of power, a decrease in speed is obtained, but torque increases in the following proportion:
+2. For the obstacle challenge, it is required that the robot moves slowly and with more torque, resulting in the driven gear for this particular challenge having 32 teeth and the driving gear having 54, so that by applying the principle of conservation of power, a decrease in speed is obtained, but torque increases in the following proportion:
 
 
-    XXXXXXXX
+   where:  RT =   driven gear teeth / driving gear teeth = 32 / 54 = **0.59**
 
 
 
