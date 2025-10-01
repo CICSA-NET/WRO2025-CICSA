@@ -416,9 +416,11 @@ ___
 ====
 
 02-mayo-25
+
 start of assembling the robot prototype with lego ev3 to begin code testing
 
 may 3-8, 25
+
 program testing period using ev3.
 
 may 9, 25
