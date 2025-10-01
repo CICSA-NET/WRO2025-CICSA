@@ -222,11 +222,11 @@ enable.duty_u16(35000)                  # Set duty cycle to ~53.4%
 - freq=1000: Sets the PWM frequency to 1000 Hz (1 kHz), meaning the signal completes 1000 cycles per second.
 - duty_u16(...): Sets the duty cycle using a 16-bit value (range: 0 to 65535).
 - 35000: Represents the “on” time of the PWM signal. The duty cycle percentage is:
-  Duty Cycle(%) = (PWM / 65535) * 100                approx 53.4\%
+  Duty Cycle(%) = (PWM / 65535) * 100                **approx 53.4\%**
 - This means the signal is high (ON) for 53.4% of each cycle and low (OFF) for the remaining 46.6%.
-- Average Voltage: The motor receives approximately 53.4% of the supply voltage. If V_{\text{max}} = 6V, then:
-V_{\text{avg}} = 6V \times 0.534 \approx 3.2V
-- Motor Speed: The angular velocity of the motor shaft is roughly proportional to V_{\text{avg}}, assuming constant load and linear response.
+- Average Voltage: The motor receives approximately 53.4% of the supply voltage. If V = 11.1 V, then:
+  V = 11.1V * 0.534      **approx 6V**
+
 
 
 **Directional Control**: A high-precision servomotor is used to steer the front axle, allowing for smooth and responsive turns. This setup mimics real-world vehicle steering and improves maneuverability in tight spaces.
