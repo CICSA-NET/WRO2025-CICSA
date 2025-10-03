@@ -312,7 +312,17 @@ Based on the measured values and the technical specifications provided by the ma
 
 
 
-**Chassis Design**: The gear system and steering mechanism are integrated into a compact, rigid frame that supports sensor placement and structural integrity.
+**Chassis Adaptation and Structural Enhancements**: 
+
+A commercial chassis kit was initially acquired as the mechanical foundation for the robot. However, significant structural and functional improvements were implemented to optimize device integration and system stability.
+Custom mounting platforms were designed and fabricated to securely accommodate key components such as the ESP32 microcontroller, the Raspberry Pi 5 single-board computer, the camera module, and the sensor array. These modifications involved redesigning the original base plates to ensure precise alignment, vibration damping, and thermal clearance for high-performance operation.
+The updated design also includes reinforced brackets and modular supports that facilitate rapid maintenance and component replacement during competition. These enhancements substantially diverge from the original kit layout, resulting in a more robust, competition-ready architecture.
+The following technical drawings illustrate the custom adaptations made to the chassis, highlighting the engineering rationale behind each modification and its impact on system performance.
+
+
+
+
+
 
 
 
