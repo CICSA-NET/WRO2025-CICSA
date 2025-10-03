@@ -228,6 +228,18 @@ enable.duty_u16(35000)                  # Set duty cycle to ~53.4%
   V = 11.1V * 0.534      **approx 6V**
 
 
+Based on the measured values and the technical specifications provided by the manufacturer, the following results are obtained:
+
+| Parameter             | Measured Value | Unit       |
+|----------------------|----------------|------------|
+| No-load Speed         | 150            | RPM        |
+| Maximum Torque        | 4.5            | kg·cm      |
+| Nominal Current       | 500            | mA         |
+| Operating Voltage     | 6.0            | V          |
+
+> *Referencia: Manual técnico del motor JGA25-370, sección 4.2.*
+
+
 
 **Directional Control**: A high-precision servomotor is used to steer the front axle, allowing for smooth and responsive turns. This setup mimics real-world vehicle steering and improves maneuverability in tight spaces.
 
