@@ -257,7 +257,7 @@ Based on the measured values and the technical specifications provided by the ma
   V = 11.1V * 0.396      **approx 4.39V**
 
 
-  Based on the measured values and the technical specifications provided by the manufacturer, the following results are obtained:
+Based on the measured values and the technical specifications provided by the manufacturer, the following results are obtained:
 
 | Parameter             | Measured Value | Unit       |
 |----------------------|----------------|------------|
