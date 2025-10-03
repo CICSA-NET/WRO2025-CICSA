@@ -322,7 +322,8 @@ Full CAD models and detailed design files can be found in the  folder, including
 
 | Sensors base | Camera base | Main base |
 |---------------|---------------|----------------|
-| ![](models/base_urm37_v7.stl) | ![](v-photos/Robot_Left.jpeg) | ![](v-photos/Robot_Right.jpeg) |
+| ![](models/base_urm37_v7.jpg) | ![](v-photos/Robot_Left.jpeg) | ![](v-photos/Robot_Right.jpeg) |
+
 
 
 
