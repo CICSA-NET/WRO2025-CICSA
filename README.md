@@ -232,9 +232,12 @@ Based on the measured values and the technical specifications provided by the ma
 
 | Parameter             | Measured Value | Unit       |
 |----------------------|----------------|------------|
-| No-load Speed         | 150            | RPM        |
-| Maximum Torque        | 4.5            | kg·cm      |
-| Nominal Current       | 500            | mA         |
+| No-load Speed         | 646            | RPM        |
+| Rated Torque          | 0.18           | Kg-cm      |
+| Power                 | 1.5            | W          |
+| Load Speed            | 516            | RPM        |
+| Load Current          | 0.8            |  A         |
+| Stall Torque          | 2              | Kg-cm      |
 | Operating Voltage     | 6.0            | V          |
 
 > *Referencia: Manual técnico del motor JGA25-370, sección 4.2.*
