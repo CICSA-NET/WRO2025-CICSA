@@ -240,7 +240,7 @@ Based on the measured values and the technical specifications provided by the ma
 | Stall Torque          | 2              | Kg-cm      |
 | Operating Voltage     | 6.0            | V          |
 
-> *Referencia: Manual técnico del motor JGA25-370, sección 4.2.*
+[Reference](https://www.elecrow.com/4wd-smart-car-robot-chassis-for-arduino-servo-steering.html)
 
 
 
