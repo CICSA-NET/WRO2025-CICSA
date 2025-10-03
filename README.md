@@ -211,6 +211,9 @@ Based on the previous terms, we use them in the robot as follows:
 The motor is controlled using the pulse width modulation technique. Pulse Width Modulation (PWM) is a widely used technique for controlling the speed of DC motors by adjusting the effective voltage applied to the motor terminals. Instead of varying the actual supply voltage, PWM rapidly switches the motor’s power on and off at a fixed frequency, modulating the duration of the “on” time within each cycle—this is known as the duty cycle. The motor’s speed is directly influenced by the duty cycle of the PWM signal. A higher duty cycle means the motor receives power for a greater portion of each cycle, resulting in a higher average voltage and increased rotational speed. Conversely, a lower duty cycle reduces the average voltage and slows the motor down. The configuration parameters are shown below:
 
 
+These are the parameters defined for the open-category challenge:
+
+
 enable = PWM(Pin(21), freq=1000)        # Motor PWM enable
 
 enable.duty_u16(35000)                  # Set duty cycle to ~53.4%
@@ -243,6 +246,9 @@ Based on the measured values and the technical specifications provided by the ma
 | Operating Voltage     | 6.0            | V          |
 
 [Reference](https://www.elecrow.com/4wd-smart-car-robot-chassis-for-arduino-servo-steering.html)
+
+
+The following parameters were defined for the obstacle challenge:
 
 
 
