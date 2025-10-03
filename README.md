@@ -254,7 +254,7 @@ Based on the measured values and the technical specifications provided by the ma
   Duty Cycle(%) = (26000 / 65535) * 100                **approx 39.6\%**
 - This means the signal is high (ON) for 39.6%.
 - Average Voltage: The motor receives approximately 39.6% of the supply voltage. If V = 11.1 V, then:
-  V = 11.1V * 0.534      **approx 4.39V**
+  V = 11.1V * 0.396      **approx 4.39V**
 
 
   Based on the measured values and the technical specifications provided by the manufacturer, the following results are obtained:
