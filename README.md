@@ -320,6 +320,9 @@ The updated design also includes reinforced brackets and modular supports that f
 The following technical drawings illustrate the custom adaptations made to the chassis, highlighting the engineering rationale behind each modification and its impact on system performance. The most critical structural adaptations are presented below. These modifications were implemented to enhance component stability, optimize spatial distribution, and improve overall system integration.
 Full CAD models and detailed design files can be found in the  folder, including all custom mounts, sensor brackets, and revised base plates. These designs reflect substantial changes to the original kit configuration, tailored to meet the specific demands of the obstacle and open-category challenges.
 
+| Sensors base | Camera base | Main base |
+|---------------|---------------|----------------|
+| ![](models/base_urm37_v7.stl) | ![](v-photos/Robot_Left.jpeg) | ![](v-photos/Robot_Right.jpeg) |
 
 
 
