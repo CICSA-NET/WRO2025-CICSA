@@ -121,7 +121,7 @@ This repository contains engineering materials of a self-driven vehicle's model 
 | 3        | Ultrasonic sensors URM37V5.0     |[DigiKey](https://www.digikey.com/en/products/detail/dfrobot/SEN0001/6588449)    |
 | 1        | USB to TTL Converter             |[Amazon](https://www.amazon.com/DSD-TECH-SH-U09C5-Converter-Support/dp/B07WX2DSVB/ref=sr_1_1_sspa?crid=2QX262TSU2971&dib=eyJ2IjoiMSJ9.D0amzFmzxb2ADgV4_ep2_cNsHofmse9FrT0i3YgPbkkxw9dDBUytrt0npuovbHnL_3S6v23XzdO_asu_QGvTb2Xjt8cJP9msCvWRym4dC-NQ5NTpSmg1KoBVbtpjXTKzSdeGcnmmJXYL0MKO4YnP0BkdedFIRCeQRcUuI0so7kzy4gRZetXyXEyAKVydX322o3dGYQZDO36bSsJFr7-PYeHAkOIlBLjA0B6oDqn0qCY.4Iuq8Gj72bw3DYdHWGSINCcQwrmvXEQQxcY40qAGySw&dib_tag=se&keywords=uart+to+usb.3v&qid=1754865582&sprefix=uart+to+usb.3%2Caps%2C240&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)    |
 
-Estimated total cost ==> $ 327.00 US dollars.
+Estimated total cost ==> **$ 327.00 US dollars**.
 
 
 |    Component         |   Function / Description                          |
@@ -211,7 +211,7 @@ Based on the previous terms, we use them in the robot as follows:
 The motor is controlled using the pulse width modulation technique. Pulse Width Modulation (PWM) is a widely used technique for controlling the speed of DC motors by adjusting the effective voltage applied to the motor terminals. Instead of varying the actual supply voltage, PWM rapidly switches the motor’s power on and off at a fixed frequency, modulating the duration of the “on” time within each cycle—this is known as the duty cycle. The motor’s speed is directly influenced by the duty cycle of the PWM signal. A higher duty cycle means the motor receives power for a greater portion of each cycle, resulting in a higher average voltage and increased rotational speed. Conversely, a lower duty cycle reduces the average voltage and slows the motor down. The configuration parameters are shown below:
 
 
-These are the parameters defined for the open-category challenge:
+**These are the parameters defined for the open-category challenge:**
 
 
 enable = PWM(Pin(21), freq=1000)        # Motor PWM enable
@@ -225,8 +225,8 @@ enable.duty_u16(35000)                  # Set duty cycle to ~53.4%
 - freq=1000: Sets the PWM frequency to 1000 Hz (1 kHz), meaning the signal completes 1000 cycles per second.
 - duty_u16(...): Sets the duty cycle using a 16-bit value (range: 0 to 65535).
 - 35000: Represents the “on” time of the PWM signal. The duty cycle percentage is:
-  Duty Cycle(%) = (PWM / 65535) * 100                **approx 53.4\%**
-- This means the signal is high (ON) for 53.4% of each cycle and low (OFF) for the remaining 46.6%.
+  Duty Cycle(%) = (35000 / 65535) * 100                **approx 53.4\%**
+- This means the signal is high (ON) for 53.4%.
 - Average Voltage: The motor receives approximately 53.4% of the supply voltage. If V = 11.1 V, then:
   V = 11.1V * 0.534      **approx 6V**
 
@@ -248,8 +248,30 @@ Based on the measured values and the technical specifications provided by the ma
 [Reference](https://www.elecrow.com/4wd-smart-car-robot-chassis-for-arduino-servo-steering.html)
 
 
-The following parameters were defined for the obstacle challenge:
+**The following parameters were defined for the obstacle challenge:**
 
+- 26000: Represents the “on” time of the PWM signal. The duty cycle percentage is:
+  Duty Cycle(%) = (26000 / 65535) * 100                **approx 39.6\%**
+- This means the signal is high (ON) for 39.6%.
+- Average Voltage: The motor receives approximately 39.6% of the supply voltage. If V = 11.1 V, then:
+  V = 11.1V * 0.534      **approx 4.39V**
+
+
+  Based on the measured values and the technical specifications provided by the manufacturer, the following results are obtained:
+
+| Parameter             | Measured Value | Unit       |
+|----------------------|----------------|------------|
+| No-load Speed         | 472            | RPM        |
+| No-load Current       | 0.073          | A          |
+| Rated Torque          | 0.263          | Kg-cm      |
+| Power                 | 1.0            | W          |
+| Load Speed            | 377            | RPM        |
+| Load Current          | 0.58           |  A         |
+| Stall Torque          | 2              | Kg-cm      |
+| Stall Current         | 1.46           | A          |
+| Operating Voltage     | 4.39           | V          |
+
+[Reference](https://www.elecrow.com/4wd-smart-car-robot-chassis-for-arduino-servo-steering.html)
 
 
 **Directional Control**: A high-precision servomotor is used to steer the front axle, allowing for smooth and responsive turns. This setup mimics real-world vehicle steering and improves maneuverability in tight spaces.
