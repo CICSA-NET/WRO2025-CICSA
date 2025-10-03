@@ -317,7 +317,9 @@ Based on the measured values and the technical specifications provided by the ma
 A commercial chassis kit was initially acquired as the mechanical foundation for the robot. However, significant structural and functional improvements were implemented to optimize device integration and system stability.
 Custom mounting platforms were designed and fabricated to securely accommodate key components such as the ESP32 microcontroller, the Raspberry Pi 5 single-board computer, the camera module, and the sensor array. These modifications involved redesigning the original base plates to ensure precise alignment, vibration damping, and thermal clearance for high-performance operation.
 The updated design also includes reinforced brackets and modular supports that facilitate rapid maintenance and component replacement during competition. These enhancements substantially diverge from the original kit layout, resulting in a more robust, competition-ready architecture.
-The following technical drawings illustrate the custom adaptations made to the chassis, highlighting the engineering rationale behind each modification and its impact on system performance.
+The following technical drawings illustrate the custom adaptations made to the chassis, highlighting the engineering rationale behind each modification and its impact on system performance. The most critical structural adaptations are presented below. These modifications were implemented to enhance component stability, optimize spatial distribution, and improve overall system integration.
+Full CAD models and detailed design files can be found in the  folder, including all custom mounts, sensor brackets, and revised base plates. These designs reflect substantial changes to the original kit configuration, tailored to meet the specific demands of the obstacle and open-category challenges.
+
 
 
 
