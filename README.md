@@ -326,7 +326,10 @@ Full CAD models and detailed design files can be found in the  folder, including
 **Camera base.**
 ![](models/base_camera2_V2.JPG)
 ![](models/base_camera_v2.JPG)
+![](models/tapa_camera.JPG)
 
+**Main base.**
+![](models/base_principal_V6.JPG)
 
 
 
