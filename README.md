@@ -233,11 +233,13 @@ Based on the measured values and the technical specifications provided by the ma
 | Parameter             | Measured Value | Unit       |
 |----------------------|----------------|------------|
 | No-load Speed         | 646            | RPM        |
-| Rated Torque          | 0.18           | Kg-cm      |
+| No-load Current       | 0.1            | A          |
+| Rated Torque          | 0.23           | Kg-cm      |
 | Power                 | 1.5            | W          |
 | Load Speed            | 516            | RPM        |
 | Load Current          | 0.8            |  A         |
 | Stall Torque          | 2              | Kg-cm      |
+| Stall Current         | 2              | A          |
 | Operating Voltage     | 6.0            | V          |
 
 [Reference](https://www.elecrow.com/4wd-smart-car-robot-chassis-for-arduino-servo-steering.html)
