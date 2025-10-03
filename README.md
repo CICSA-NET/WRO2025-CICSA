@@ -321,7 +321,6 @@ The following technical drawings illustrate the custom adaptations made to the c
 Full CAD models and detailed design files can be found in the  folder, including all custom mounts, sensor brackets, and revised base plates. These designs reflect substantial changes to the original kit configuration, tailored to meet the specific demands of the obstacle and open-category challenges.
 
 | Sensors base |  
-|---------------|---------------|----------------|
 | ![](models/base_urm37_v7.JPG) | ![](models/base_urm37_v7.STL) | 
 
 
