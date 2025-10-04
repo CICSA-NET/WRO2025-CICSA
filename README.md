@@ -669,7 +669,7 @@ Three sensors were used to provide the microcontroller (ESP32) with the necessar
 | ESP32                  | 1        | 5           | 0.08                  | 0.08               | 0.08                  |
 | URM37V5 Sensor         | 3        | 5           | 0.02                  | 0.06               | 0.06                   |
 | L298N (logic circuit)  | 1        | 5           | 0.05                  | 0.05               | 0.05                   |
-| **Estimated Total**    | —        | —           | —                     | **2.49 A**         | **6.29 A**             |
+| **Estimated Total**    | —        | —           | —                     |👉 **2.49 A**         | 6.29 A          |
 
 **Power Supply Strategy**
 
