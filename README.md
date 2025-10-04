@@ -688,6 +688,10 @@ Three sensors were selected to provide the robot with positioning information on
 They were mounted on the front of the robot: one on the right side, one on the left side, and one in the center.
 This configuration allows the robot to detect lateral boundaries and maintain alignment during navigation.
 
+<img width="284" height="269" alt="image" src="https://github.com/user-attachments/assets/0c59283b-8f7f-4647-9662-30ca02abfb3d" />
+
+
+
 The side-mounted sensors provide the system with distance measurements between the robot and the lateral walls.
 A PID control algorithm was implemented to maintain a consistent, predefined distance from these walls during navigation.
 The center sensor supplies data regarding the robot’s proximity to the front wall, enabling forward obstacle detection and alignment.
