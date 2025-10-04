@@ -598,7 +598,8 @@ The reference distance established for the system is 25 mm, which is the distanc
 | 7   | 0.2 | 5   |
 
 
-
+Resulting in the most optimal values ​​for the robot:
+**Kp = 1.4, Ki = 0.01,  Kd = 0.25 and T=0.15 seg.**
 
 
 
