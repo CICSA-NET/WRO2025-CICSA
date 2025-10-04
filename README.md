@@ -581,7 +581,7 @@ Developing equation 01, the result is equation 02, which is finally the control 
 <img width="425" height="55" alt="image" src="https://github.com/user-attachments/assets/526378b9-5c5e-4367-b401-767b8005ffff" />
 
 
-The reference distance established for the system is 250 mm, which is the distance the robot must maintain in relation to the wall. Table 1 shows the parameters with which we performed the tests, in order to obtain a point at which the PID controller operates as optimally as possible. The parameters were tuned to the point that most quickly obtained the desired reference and was most stable. It should be noted that this procedure was performed using the tuning method.
+The reference distance established for the system is 250 mm, which is the distance the robot must maintain in relation to the wall. Table below shows the parameters with which we performed the tests, in order to obtain a point at which the PID controller operates as optimally as possible. The parameters were tuned to the point that most quickly obtained the desired reference and was most stable. It should be noted that this procedure was performed using the tuning method.
 
 | Kp  | Ki  | Kd  |
 |-----|-----|-----|
