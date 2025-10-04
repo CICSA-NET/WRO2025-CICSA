@@ -900,6 +900,10 @@ ___
 
 [4] Schtchikov Y., Sokolova S., "Technical Vision for Object Recognition", 2024 International Conference on Industrial Engineering, Applications and Manufacturing (ICIEAM), DOI: 10.1109/ICIEAM60818.2024.10553791, Electronic ISBN:979-8-3503-9501-3.
 
+[5] Ali Rospawan, Ching-Chih Tsai and Feng-Chun Tai. (2022). “Intelligent PID Temperature Control Using Output Recurrent Fuzzy Broad Learning System for Nonlinear Time-Delay Dynamic Systems”. Internacional Conference on System Science and Engineering. Electronic ISBN:978-1-6654-8852-5. 
+DOI: 10.1109/ICSSE55923.2022.9948234.
+
+
 
 [Menu](#Contents)
 ___
