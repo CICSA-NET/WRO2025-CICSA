@@ -180,7 +180,9 @@ This guide provides step-by-step instructions for assembling the robot chassis. 
 - [Place the base to hold the connector](models/base_conector_v3.STL)
 - [Place the base to hold the L298N](models/base_l298n.stl)
 - [Place the main base](models/base_principal_V6.STL)
-- [Place the base to hold the camera](models/base_camera_v2.STL)
+- [Place the base to hold the support of the camera](models/base_camera_v2.STL)
+- [Place the base to hold the camera](models/base_camera2_V2.STL)
+- [Place the camera base cover](models/base_camera2_V2.STL)
 
 ---
 
