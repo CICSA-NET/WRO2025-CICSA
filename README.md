@@ -453,6 +453,25 @@ The selection was based mainly on the following reasons:
 - It also simplifies documentation, calibration, and debugging.
 
 
+**Dimensions, Steering Geometry, and Their Impact on Navigation**
+The robot designed for the Future Engineers category of the WRO has dimensions of 150 mm in width, 150 mm in height, and 276 mm in length, with a total weight of 1480 grams. These specifications fall within the official limits defined by the competition rules.
+
+**Parallel Steering Geometry with 35° Angles**. 
+The robot uses a parallel steering geometry, meaning both front wheels turn at the same angle. In this case, the steering angle is 35 degrees, which provides a reasonable turning capability for wide trajectories. This system is mechanically simple and symmetrical, making it ideal for implementation with servos and direct control.
+
+**Turning Ability and Adjustments in the Open Challenge.**
+The 276 mm length results in a larger turning radius, especially in confined spaces. While the 35° steering angle allows functional turns, perfect for use with PID control algorithms.
+
+**Obstacle Avoidance in the Obstacle Challenge.**
+The 150×276 mm footprint defines the robot’s contact area with the ground, presenting the following advantages:
+-  	Stable base for sensor mounting: The extended length allows for strategic placement of ultrasonic sensors at the front and side, improving obstacle detection and path planning.
+-  	Improved traction and weight balance: The 1480 g mass provides sufficient downward force for consistent wheel contact, reducing slippage on ramps or uneven surfaces.
+-  	Predictable movement dynamics: The rectangular footprint and parallel steering geometry result in symmetrical turning behavior, which simplifies obstacle avoidance algorithms and makes path corrections more consistent.
+-  	Room for modular attachments: The chassis accommodates additional modules such as grippers, cameras, or sensor arrays without compromising structural integrity.
+-  	Low center of gravity potential: With proper component placement, the 150 mm height allows for a compact vertical profile, minimizing the risk of tipping during lateral movements or sudden stops.
+
+
+
 
 **Motor and Servo Specifications**
 
