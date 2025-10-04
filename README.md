@@ -108,6 +108,126 @@ ___
 [Menu](#Contents)
 ___
 
+## Robot construction guide.
+====
+# Assembly Guide.
+
+This guide provides step-by-step instructions for assembling the robot chassis. It includes mechanical installation, electrical wiring, and safety notes for robotics projects using ESP-32, Raspberry Pi 5, camera and sensors.
+
+---
+
+## Component List
+
+| Component                   | Quantity | Description                     |
+|----------------------------|----------|---------------------------------|
+| JGA25-370 DC Motor         | 1        | Gear motor for drive system     |
+| Servo Motor                | 1        | For front steering mechanism    |
+| Wheels                     | 4        | Includes M4 nuts                |
+| Bearings (large/small)     | 8        | 2 per wheel                     |
+| Steering Cup               | 2        | For front wheels                |
+| Short Ball Head            | 1        | Connects servo to steering cup |
+| Steering Rod               | 2        | Length: 65 mm                   |
+| M3×5mm Screws              | 4        | Servo mounting                  |
+| M3×8mm Screws              | 4        | Pillar mounting                 |
+| M2.5×10mm Screws           | 2        | Steering rod mounting           |
+| M3×22mm Copper Pillars     | 4        | Standard chassis height         |
+| M3×16mm Copper Pillars     | 4        | Extended front option           |
+| Rocker Switch              | 1        | Power control                   |
+
+---
+
+## Pre-Installation Checks
+
+### Servo Motor
+- Connect and calibrate to **90°** before installation.
+- Use test code or compatible software.
+
+### DC Motor
+- Power directly to verify rotation.
+- **Red dot** indicates positive terminal.
+
+---
+
+##  Wheel Assembly Steps
+
+1. Insert rotating shaft.
+2. Add large bearing.
+3. Install steering cup.
+4. Add small bearing.
+5. Insert pin.
+6. Attach hex coupler.
+7. Mount wheel.
+8. Secure with M4 nut.
+
+>  Ensure bearings are parallel and wheel rotates freely.
+
+---
+
+##  Servo & Steering Assembly
+
+- Mount servo to L-bracket using M3×5mm screws.
+- Connect short ball head between servo and steering cup.
+- Attach steering rods using M2.5×10mm screws.
+
+---
+
+##  Chassis Mounting
+
+- Use M3×22mm pillars and M3×8mm screws for standard setup.
+- For extended front space (e.g. larger battery), use M3×16mm pillars.
+
+---
+
+##  Electrical Wiring
+
+### Servo Motor
+
+| Wire Color | Function |
+|------------|----------|
+| Brown      | GND      |
+| Red        | VCC      |
+| Yellow     | Signal   |
+
+### Power Switch
+
+- Connect **in series** with the positive (red) wire.
+- Enables safe power control.
+
+---
+
+##  Safety Notes
+
+- Do not operate in humid environments.
+- Avoid reverse polarity.
+- Prevent short circuits.
+- Double-check connections before powering on.
+
+---
+
+##  Board Compatibility
+
+Mounting holes support:
+
+- ESP-32 base
+- Camera base
+- Raspberry Pi 5 base
+
+---
+
+##  Reference
+
+Original PDF: [Elecrow 4WD Car Installation Instructions](https://www.elecrow.com/download/4wd_CAR_Install_instructions.pdf)
+
+---
+
+
+
+
+[Menu](#Contents)
+___
+
+
+
 ## Engineering materials.
 ====
 
