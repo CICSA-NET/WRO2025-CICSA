@@ -423,6 +423,12 @@ Based on the measured values and the technical specifications provided by the ma
 
 <img width="1010" height="271" alt="image" src="https://github.com/user-attachments/assets/add06f32-cd43-4ca6-af2d-0291b82927d2" />
 
+
+<img width="535" height="269" alt="image" src="https://github.com/user-attachments/assets/2e9624db-e6d5-44d9-9a47-ede9366ab192" />
+
+
+
+
 **Motor and Servo Specifications**
 
 | Parameter         | JGA25-370 Gear Motor (12V)           | MG996 Servo Motor (6V)             |
