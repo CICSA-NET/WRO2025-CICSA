@@ -111,13 +111,13 @@ ___
 
 ## Robot construction guide.
 ====
-# Assembly Guide.
+**Assembly Guide.**
 
 This guide provides step-by-step instructions for assembling the robot chassis. It includes mechanical installation, electrical wiring, and safety notes for robotics projects using ESP-32, Raspberry Pi 5, camera and sensors.
 
 ---
 
-## Component List
+**Component List.**
 
 | Component                   | Quantity | Description                     |
 |----------------------------|----------|---------------------------------|
@@ -137,19 +137,19 @@ This guide provides step-by-step instructions for assembling the robot chassis. 
 
 ---
 
-## Pre-Installation Checks
+**Pre-Installation Checks.**
 
-### Servo Motor
+**Servo Motor.**
 - Connect and calibrate to **90°** before installation.
 - Use test code or compatible software.
 
-### DC Motor
+**DC Motor.**
 - Power directly to verify rotation.
 - **Red dot** indicates positive terminal.
 
 ---
 
-##  Wheel Assembly Steps
+**Wheel Assembly Steps.**
 
 1. Insert rotating shaft.
 2. Add large bearing.
@@ -164,7 +164,7 @@ This guide provides step-by-step instructions for assembling the robot chassis. 
 
 ---
 
-##  Servo & Steering Assembly
+**Servo & Steering Assembly.**
 
 - Mount servo to L-bracket using M3×5mm screws.
 - Connect short ball head between servo and steering cup.
@@ -172,16 +172,16 @@ This guide provides step-by-step instructions for assembling the robot chassis. 
 
 ---
 
-##  Chassis Mounting
+**Chassis Mounting.**
 
 - Use M3×22mm pillars and M3×8mm screws for standard setup.
 - For extended front space (e.g. larger battery), use M3×16mm pillars.
 
 ---
 
-##  Electrical Wiring
+**Electrical Wiring.**
 
-### Servo Motor
+**Servo Motor.**
 
 | Wire Color | Function |
 |------------|----------|
@@ -189,14 +189,14 @@ This guide provides step-by-step instructions for assembling the robot chassis. 
 | Red        | VCC      |
 | Yellow     | Signal   |
 
-### Power Switch
+**Power Switch.**
 
 - Connect **in series** with the positive (red) wire.
 - Enables safe power control.
 
 ---
 
-##  Safety Notes
+**Safety Notes.**
 
 - Do not operate in humid environments.
 - Avoid reverse polarity.
@@ -205,7 +205,7 @@ This guide provides step-by-step instructions for assembling the robot chassis. 
 
 ---
 
-##  Board Compatibility
+**Board Compatibility.**
 
 Mounting holes support:
 
@@ -214,8 +214,6 @@ Mounting holes support:
 - Raspberry Pi 5 base
 
 ---
-
-##  Reference
 
 Original PDF: [Elecrow 4WD Car Installation Instructions](https://www.elecrow.com/download/4wd_CAR_Install_instructions.pdf)
 
