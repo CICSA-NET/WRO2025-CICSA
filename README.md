@@ -600,6 +600,8 @@ The reference distance established for the system is 25 mm, which is the distanc
 
 
 
+
+
 The process to be controlled is called plant G(Z), which can represent any physical process whose response must be through an appropriate control action, by satisfactory response it is defined that the output Y(Z), is forced to follow the input reference R(Z), despite the presence of disturbances. The process of keeping Y(Z) close to R(Z), is called the regulation process. The microcontroller uses clock signals in order to synchronize the flow of information, all the time that the microcontroller invests in reading the response of the plant, processing the information and writing the control action, is known as sampling time T. The control action consists fundamentally in calculating the control signal U(Z), see next equation:
 
 <img width="329" height="47" alt="image" src="https://github.com/user-attachments/assets/1c56d4cb-2736-4ce9-b708-9f9cfb25f857" />
