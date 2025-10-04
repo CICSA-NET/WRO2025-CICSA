@@ -570,15 +570,6 @@ A discrete PID control algorithm was designed and implemented, whose output is r
 
 
 
-<img width="423" height="36" alt="image" src="https://github.com/user-attachments/assets/01000d83-9a9b-4b09-be7d-9bc8b2983ba8" />
-
-
-
-
-
-
-
-
 The process to be controlled is called plant G(Z), which can represent any physical process whose response must be through an appropriate control action, by satisfactory response it is defined that the output Y(Z), is forced to follow the input reference R(Z), despite the presence of disturbances. The process of keeping Y(Z) close to R(Z), is called the regulation process. The microcontroller uses clock signals in order to synchronize the flow of information, all the time that the microcontroller invests in reading the response of the plant, processing the information and writing the control action, is known as sampling time T. The control action consists fundamentally in calculating the control signal U(Z), see next equation [1]:
 
 <img width="329" height="47" alt="image" src="https://github.com/user-attachments/assets/1c56d4cb-2736-4ce9-b708-9f9cfb25f857" />
