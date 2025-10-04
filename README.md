@@ -187,6 +187,8 @@ This guide provides step-by-step instructions for assembling the robot chassis. 
 - [Place the base to hold the Rasoberry Pi 5](models/Base_Pi_5_v5.STL)
 - [Place the shield that contains the esp32](https://www.mercadolibre.com.mx/screw-shield-adaptador-de-terminales-esp32-30-pines/p/MLM2038781113?pdp_filters=item_id%3AMLM2162499429#origin%3Dshare%26sid%3Dshare)
 
+For more information regarding 3D printed parts: [📁 Models](./models/)
+
 ---
 
 **Electrical Wiring.**
