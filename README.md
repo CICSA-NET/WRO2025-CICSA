@@ -425,8 +425,7 @@ Based on the measured values and the technical specifications provided by the ma
 
 
 
-
-
+The foundation of our chassis design is based on a steering configuration known as the parallel steering model, in which both front wheels turn at the same angle when steering input is applied. This approach, while mechanically straightforward, provides a reliable baseline for mobile robot steering systems—especially when simplicity, symmetry, and ease of implementation are key priorities.
 
 
 <img width="541" height="250" alt="image" src="https://github.com/user-attachments/assets/5f82ad7a-f967-4f60-8227-f051eb56edba" />
