@@ -76,6 +76,9 @@ Design and build a mobile robot capable of autonomous navigation using:
 * PID control to maintain a safe distance from obstacles using ultrasonic sensors.
 * Communication between Raspberry Pi 5 and ESP32 to divide tasks between heavy processing (vision) and real-time control (motors and sensors).
 
+<img width="963" height="552" alt="image" src="https://github.com/user-attachments/assets/ebe243d9-7ccf-4ea6-b62b-a09898a56666" />
+
+
 For more indo visit: [WRO Official Site](https://wro-association.org/)
 
 
