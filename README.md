@@ -522,15 +522,6 @@ Full CAD models and detailed design files can be found in the  folder, including
 **Main base.**
 ![](models/base_principal_V6.JPG)
 
-**Chassis Selection and Custom Adaptations**
-
-This project utilizes a commercial chassis with **custom structural own modifications** to support advanced robotics integration. The chassis has been adapted to include:
-
-- **Sensor mounting base** – for ultrasonic sensors
-- **Connector interface base** – for clean wiring and modular component swaps
-- **ESP32 microcontroller base** – optimized for MicroPython deployment and GPIO access
-- **Camera module base** – compatible with vision systems
-- **Raspberry Pi 5 integration base** – for high-level processing, remote monitoring, and AI tasks
 
 These adaptations ensure modularity, scalability, and ease of maintenance during competition and development phases.
 
