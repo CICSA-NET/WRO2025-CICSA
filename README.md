@@ -558,6 +558,7 @@ A commercial chassis was selected to optimize structural integrity, motor compat
 
 ![pid](https://github.com/user-attachments/assets/e41df90c-652f-4877-9b12-4f1181881fed)
 
+![Start_diagram](https://github.com/user-attachments/assets/cadfb8da-a89d-4c73-9679-b357a9c7902d)
 
 
 **Interaction of the PID control algorithm with the robot.**
