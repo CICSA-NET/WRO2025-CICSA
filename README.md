@@ -184,6 +184,8 @@ This guide provides step-by-step instructions for assembling the robot chassis. 
 - [Place the base to hold the camera](models/base_camera2_V2.STL)
 - [Place the camera base cover](models/tapa_camera.STL)
 - [Place the base to hold the sensors UM](models/base_urm37_v7.STL)
+- [Place the base to hold the Rasoberry Pi 5](models/Base_Pi_5_v5.STL)
+- [Place the shield that contains the esp32]
 
 ---
 
