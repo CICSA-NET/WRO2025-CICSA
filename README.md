@@ -645,8 +645,6 @@ These components include:
 
 >  All files are provided in `.STL` format and are ready for slicing and printing. Designed for compatibility with standard FDM printers and PLA/ABS materials.
 
-Feel free to modify or remix these models to suit your specific configuration. Contributions and improvements are welcome!
-
 
 [Menu](#Contents)
 ___
