@@ -47,10 +47,7 @@ Sergio Iván has been the director of the CICSA robotics academy since 2015 and 
 
 ___
 
-| Official Photo | National Wro 2025 | 
-|---------------|---------------|
-| ![](v-photos/TeamOficial.jpg) | ![](v-photos/team4.jpeg) |
-
+<img width="222" height="315" alt="image" src="https://github.com/user-attachments/assets/b781f27f-25b8-4849-a22a-9517dacac7ab" />
 
 
 [Menu](#Contents)
