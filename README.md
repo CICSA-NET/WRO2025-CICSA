@@ -177,6 +177,7 @@ This guide provides step-by-step instructions for assembling the robot chassis. 
 
 - Use M3×22mm pillars and M3×8mm screws for standard setup.
 - For extended front space (e.g. larger battery), use M3×16mm pillars.
+- [Place the base to hold the connector](models/base_conector_v3.STL)
 
 ---
 
