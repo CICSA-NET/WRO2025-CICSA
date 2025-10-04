@@ -18,7 +18,7 @@ This is the official repository of the Team CICSA for the international final of
 - [The team](#The-team)
 - [The Challenge.](#The-Challenge)
 - [Robot Overview](#Robot-Overview)
-- [Robot construction guide.](#Robot-construction-guide.)
+- [Robot construction guide.](#Robot-construction-guide)
 - [Engineering materials](#Engineering-materials)
 - [Mobility Management](#Mobility-Management)
 - [Power and Sensor Management](#Power-and-Sensor-Management)
