@@ -441,17 +441,17 @@ In short, parallel steering was chosen because it strikes a balance between func
 The selection was based mainly on the following reasons:
 
 1. Mechanical Simplicity
-• 	The parallel steering model allows both front wheels to turn at the same angle using a single servo or mirrored linkage system.
-• 	This reduces the number of moving parts and avoids the need for complex geometry or differential steering mechanisms.
+- The parallel steering model allows both front wheels to turn at the same angle using a single servo or mirrored linkage system.
+- This reduces the number of moving parts and avoids the need for complex geometry or differential steering mechanisms.
 2. Ease of Control
-• 	From a programming standpoint, controlling a single angle for both wheels is straightforward.
-• 	It simplifies PID tuning, sensor feedback loops, and integration with basic autonomous navigation systems.
+- From a programming standpoint, controlling a single angle for both wheels is straightforward.
+- It simplifies PID tuning, sensor feedback loops, and integration with basic autonomous navigation systems.
 3. Modular Compatibility
-• 	Many commercial chassis kits (like those using MG996R servos or JGA25-370 motors) are designed with parallel steering in mind.
-• 	This makes it easier to integrate with off-the-shelf components and adapt to different platforms.
+- Many commercial chassis kits (like those using MG996R servos or JGA25-370 motors) are designed with parallel steering in mind.
+- This makes it easier to integrate with off-the-shelf components and adapt to different platforms.
 4. Symmetry and Predictability
-• 	Parallel steering provides predictable turning behavior, which is useful for line-following, maze-solving, or path planning in competition environments.
-• 	It also simplifies documentation, calibration, and debugging.
+- Parallel steering provides predictable turning behavior, which is useful for line-following, maze-solving, or path planning in competition environments.
+- It also simplifies documentation, calibration, and debugging.
 
 
 
