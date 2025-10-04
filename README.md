@@ -78,7 +78,8 @@ Design and build a mobile robot capable of autonomous navigation using:
 
 **Open challenge.**
 
-<img width="712" height="396" alt="image" src="https://github.com/user-attachments/assets/83a59ce3-f480-4007-a3d0-d90784d67115" />
+<img width="817" height="459" alt="image" src="https://github.com/user-attachments/assets/ff3d98e8-99d8-4e3b-b802-f49cc1a7c85c" />
+
 
 
 **Obstacle challenge.**
