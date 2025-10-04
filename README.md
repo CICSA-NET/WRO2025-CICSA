@@ -182,7 +182,8 @@ This guide provides step-by-step instructions for assembling the robot chassis. 
 - [Place the main base](models/base_principal_V6.STL)
 - [Place the base to hold the support of the camera](models/base_camera_v2.STL)
 - [Place the base to hold the camera](models/base_camera2_V2.STL)
-- [Place the camera base cover](models/base_camera2_V2.STL)
+- [Place the camera base cover](models/tapa_camera.STL)
+- [Place the base to hold the sensors UM](models/base_urm37_v7.STL)
 
 ---
 
