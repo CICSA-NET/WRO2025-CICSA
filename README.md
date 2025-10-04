@@ -655,6 +655,10 @@ ___
 Efficient energy and sensor management are essential for reliable vehicle performance. This section outlines the power strategy, sensor selection, and system integration used in the robot.
 Three sensors were used to provide the microcontroller (ESP32) with the necessary information to navigate the track and overcome various challenges. One sensor is mounted on the right side of the vehicle to work in conjunction with the PID controller, maintaining a specific distance from the wall. Another sensor is placed on the left side, performing the same function on the opposite side. A third sensor is positioned facing forward to monitor when the robot approaches the front wall.
 
+![](schemes/schemes.jpeg)
+
+
+
 **Current Consumption Analysis – Robotic System**
 
 | Component               | Quantity | Voltage (V) | Current per unit (A) | Total current (A) | Max total current (A) |
