@@ -702,6 +702,10 @@ Each sensor contributes to navigation, obstacle detection, or environmental awar
 | 3.- URM37V5.0    | Distance measurement        | Digital  | Low consumption      |
 
 
+**Camera placement.**
+The camera was mounted at the front of the robot, with an inclination angle of approximately 20 degrees. This positioning allows the camera to capture a forward-facing field of view that includes both near-ground elements and mid-range obstacles. While the tilt angle contributes to the perspective of the captured image, it is not a critical factor for the implemented algorithm. The vision system is designed to process frames using region-of-interest cropping and perspective normalization, which minimizes the impact of camera orientation. As a result, the algorithm remains robust across slight variations in tilt, ensuring consistent performance in tasks such as line detection, object recognition, or path planning.
+
+
 **System Integration Overview**
 
 A wiring diagram and bill of materials (BOM) will be included to illustrate:
