@@ -107,7 +107,7 @@ ___
 
 | Side Dimensions | Front Dimensions  |
 |---------------|---------------|
-| ![](v-photos/Left Dimensions.jpg) | ![](v-photos/Front Dimensions.jpg) |
+| ![](v-photos/Left-Dimensions.jpg) | ![](v-photos/Front-Dimensions.jpg) |
 
 
 [Menu](#Contents)
