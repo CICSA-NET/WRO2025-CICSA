@@ -643,7 +643,7 @@ These components include:
 - **Battery holders**
 - **Structural reinforcements** and expansion adapters
 
->  All files are provided in `.STL` format and are ready for slicing and printing. Designed for compatibility with standard FDM printers and PLA/ABS materials.
+>  All files are provided in `.STL` format and are ready for slicing and printing. Designed for compatibility with standard FDM printers and PLA materials.
 
 
 [Menu](#Contents)
