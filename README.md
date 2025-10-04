@@ -111,6 +111,7 @@ ___
 
 ## Robot construction guide.
 ====
+
 **Assembly Guide.**
 
 This guide provides step-by-step instructions for assembling the robot chassis. It includes mechanical installation, electrical wiring, and safety notes for robotics projects using ESP-32, Raspberry Pi 5, camera and sensors.
