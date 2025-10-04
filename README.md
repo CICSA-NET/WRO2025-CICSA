@@ -573,13 +573,24 @@ A discrete PID control algorithm was designed and implemented, whose output is r
 <img width="423" height="36" alt="image" src="https://github.com/user-attachments/assets/01000d83-9a9b-4b09-be7d-9bc8b2983ba8" />
 
 
+
+
+
+
+
+
+The process to be controlled is called plant G(Z), which can represent any physical process whose response must be through an appropriate control action, by satisfactory response it is defined that the output Y(Z), is forced to follow the input reference R(Z), despite the presence of disturbances. The process of keeping Y(Z) close to R(Z), is called the regulation process. The microcontroller uses clock signals in order to synchronize the flow of information, all the time that the microcontroller invests in reading the response of the plant, processing the information and writing the control action, is known as sampling time T. The control action consists fundamentally in calculating the control signal U(Z), see next equation [1]:
+
+<img width="329" height="47" alt="image" src="https://github.com/user-attachments/assets/1c56d4cb-2736-4ce9-b708-9f9cfb25f857" />
+
+
 Developing equation 01, the result is equation 02, which is finally the control action of the PID algorithm to be implemented.
 
 
 <img width="425" height="55" alt="image" src="https://github.com/user-attachments/assets/526378b9-5c5e-4367-b401-767b8005ffff" />
 
 
-The reference distance established for the system is 25 mm, which is the distance the robot must maintain in relation to the wall. Table 1 shows the parameters with which we performed the tests, in order to obtain a point at which the PID controller operates as optimally as possible. The parameters were tuned to the point that most quickly obtained the desired reference and was most stable. It should be noted that this procedure was performed using the tuning method.
+The reference distance established for the system is 250 mm, which is the distance the robot must maintain in relation to the wall. Table 1 shows the parameters with which we performed the tests, in order to obtain a point at which the PID controller operates as optimally as possible. The parameters were tuned to the point that most quickly obtained the desired reference and was most stable. It should be noted that this procedure was performed using the tuning method.
 
 | Kp  | Ki  | Kd  |
 |-----|-----|-----|
@@ -604,15 +615,6 @@ The reference distance established for the system is 25 mm, which is the distanc
 
 Resulting in the most optimal values ​​for the robot:
 **Kp = 1.4, Ki = 0.01,  Kd = 0.25 and T=0.15 seg.**
-
-
-
-The process to be controlled is called plant G(Z), which can represent any physical process whose response must be through an appropriate control action, by satisfactory response it is defined that the output Y(Z), is forced to follow the input reference R(Z), despite the presence of disturbances. The process of keeping Y(Z) close to R(Z), is called the regulation process. The microcontroller uses clock signals in order to synchronize the flow of information, all the time that the microcontroller invests in reading the response of the plant, processing the information and writing the control action, is known as sampling time T. The control action consists fundamentally in calculating the control signal U(Z), see next equation:
-
-<img width="329" height="47" alt="image" src="https://github.com/user-attachments/assets/1c56d4cb-2736-4ce9-b708-9f9cfb25f857" />
-
-
-
 
 **Performance Evaluation**
 
