@@ -105,9 +105,10 @@ ___
 | ![](v-photos/Robot_Bottom.jpeg) | ![](v-photos/Robot_Left.jpeg) | ![](v-photos/Robot_Right.jpeg) |
 
 
-| Side Dimensions | Front Dimensions  |
+| Side DImensions | Front Dimensions | 
 |---------------|---------------|
-| ![](v-photos/Left-Dimensions.jpg) | ![](v-photos/Front-Dimensions.jpg) |
+| ![](v-photos/Side_Dimensions.jpeg) | ![](v-photos/Front_Dimensions.jpeg) |
+
 
 
 [Menu](#Contents)
