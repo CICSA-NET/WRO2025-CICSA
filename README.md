@@ -565,7 +565,8 @@ A commercial chassis was selected to optimize structural integrity, motor compat
 
 A discrete PID control algorithm was designed and implemented, whose output is responsible for controlling the direction of the robot, through the steering system described above. Establishing a reference of 250 mm to a wall laterally, that is, the main task of the controller is to keep the robot at a distance of 250 mm from the wall. The figure shows the closed-loop control system in the Z domain. R(Z) is the system reference, in this case it has a value of 250 mm, E(Z) represents the system error, which is calculated with the measurement of the ultrasonic sensor minus the input reference, D(Z) is the PID control algorithm, U(Z) is the control action output of the controller, G(Z) is the plant, Y(Z) represents the system output. 
 
-<img width="756" height="270" alt="image" src="https://github.com/user-attachments/assets/16f18653-f7d2-43d5-a6b8-1924a4c26b1a" />
+![R_z_](https://github.com/user-attachments/assets/200af6f0-5185-44e5-a340-96f3e1fc6b0c)
+
 
 <img width="291" height="292" alt="image" src="https://github.com/user-attachments/assets/5f5cd4f2-7dc7-4010-9859-71afca694594" />
 
