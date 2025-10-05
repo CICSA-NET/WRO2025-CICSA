@@ -718,6 +718,8 @@ This triangular arrangement allows the robot to:
 By aligning sensor placement with the robot’s direction of travel and control logic, this design ensures that all critical navigation decisions are based on immediate frontal context—improving responsiveness, stability, and overall system robustness.
 
 
+
+
 **Camera placement.**
 The camera was mounted at the front of the robot, with an inclination angle of approximately 20 degrees. This positioning allows the camera to capture a forward-facing field of view that includes both near-ground elements and mid-range obstacles. While the tilt angle contributes to the perspective of the captured image, it is not a critical factor for the implemented algorithm. The vision system is designed to process frames using region-of-interest cropping and perspective normalization, which minimizes the impact of camera orientation. As a result, the algorithm remains robust across slight variations in tilt, ensuring consistent performance in tasks such as line detection, object recognition, or path planning.
 
