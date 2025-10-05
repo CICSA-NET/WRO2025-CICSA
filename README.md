@@ -737,7 +737,7 @@ Control parameters (PID) must be aligned with loop timing () and physical respon
 Timeouts and thresholds for cornering and lane changes ensure safe decision-making. For example,  defines how early the robot reacts to obstacles, while  prevents indefinite waiting and triggers recovery.
 This table supports iterative tuning, field testing, and transparent documentation for sponsors and judges. Each parameter is annotated with its tradeoffs to guide engineering decisions and promote reproducibility.
 
-## Vision & Control Parameter Table
+**Vision & Control Parameter Table.**
 
 | Parameter                        | Location (file)              | Safe Min       | Safe Max       | Notes                                                                 | Primary Impact             |
 |----------------------------------|------------------------------|----------------|----------------|-----------------------------------------------------------------------|----------------------------|
