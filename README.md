@@ -665,11 +665,11 @@ Three sensors were used to provide the microcontroller (ESP32) with the necessar
 |------------------------|----------|-------------|-----------------------|--------------------|------------------------|
 | JGA25-370 Motor        | 1        | 11          | 0.6                   | 0.6                | 0.6                    |
 | MG996R Servo           | 1        | 5.0         | 0.5                   | 0.5                | 1.0                    |
-| Raspberry Pi 5         | 1        | 5           | 1.2                   | 1.2                | 4.5                    |
+| Raspberry Pi 5         | 1        | 5           | 1.2                   | 1.2                | 3.5                    |
 | ESP32                  | 1        | 5           | 0.08                  | 0.08               | 0.08                  |
 | URM37V5 Sensor         | 3        | 5           | 0.02                  | 0.06               | 0.06                   |
 | L298N (logic circuit)  | 1        | 5           | 0.05                  | 0.05               | 0.05                   |
-| **Estimated Total**    | —        | —           | —                     |👉 **2.49 A**         | 6.29 A          |
+| **Estimated Total**    | —        | —           | —                     |👉 **2.49 A**         | 5.29 A          |
 
 **Power Supply Strategy**
 
