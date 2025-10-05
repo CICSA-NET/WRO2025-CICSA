@@ -705,6 +705,19 @@ Each sensor contributes to navigation, obstacle detection, or environmental awar
 ![Robot_Sensor](https://github.com/user-attachments/assets/b77b0f5d-2f82-4365-ae12-082a41c9f502)
 
 
+
+Technical Discussion: **Justification for the Frontal Triangular Sensor Layout.**
+This frontal sensor configuration was selected to optimize obstacle detection, corner recognition, and real-time control feedback. The measurements obtained from the side-mounted sensors serve as inputs for calculating the error relative to a reference in the PID control algorithm. The layout provides a wide horizontal sensing field while maintaining directional specificity:
+- Left Sensor: Detects lateral obstacles and corner proximity on the robot’s left flank. It is essential for initiating left turns and feeds distance data into the PID control algorithm.
+- Center Sensor: Functions as the primary forward-facing detector. It monitors frontal clearance, triggers corner detection based on threshold distance, and supports collision avoidance logic. It also serves as a reference for the PID controller, indicating when the robot approaches a frontal wall and needs to initiate a turn.
+- Right Sensor: Mirrors the role of the left sensor, enabling symmetric detection on the robot’s right flank. It supports right turns and contributes to PID error calculation for wall-following and lane-change decisions.
+This triangular arrangement allows the robot to:
+- Disambiguate corners from flat walls by comparing differential readings across the three sensors.
+- Reduce decision latency by placing all sensors on the frontal plane, ensuring immediate access to environmental data aligned with the robot’s forward motion vector.
+- Enhance control precision by providing real-time feedback to the PID algorithm, enabling smoother navigation and more reliable maneuver execution.
+By aligning sensor placement with the robot’s direction of travel and control logic, this design ensures that all critical navigation decisions are based on immediate frontal context—improving responsiveness, stability, and overall system robustness.
+
+
 **Camera placement.**
 The camera was mounted at the front of the robot, with an inclination angle of approximately 20 degrees. This positioning allows the camera to capture a forward-facing field of view that includes both near-ground elements and mid-range obstacles. While the tilt angle contributes to the perspective of the captured image, it is not a critical factor for the implemented algorithm. The vision system is designed to process frames using region-of-interest cropping and perspective normalization, which minimizes the impact of camera orientation. As a result, the algorithm remains robust across slight variations in tilt, ensuring consistent performance in tasks such as line detection, object recognition, or path planning.
 
