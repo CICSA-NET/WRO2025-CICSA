@@ -705,7 +705,19 @@ Each sensor contributes to navigation, obstacle detection, or environmental awar
 
 | Sensor       | Purpose                     | Protocol | Power Notes         |
 |--------------|-----------------------------|----------|----------------------|
-| 3.- URM37V5.0    | Distance measurement        | Digital  | Low consumption      |
+| 3 URM37V5.0    | Distance measurement        | Digital  | Low consumption      |
+
+**Specification:**
+- Operating voltage: 3.3V ~ 5.5V.
+- Operating current: 20 mA.
+- Working temperature: -10°C ~ 70°C.
+- Detecting range: 2cm - 800cm (ultimate range 1000cm).
+- Resolution: 1cm.
+- Accuracy:1%.
+- Measuring period: <100ms (Max).
+- Dimmensions: 22mm X 51mm.
+- Weight: about 25g.
+
 
 ![Robot_Sensor](https://github.com/user-attachments/assets/b77b0f5d-2f82-4365-ae12-082a41c9f502)
 
