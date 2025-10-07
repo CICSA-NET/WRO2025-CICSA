@@ -6,7 +6,7 @@ This is the official repository of the Team CICSA for the international final of
 
 ## Follow us!
 
-| Facebook | YouTube | Top |
+| Facebook | YouTube | Instagram |
 |---------------|---------------|----------------|
 | [![Facebook](other/facebook.jpg)](https://www.facebook.com/share/1A1hz6zQSn/) | [![YouTube](other/youtube.png)](https://www.youtube.com/@CICSA_Academia) | [![Instagram](other/instagram.jpg)](https://share.google/ZzGMFZOurGsjhWN2D) |
 
