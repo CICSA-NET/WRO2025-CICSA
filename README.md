@@ -751,7 +751,7 @@ This system pairs a Raspberry Pi 5 vision producer with an ESP32 motion controll
 The connection diagram is shown in section schemes.
 The source code is in section src.
 
-**Discussion: Balancing Detection, Control, and Safety.**
+**Balancing Detection, Control, and Safety.**
 
 This parameter set defines the robot’s core behavior in dynamic environments. HSV thresholds are split into two red bands to handle hue wrap-around and lighting variability. Adjusting saturation and value helps maintain detection under dim conditions while avoiding false positives from glare or floor reflections.
 Region of Interest (ROI) and contour thresholds filter spatial noise and optimize latency. A tighter ROI avoids edge clutter, while contour area settings balance between ignoring speckles and detecting distant pillars. Morphological kernel size further tunes noise suppression versus blob preservation.
