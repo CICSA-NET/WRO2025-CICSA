@@ -1,8 +1,11 @@
-# Autores: Xiara Alcantar, Iván Hernández & Sergio Hernández.
-# Fecha: 17 de septiembre de 2025
-# Descripción: Este programa fue desarrollado para el reto  libre
-#              de la competencia Future Engineers de la WRO 2025 Etapa Nacional.
-# Versión: 1.3.0
+# ============================================================
+# Authors: Xiara Alcantar, Iván Hernández & Sergio Hernández
+# Date: September 17, 2025
+# Description:
+#     This program was developed for the Open Challenge
+#     of the Future Engineers category at the WRO 2025 National Stage.
+# Version: 1.3.0
+# ============================================================
 
 import _thread
 from machine import Pin, I2C, PWM, time_pulse_us
@@ -69,7 +72,8 @@ def get_distance(echo, trig):
         return None
     else:
         return int(low_time // 50)  # cada 50 µs ≈ 1 cm
-
+        
+# Get data from distance sensors
 def get_data():
     global distance_left
     global distance_right
@@ -82,6 +86,7 @@ def get_data():
         time.sleep_ms(5)
         distance_left = get_distance(UR_ECHO_LEFT, UR_TRIG_LEFT)
         time.sleep_ms(5)
+        
 # turn around      
 def turn_robot():
     global direction
@@ -220,6 +225,7 @@ def pid(ref, condition, vel, sensor):
     led.value(1)
     in1.off()
     in2.on()
+    
 #     Start the control algorithm
     enable.duty_u16(vel)
     while count <= condition:
@@ -244,6 +250,7 @@ def pid(ref, condition, vel, sensor):
         
     turn_servo(CENTER)   # center
     led.value(0)
+    
 #---------------------------------------- main -----------------------------------------
 _thread.start_new_thread(get_data, ())
 time.sleep(1.5)
@@ -274,4 +281,5 @@ try:
     
 except KeyboardInterrupt:
     turn_servo(CENTER)   # Center
+
 
