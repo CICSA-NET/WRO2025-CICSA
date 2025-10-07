@@ -1,27 +1,33 @@
-# Autores: Iván Hernández, Sergio Hernández & Xiara Alcantar.
-# Fecha: 17 de septiembre de 2025
-# Descripción: Este programa se desarrolló para el dispositivo ESP-32
-#              con el fin de realizar el reto  de obstaculos de la competencia
-#              Future Engineers de la WRO 2025 Etapa Nacional.
-# Versión: 2.2.0
+# Authors: Iván Hernández, Sergio Hernández & Xiara Alcantar
+# Date: September 17, 2025
+# Description: This program was developed for the ESP32 microcontroller
+#              to execute the obstacle challenge in the Future Engineers
+#              category of the WRO 2025 National Stage.
+# Target Platform: ESP32
+# Language: MicroPython 1.21
+# Interfaces: UART (Serial), PWM, GPIO
+# Sensors: 3x URM37 V5.0 Ultrasonic Sensors (PWM mode)
+# Motor Control: Dual H-Bridge (L298N)
+# Version: 2.2.0
+# License: MIT
 
 import _thread
 from machine import Pin, PWM, UART, time_pulse_us
 import time
 
-# =================== Valores  ===================
+# =================== Values ===================
 velocity = 26000
 MANEUVER_BOOST_VELOCITY = velocity + 1000
-DIAGONAL_DURATION_MS = 750   # Fase 1 esquiva
-TURN_DURATION_MS     = 770   # Fase 2 esquiva (regreso)
+DIAGONAL_DURATION_MS = 750   # Phase 1: Evasion
+TURN_DURATION_MS     = 770   # Phase 2: Evasion (Return)
 CORNER_TURN_DURATION_MS = 1800
 RECOVERY_FORWARD_MS  = 1050
-# Fin de diagonal por cambio en el lateral correspondiente
-DIAG_CHANGE_DELTA_CM = 9    # cm de cambio mínimo para cortar la diagonal
-DIAG_MIN_HOLD_MS     = 180  # espera mínima antes de evaluar el cambio
+# End of diagonal movement due to switch with the corresponding lateral unit
+DIAG_CHANGE_DELTA_CM = 9    # Minimum shift (in cm) required to interrupt diagonal path
+DIAG_MIN_HOLD_MS     = 180  # Minimum wait time before evaluating the change
 
 
-# Esquina
+# Corner position detected
 CORNER_DIST_CM        = 20
 CORNER_DEBOUNCE_HITS  = 3
 
@@ -33,7 +39,7 @@ PID_DT      = 0.025
 # Servo 
 CENTER, LEFT, RIGHT = 43, 19, 62
 
-# Pines 
+# Pin
 SERVO_PIN   = 5
 LED_PIN     = 2
 IN1_PIN     = 18
@@ -45,12 +51,12 @@ ECHO_F, TRIG_F = 27, 14
 BTN_PIN     = 13
 UART_TX, UART_RX = 17, 16
 
-# =================== Estado ===================
+# =================== State ===================
 distance_left  = 999
 distance_right = 999
 distance_front = 999
 
-direction = ""     # pared a seguir
+direction = ""     # Wall to follow
 integral = 0.0
 last_error = 0.0
 
@@ -71,7 +77,7 @@ UR_ECHO_FRONT = Pin(ECHO_F, Pin.IN); UR_TRIG_FRONT = Pin(TRIG_F,  Pin.OUT)
 button = Pin(BTN_PIN, Pin.IN, Pin.PULL_UP)
 uart   = UART(2, baudrate=115200, tx=UART_TX, rx=UART_RX, timeout=0)
 
-# =================== Motores ===================
+# =================== Motors ===================
 def set_speed_forward(pwm):
     in1.off(); in2.on()
     enable.duty_u16(max(0, min(65535, pwm)))
@@ -83,7 +89,7 @@ def set_speed_reverse(pwm):
 def stop_motors():
     enable.duty_u16(0)
 
-# =================== Sensores ===================
+# =================== Sensors ===================
 def get_distance(echo: Pin, trig: Pin) -> int:
     trig.off(); time.sleep_us(10); trig.on()
     t = time_pulse_us(echo, 0, 100000)
@@ -110,19 +116,19 @@ def poll_uart():
         if ch in ('R', 'G', 'C'):
             camera_command = ch
 
-# =================== Inicio ===================
+# =================== Start ===================
 def start():
     global direction
-    # espera pulsar botón
+    # Wait for button press
     while button.value() != 0:
         time.sleep_ms(10)
 
-    # arranque
+    # Startup
     in1.off(); in2.on()
     enable.duty_u16(velocity)
     servo.duty(CENTER)
 
-    # autodetecta pared a seguir 
+    # Auto-detect wall to follow
     t0 = time.ticks_ms()
     while time.ticks_diff(time.ticks_ms(), t0) < 1000:
         if distance_left <= 30:  direction = "left";  break
@@ -132,23 +138,33 @@ def start():
 
 # =================== Control ===================
 def pid_step():
-    """Un paso de PID siguiendo la pared elegida."""
+    # One PID step following the selected wall
     global integral, last_error
     set_speed_forward(velocity)
 
     if direction == "left":
+        # Calculate error based on left wall distance
         error = distance_left - REF_DIST_CM
-        output =  KP*error + KI*integral + KD*(error - last_error)
-        duty   = CENTER - int(output)
+    
+        # Compute PID output using proportional, integral, and derivative terms
+        output = KP * error + KI * integral + KD * (error - last_error)
+    
+        # Adjust motor duty cycle to steer away from left wall
+        duty = CENTER - int(output)
     else:
+        # Calculate error based on right wall distance
         error = REF_DIST_CM - distance_right
-        output =  KP*error + KI*integral + KD*(error - last_error)
-        duty   = CENTER + int(output)
+    
+        # Compute PID output using proportional, integral, and derivative terms
+        output = KP * error + KI * integral + KD * (error - last_error)
+    
+        # Adjust motor duty cycle to steer away from right wall
+        duty = CENTER + int(output)
 
     integral += error
     last_error = error
 
-    # límites del servo
+    # Servo limits
     if duty < LEFT: duty = LEFT
     if duty > RIGHT: duty = RIGHT
     servo.duty(duty)
@@ -157,7 +173,7 @@ def execute_lane_change(color):
     
     turn, counter = (RIGHT, LEFT) if color == 'R' else (LEFT, RIGHT)
 
-    # Toma referencias iniciales
+    # Take initial reference readings
     base_left  = distance_left
     base_right = distance_right
 
@@ -169,18 +185,18 @@ def execute_lane_change(color):
         now = time.ticks_ms()
         elapsed = time.ticks_diff(now, t0)
 
-        # evita falsos positivos los primeros ms
+        # Avoid false positives during initial milliseconds
         if elapsed >= DIAG_MIN_HOLD_MS:
             if color == 'R':
                 # R: cortar cuando LEFT cambie lo suficiente
                 if distance_left < 990 and abs(distance_left - base_left) >= DIAG_CHANGE_DELTA_CM:
                     break
             else:
-                # G: cortar cuando RIGHT cambie lo suficiente
+                # G: stop when RIGHT changes significantly
                 if distance_right < 990 and abs(distance_right - base_right) >= DIAG_CHANGE_DELTA_CM:
                     break
 
-        # Tope de seguridad
+        # Safety stop
         if elapsed >= DIAGONAL_DURATION_MS:
             break
 
@@ -193,7 +209,7 @@ def execute_lane_change(color):
 
 
 def execute_corner_turn():
-    """Giro de esquina por tiempo fijo, respetando dirección de pared."""
+    # Corner turn based on fixed time, respecting wall direction
     turn_dir = LEFT if direction == "left" else RIGHT
     set_speed_reverse(MANEUVER_BOOST_VELOCITY)
     servo.duty(turn_dir); time.sleep_ms(CORNER_TURN_DURATION_MS)
@@ -218,22 +234,22 @@ def main():
     while True:
         poll_uart()
 
-        # 1) Pilares por cámara
+        # 1) Pillars detected via camera
         if camera_command in ('R', 'G'):
             c = camera_command
             camera_command = 'C'
             execute_lane_change(c)
             
-            # recuperación corta
+            # Short recovery
             integral = 0; last_error = 0
             servo.duty(CENTER)
             continue
 
-        # 2) PID de pared
+        # 2) Wall-following PID
         pid_step()
         time.sleep(PID_DT)
 
-        # 3) Esquina 
+        # 3) Corner 
         if distance_front <= CORNER_DIST_CM:
             corner_hits += 1
         else:
@@ -251,4 +267,5 @@ try:
     main()
 except KeyboardInterrupt:
     stop_motors(); servo.duty(CENTER); led.off()
+
 
