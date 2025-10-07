@@ -664,7 +664,8 @@ Three sensors were used to provide the microcontroller (ESP32) with the necessar
 
 | ESP-32 | Raspberry PI 5 | URM37 |
 |---------------|---------------|----------------|
-| ![](schemes/Esp32_PinOut.jpg) | ![](schemes/Raspberry_Pi_5_GPIO-Pinout.jpge.webp) | ![](schemes/Esp32_PinOut.jpg) |
+| ![](schemes/Esp32_PinOut.jpg) | ![](schemes/Raspberry_Pi_5_GPIO-Pinout.jpge.webp) | ![](<img width="729" height="320" alt="image" src="https://github.com/user-attachments/assets/b3ed2cd2-d100-4ad9-9f44-08949b10e879" />
+) |
 
 ![](schemes/schemes.jpeg)
 
