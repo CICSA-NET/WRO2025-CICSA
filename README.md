@@ -70,7 +70,7 @@ ___
 ## The Challenge.
 ====
 
-The WRO Future Engineers challenge pushes students to create fully autonomous self-driving vehicles. Each robot must:
+The WRO Future Engineers challenge pushes students to create fully autonomous self driving vehicles. Each robot must:
 
 - Navigate a dynamically randomized track.
 - Detect and avoid colored obstacles (green/red blocks).
