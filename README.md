@@ -793,69 +793,6 @@ This table supports iterative tuning, field testing, and transparent documentati
 
 **Raspberry Pi 5 program flowchart.**
 
-+-------------------------------+
-| PROGRAM START                |
-| - Initialize camera          |
-| - Open serial port           |
-+--------------+---------------+
-               |
-               v
-+-------------------------------+
-| FRAME CAPTURE                |
-| - Capture frame from camera  |
-+--------------+---------------+
-               |
-               v
-+-------------------------------+
-| IMAGE PROCESSING             |
-| - Define ROI                 |
-| - Convert RGB → HSV          |
-+--------------+---------------+
-               |
-               v
-+-------------------------------+
-| COLOR DETECTION              |
-| - Red and green masks        |
-| - Morphological operations   |
-+--------------+---------------+
-               |
-               v
-+-------------------------------+
-| CONTOUR DETECTION            |
-| - Find contours              |
-| - Calculate areas            |
-+--------------+---------------+
-               |
-               v
-+-------------------------------+
-| COMMAND DECISION             |
-| - Compare critical areas     |
-| - Choose 'R', 'G', or 'C'    |
-+--------------+---------------+
-               |
-               v
-+-------------------------------+
-| UART TRANSMISSION            |
-| - Send command via serial    |
-+--------------+---------------+
-               |
-               v
-+-------------------------------+
-| FRAME DISPLAY                |
-| - Show command on screen     |
-+--------------+---------------+
-               |
-               v
-         (Repeat loop)
-               |
-               v
-+-------------------------------+
-| PROGRAM END                  |
-| - Stop camera                |
-| - Close serial port          |
-+-------------------------------+
-
-
 
 [Menu](#Contents)
 ___
