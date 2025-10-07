@@ -31,7 +31,7 @@ This is the official repository of the Team CICSA for the international final of
 - [Mobility Management](#Mobility-Management)
 - [Power and Sensor Management](#Power-and-Sensor-Management)
 - [Obstacle management](#Obstacle-management)
-- [Work log](https://github.com/CICSA-NET/WRO2025-CICSA/blob/main/other/README.md)
+- [Digital Engineering Logbook](https://github.com/CICSA-NET/WRO2025-CICSA/blob/main/other/README.md)
 - [References](#References)
 
 ___
