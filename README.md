@@ -123,7 +123,10 @@ ___
 
 
 **Evolution of the robot.**
-![](v-photos/Robot_Evolution.jpeg)
+
+| Robot trajectory |
+|---------------|
+| ![](v-photos/Robot_Evolution.jpeg) |
 
 
 [Menu](#Contents)
