@@ -312,8 +312,6 @@ Activities
 Outcomes
 - 	Steering system restored and recalibrated
 
-[Menu](#Contents)
-
-Consulta el [README original](https://github.com/usuario/repositorio-origen/blob/main/README.md) para más detalles.
+[Menu]([#Contents](https://github.com/CICSA-NET/WRO2025-CICSA/blob/main/README.md))
 ___
 
