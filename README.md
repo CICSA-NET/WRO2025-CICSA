@@ -677,7 +677,7 @@ Detailed battery specifications are provided below
   - Buck converters or dedicated power rails to prevent voltage drops and protect sensitive components
 
 **Sensor Selection and Justification**
-Three ultrasonic sensors [URM37 V5.0](https://wiki.dfrobot.com/URM37_V5.0_Ultrasonic_Sensor_SKU_SEN0001 ) were selected to provide the robot with positioning information on the track.
+Three ultrasonic sensors [URM37 V5.0](https://wiki.dfrobot.com/URM37_V5.0_Ultrasonic_Sensor_SKU_SEN0001_) were selected to provide the robot with positioning information on the track.
 They were mounted on the front of the robot: one on the right side, one on the left side, and one in the center.
 This configuration allows the robot to detect lateral boundaries and maintain alignment during navigation.
 
