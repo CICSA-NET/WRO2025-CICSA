@@ -122,9 +122,7 @@ ___
 | ![](v-photos/Side_Dimensions.jpeg) | ![](v-photos/Front_Dimensions.jpeg) | ![](v-photos/Robot_Weight.jpeg) |
 
 
-**Evolution of the robot.**
-
-| Robot trajectory |
+| Evolution of the robot |
 |---------------|
 | ![](v-photos/Robot_Evolution.jpeg) |
 
