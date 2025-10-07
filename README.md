@@ -790,6 +790,75 @@ This table supports iterative tuning, field testing, and transparent documentati
 | Recovery forward (ms)            | controller/main_16-09.py     | 150            | 260            | Short re-center after corner or lane abort                            | Re-stabilize               |
 
 
+
+**Raspberry Pi 5 program flowchart.**
+
+┌────────────────────────────────────┐
+│ PROGRAM START                      │
+│ - Initialize camera                │
+│ - Open serial port                 │
+└────────────┬───────────────────────┘
+             │
+             ▼
+┌────────────────────────────────────┐
+│ FRAME CAPTURE                      │
+│ - Capture frame from PiCamera2     │
+└────────────┬───────────────────────┘
+             │
+             ▼
+┌────────────────────────────────────┐
+│ IMAGE PROCESSING                   │
+│ - Define ROI                       │
+│ - Convert RGB → HSV                │
+└────────────┬───────────────────────┘
+             │
+             ▼
+┌────────────────────────────────────┐
+│ COLOR DETECTION                    │
+│ - Red and green masks              │
+│ - Morphological operations         │
+└────────────┬───────────────────────┘
+             │
+             ▼
+┌────────────────────────────────────┐
+│ CONTOUR DETECTION                  │
+│ - Find red and green contours      │
+│ - Calculate areas                  │
+└────────────┬───────────────────────┘
+             │
+             ▼
+┌────────────────────────────────────┐
+│ COMMAND DECISION                   │
+│ - Compare critical areas           │
+│ - Choose 'R', 'G', or 'C'          │
+└────────────┬───────────────────────┘
+             │
+             ▼
+┌────────────────────────────────────┐
+│ UART TRANSMISSION                  │
+│ - Send command via serial port     │
+└────────────┬───────────────────────┘
+             │
+             ▼
+┌────────────────────────────────────┐
+│ FRAME DISPLAY                      │
+│ - Show command on screen           │
+└────────────┬───────────────────────┘
+             │
+             ▼
+        (Repeat loop)
+             │
+             ▼
+┌────────────────────────────────────┐
+│ PROGRAM END                        │
+│ - Stop camera                      │
+│ - Close serial port                │
+└────────────────────────────────────┘
+
+
+
+
+
 [Menu](#Contents)
 ___
 
