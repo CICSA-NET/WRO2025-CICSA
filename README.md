@@ -661,6 +661,11 @@ ___
 Efficient energy and sensor management are essential for reliable vehicle performance. This section outlines the power strategy, sensor selection, and system integration used in the robot.
 Three sensors were used to provide the microcontroller (ESP32) with the necessary information to navigate the track and overcome various challenges. One sensor is mounted on the right side of the vehicle to work in conjunction with the PID controller, maintaining a specific distance from the wall. Another sensor is placed on the left side, performing the same function on the opposite side. A third sensor is positioned facing forward to monitor when the robot approaches the front wall.
 
+
+| ESP-32 | Raspberry PI 5 | URM37 |
+|---------------|---------------|----------------|
+| ![](schemes/Esp32_PinOut.jpg) | ![](schemes/Raspberry_Pi_5_GPIO-Pinout.jpge.webp) | ![](schemes/Esp32_PinOut.jpg) |
+
 ![](schemes/schemes.jpeg)
 
 
