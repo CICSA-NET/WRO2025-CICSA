@@ -8,7 +8,7 @@ This is the official repository of the Team CICSA for the international final of
 
 | Facebook | YouTube | Top |
 |---------------|---------------|----------------|
-| [![Facebook](other/facebook.jpg)](https://www.facebook.com/share/1A1hz6zQSn/) | [![YouTube](other/youtube.png)](https://www.youtube.com/@CICSA_Academia) |  |
+| [![Facebook](other/facebook.jpg)](https://www.facebook.com/share/1A1hz6zQSn/) | [![YouTube](other/youtube.png)](https://www.youtube.com/@CICSA_Academia) | [![Instagram](other/youtube.png)](https://www.youtube.com/@CICSA_Academia) |
 
 
 ## Contents.
