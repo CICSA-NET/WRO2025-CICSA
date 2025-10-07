@@ -3,6 +3,8 @@
 
 This is the official repository of the Team CICSA for the international final of the WRO2025 season in Panamá.
 
+##Follow us!
+
 ## Contents.
 **Folders**
 - [📁 Models](./models/)
