@@ -659,10 +659,10 @@ Three sensors were used to provide the microcontroller (ESP32) with the necessar
 | JGA25-370 Motor        | 1        | 11          | 0.6                   | 0.6                | 0.6                    |
 | MG996R Servo           | 1        | 5.0         | 0.5                   | 0.5                | 1.0                    |
 | Raspberry Pi 5         | 1        | 5           | 1.2                   | 1.2                | 3.5                    |
-| ESP32                  | 1        | 5           | 0.08                  | 0.08               | 0.08                  |
+| ESP32                  | 1        | 5           | 0.08                  | 0.08               | 0.08                   |
 | URM37V5 Sensor         | 3        | 5           | 0.02                  | 0.06               | 0.06                   |
 | L298N (logic circuit)  | 1        | 5           | 0.05                  | 0.05               | 0.05                   |
-| **Estimated Total**    | —        | —           | —                     |👉 **2.49 A**         | 5.29 A          |
+| **Estimated Total**    | —        | —           | —                     |👉 **2.49 A**       | 5.29 A                 |
 
 **Power Supply Strategy**
 
@@ -677,7 +677,7 @@ Detailed battery specifications are provided below
   - Buck converters or dedicated power rails to prevent voltage drops and protect sensitive components
 
 **Sensor Selection and Justification**
-Three ultrasonic sensors [URM37 V5.0](https://wiki.dfrobot.com/URM37_V5.0_Ultrasonic_Sensor_SKU_SEN0001) were selected to provide the robot with positioning information on the track.
+Three ultrasonic sensors [URM37 V5.0](https://wiki.dfrobot.com/URM37_V5.0_Ultrasonic_Sensor_SKU_SEN0001 ) were selected to provide the robot with positioning information on the track.
 They were mounted on the front of the robot: one on the right side, one on the left side, and one in the center.
 This configuration allows the robot to detect lateral boundaries and maintain alignment during navigation.
 
