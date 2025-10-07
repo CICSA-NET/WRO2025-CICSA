@@ -688,7 +688,7 @@ This configuration allows the robot to detect lateral boundaries and maintain al
 The side mounted sensors provide the system with distance measurements between the robot and the lateral walls.
 A PID control algorithm was implemented to maintain a consistent, predefined distance from these walls during navigation.
 The center sensor supplies data regarding the robot’s proximity to the front wall, enabling forward obstacle detection and alignment.
-Each sensor contributes to navigation, obstacle detection, or environmental awareness, the sensor used is the URM37 V5.0.:
+Each sensor contributes to navigation, obstacle detection, or environmental awareness:
 
 | Sensor       | Purpose                     | Protocol | Power Notes         |
 |--------------|-----------------------------|----------|----------------------|
