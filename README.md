@@ -589,26 +589,6 @@ Developing equation 01, the result is equation 02, which is finally the control 
 
 The reference distance established for the system is 250 mm, which is the distance the robot must maintain in relation to the wall. Table below shows the parameters with which we performed the tests, in order to obtain a point at which the PID controller operates as optimally as possible. The parameters were tuned to the point that most quickly obtained the desired reference and was most stable. It should be noted that this procedure was performed using the tuning method.
 
-| Kp  | Ki  | Kd  |
-|-----|-----|-----|
-| 1   | 0.1 | 0.3 |
-| 1.5 | 0.5 | 1   |
-| 1.8 | 0.5 | 1   |
-| 2   | 0.5 | 1   |
-| 2   | 1   | 1   |
-| 1   | 1   | 1   |
-| 2   | 0.8 | 1   |
-| 3   | 0.8 | 1.5 |
-| 3.5 | 0.8 | 1.5 |
-| 5   | 0.4 | 2   |
-| 5.5 | 0.4 | 3   |
-| 5.8 | 0.4 | 3   |
-| 6   | 0.2 | 3   |
-| 5.5 | 0.2 | 4   |
-| 5.2 | 0.2 | 5   |
-| 6   | 0.2 | 5   |
-| 7   | 0.2 | 5   |
-
 
 Resulting in the most optimal values ​​for the robot:
 **Kp = 1.4, Ki = 0.01,  Kd = 0.25 and T=0.15 seg.**
@@ -703,10 +683,10 @@ This configuration allows the robot to detect lateral boundaries and maintain al
 
 
 
-The side-mounted sensors provide the system with distance measurements between the robot and the lateral walls.
+The side mounted sensors provide the system with distance measurements between the robot and the lateral walls.
 A PID control algorithm was implemented to maintain a consistent, predefined distance from these walls during navigation.
 The center sensor supplies data regarding the robot’s proximity to the front wall, enabling forward obstacle detection and alignment.
-Each sensor contributes to navigation, obstacle detection, or environmental awareness:
+Each sensor contributes to navigation, obstacle detection, or environmental awareness, the sensor used is the URM37 V5.0.:
 
 | Sensor       | Purpose                     | Protocol | Power Notes         |
 |--------------|-----------------------------|----------|----------------------|
