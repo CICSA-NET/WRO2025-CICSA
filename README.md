@@ -798,8 +798,8 @@ ___
 
 **Perception on Raspberry Pi 5.**
 
+File: [📁 src](src/main_16-09-25_V3.2.0.py)
 
-File: [📁 src](src/main_16-09-25_V2.2.0.py)
 
 
 For each frame, the Pi 5 captures with Picamera2 (low-latency “preview” pipeline), then applies a horizontal Region of Interest (ROI) to reduce false positives and CPU load. The ROI is converted BGR→HSV and thresholded into color masks for red (two hue bands to cover 0/179 wrap-around) and green (one band). A 5×5 morphological opening removes speckle noise. We then extract external contours per color, keep the largest blob for each, and compute its area. Two gates are used:
@@ -812,7 +812,7 @@ The decision layer compares red vs. green critical areas and emits a single inte
 **How vision is mixed with distance sensors (ESP32 sensor fusion).**
 
 
-File: [📁 src](src/main_16-09-25_V3.2.0.py)
+File: [📁 src](src/main_16-09-25_V2.2.0.py)
 
 
 The camera does not command turns directly; it provides intention. The ESP32 fuses that intent with ultrasonic distances (left/right/front) inside a small state machine:
