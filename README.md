@@ -856,30 +856,30 @@ All constants are grouped near the top of each file and documented inline for on
 
 | Parameter                        | Location (file)              | Safe Min       | Safe Max       | Notes                                                                 | Primary Impact             |
 |----------------------------------|------------------------------|----------------|----------------|-----------------------------------------------------------------------|----------------------------|
-| HSV red band 1 (min H,S,V)       | vision/WRO_headless.py       | (0,110,80)     | (6,160,120)    | Lower S/V widens detection in dim light; avoid whites/orange          | Detection sensitivity      |
-| HSV red band 1 (max H,S,V)       | vision/WRO_headless.py       | (8,240,240)    | (14,255,255)   | Tighten H upper bound if orange/yellow leaks                          | False positive control     |
-| HSV red band 2 (min H,S,V)       | vision/WRO_headless.py       | (166,110,80)   | (172,160,120)  | Covers hue wrap-around near 179; keep S/V above noise floor           | Detection sensitivity      |
-| HSV red band 2 (max H,S,V)       | vision/WRO_headless.py       | (176,240,240)  | (179,255,255)  | High S/V helps avoid glare-driven false reds                          | False positive control     |
-| HSV green (min H,S,V)            | vision/WRO_headless.py       | (38,55,60)     | (46,110,90)    | Lower S/V for pale greens; increase if picking up lime/yellow floor   | Detect pale green          |
-| HSV green (max H,S,V)            | vision/WRO_headless.py       | (75,240,240)   | (90,255,255)   | Narrow H to suppress yellow; keep S/V high to ignore white glare      | False positive control     |
-| ROI x_start (px)                 | vision/WRO_headless.py       | 20             | 120            | Start further from left edge to avoid side clutter                    | Latency & noise            |
-| ROI x_end (px)                   | vision/WRO_headless.py       | 560            | 640            | Keep pillars centered; avoid extreme edges                            | Latency & noise            |
-| MIN_CONTOUR_AREA (px)           | vision/WRO_headless.py       | 350            | 900            | Higher suppresses speckles; too high may miss distant pillars         | Noise / miss tradeoff      |
-| CRITICAL_CONTOUR_AREA (px)      | vision/WRO_headless.py       | 4200           | 7000           | Higher acts later (safer), lower acts earlier (aggressive)            | Action timing              |
-| Morph kernel (opening, px)       | vision/WRO_headless.py       | 3              | 7              | 3 preserves faint blobs; 7 cleans heavy noise                         | Noise / detail tradeoff    |
-| UART baud (Pi→ESP32)             | vision/WRO_headless.py       | 57600          | 230400         | Use higher only if framing is stable                                  | Latency / reliability      |
-| PID KP                           | controller/main_16-09.py     | 1.8            | 3.6            | Lower if oscillation; higher if sluggish                              | Wall-follow stability      |
-| PID KI                           | controller/main_16-09.py     | 0.00           | 0.04           | Integrates bias; too high = drift after turns                         | Steady-state error         |
-| PID KD                           | controller/main_16-09.py     | 0.15           | 0.45           | Damps oscillations; too high amplifies noise                          | Overshoot damping          |
-| PID DT (s)                       | controller/main_16-09.py     | 0.02           | 0.04           | Match loop cadence and sensor update rate                             | Controller timing          |
-| Base velocity (PWM units)        | controller/main_16-09.py     | 24000          | 28500          | Higher speed reduces margin; test with front threshold                | Speed vs stability         |
-| Boost (ΔPWM)                     | controller/main_16-09.py     | 800            | 1600           | Too high can skid on lane change                                      | Lane-change success        |
-| Lane min hold (ms)              | controller/main_16-09.py     | 150            | 260            | Guarantees diagonal onset before checking Δ                           | Reliability                |
-| Lateral delta success (cm)       | controller/main_16-09.py     | 7              | 12             | Distance change required on relevant side                             | Success criterion          |
-| Lane-change timeout (ms)         | controller/main_16-09.py     | 600            | 1000           | Abort if Δ not achieved; triggers recovery                            | Stuck detection            |
-| Corner front threshold (cm)      | controller/main_16-09.py     | 18             | 28             | Higher = earlier/safer turn                                           | Collision avoidance        |
-| Corner debounce hits (count)     | controller/main_16-09.py     | 3              | 5              | Consecutive reads under threshold to avoid spurious corners           | Noise immunity             |
-| Recovery forward (ms)            | controller/main_16-09.py     | 150            | 260            | Short re-center after corner or lane abort                            | Re-stabilize               |
+| HSV red band 1 (min H,S,V)       | vision/main_16-09-25_V3.2.0.py       | (0,110,80)     | (6,160,120)    | Lower S/V widens detection in dim light; avoid whites/orange          | Detection sensitivity      |
+| HSV red band 1 (max H,S,V)       | vision/main_16-09-25_V3.2.0.py       | (8,240,240)    | (14,255,255)   | Tighten H upper bound if orange/yellow leaks                          | False positive control     |
+| HSV red band 2 (min H,S,V)       | vision/main_16-09-25_V3.2.0.py      | (166,110,80)   | (172,160,120)  | Covers hue wrap-around near 179; keep S/V above noise floor           | Detection sensitivity      |
+| HSV red band 2 (max H,S,V)       | vision/main_16-09-25_V3.2.0.py      | (176,240,240)  | (179,255,255)  | High S/V helps avoid glare-driven false reds                          | False positive control     |
+| HSV green (min H,S,V)            | vision/main_16-09-25_V3.2.0.py       | (38,55,60)     | (46,110,90)    | Lower S/V for pale greens; increase if picking up lime/yellow floor   | Detect pale green          |
+| HSV green (max H,S,V)            | vision/main_16-09-25_V3.2.0.py      | (75,240,240)   | (90,255,255)   | Narrow H to suppress yellow; keep S/V high to ignore white glare      | False positive control     |
+| ROI x_start (px)                 | vision/main_16-09-25_V3.2.0.py       | 20             | 120            | Start further from left edge to avoid side clutter                    | Latency & noise            |
+| ROI x_end (px)                   | vision/main_16-09-25_V3.2.0.py       | 560            | 640            | Keep pillars centered; avoid extreme edges                            | Latency & noise            |
+| MIN_CONTOUR_AREA (px)           | vision/main_16-09-25_V3.2.0.py       | 350            | 900            | Higher suppresses speckles; too high may miss distant pillars         | Noise / miss tradeoff      |
+| CRITICAL_CONTOUR_AREA (px)      | vision/main_16-09-25_V3.2.0.py     | 4200           | 7000           | Higher acts later (safer), lower acts earlier (aggressive)            | Action timing              |
+| Morph kernel (opening, px)       | vision/main_16-09-25_V3.2.0.py       | 3              | 7              | 3 preserves faint blobs; 7 cleans heavy noise                         | Noise / detail tradeoff    |
+| UART baud (Pi→ESP32)             | vision/main_16-09-25_V3.2.0.py      | 57600          | 230400         | Use higher only if framing is stable                                  | Latency / reliability      |
+| PID KP                           | controller/main_16-09-25_V2.2.0.py     | 1.8            | 3.6            | Lower if oscillation; higher if sluggish                              | Wall-follow stability      |
+| PID KI                           | controller/main_16-09-25_V2.2.0.py    | 0.00           | 0.04           | Integrates bias; too high = drift after turns                         | Steady-state error         |
+| PID KD                           | controller/main_16-09-25_V2.2.0.py     | 0.15           | 0.45           | Damps oscillations; too high amplifies noise                          | Overshoot damping          |
+| PID DT (s)                       | controller/main_16-09-25_V2.2.0.py    | 0.02           | 0.04           | Match loop cadence and sensor update rate                             | Controller timing          |
+| Base velocity (PWM units)        | controller/main_16-09-25_V2.2.0.py    | 24000          | 28500          | Higher speed reduces margin; test with front threshold                | Speed vs stability         |
+| Boost (ΔPWM)                     | controller/main_16-09-25_V2.2.0.py     | 800            | 1600           | Too high can skid on lane change                                      | Lane-change success        |
+| Lane min hold (ms)              | controller/main_16-09-25_V2.2.0.py     | 150            | 260            | Guarantees diagonal onset before checking Δ                           | Reliability                |
+| Lateral delta success (cm)       | controller/main_16-09-25_V2.2.0.py     | 7              | 12             | Distance change required on relevant side                             | Success criterion          |
+| Lane-change timeout (ms)         | controller/main_16-09-25_V2.2.0.py     | 600            | 1000           | Abort if Δ not achieved; triggers recovery                            | Stuck detection            |
+| Corner front threshold (cm)      | controller/main_16-09-25_V2.2.0.py     | 18             | 28             | Higher = earlier/safer turn                                           | Collision avoidance        |
+| Corner debounce hits (count)     | controller/main_16-09-25_V2.2.0.py     | 3              | 5              | Consecutive reads under threshold to avoid spurious corners           | Noise immunity             |
+| Recovery forward (ms)            | controller/main_16-09-25_V2.2.0.py     | 150            | 260            | Short re-center after corner or lane abort                            | Re-stabilize               |
 
 
 **Vision RPi5.**
