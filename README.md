@@ -31,6 +31,7 @@ This is the official repository of the Team CICSA for the international final of
 - [Mobility Management](#Mobility-Management)
 - [Power and Sensor Management](#Power-and-Sensor-Management)
 - [Obstacle management](#Obstacle-management)
+- [Performance videos](#Performance-videos)
 - [Digital Engineering Logbook](https://github.com/CICSA-NET/WRO2025-CICSA/blob/main/other/README.md)
 - [Final Remarks and future work](#Final-remarks-and-future-work)
 - [References](#References)
@@ -846,6 +847,13 @@ This table supports iterative tuning, field testing, and transparent documentati
 [Menu](#Contents)
 ___
 
+
+## Performance videos.
+Our videos demonstrating our robot can be found: 
+
+
+[Menu](#Contents)
+___
 
 ## Final Remarks and future work.
 ====
