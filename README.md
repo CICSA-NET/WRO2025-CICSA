@@ -739,10 +739,34 @@ This triangular arrangement allows the robot to:
 By aligning sensor placement with the robot’s direction of travel and control logic, this design ensures that all critical navigation decisions are based on immediate frontal context—improving responsiveness, stability, and overall system robustness.
 
 
+**Vision System Integration** Freenove 8MP Camera Module.
+We integrated the Freenove 8MP Camera Module to enable real time visual sensing, environmental awareness, and documentation capabilities. This section outlines the technical rationale, integration strategy, and performance considerations of the camera within our system architecture.
+1. Engineering Justification.
+- Sensor Type: 8MP CMOS sensor with support for 1080p and 720p output, suitable for both high-resolution capture and low-latency streaming.
+- Field of View: 120° wide-angle lens enables broad environmental coverage, critical for tasks involving navigation, object detection, or visual inspection.
+- Interface: CSI ribbon cable connection ensures high-speed data transfer with minimal latency, directly compatible with Raspberry Pi 5.
+
+2. System Level Integration.
+- Power Budgeting: Camera draws power via CSI interface; no additional GPIO or external regulators required, simplifying the power distribution model.
+- Mechanical Design: Mounted on a custom 3D printed bracket aligned with the robot’s frontal axis, ensuring consistent field of view during motion.
+
+3. Software Configuration.
+- Capture Modes: Configured for both still () and video () modes, with resolution switching based on task demands.
+- Processing Pipeline: Integrated with OpenCV for real time image processing, including color segmentation, contour detection, and basic object classification.
+- Frame Rate Optimization: Tuned to 30 FPS for responsive feedback while maintaining CPU headroom for concurrent tasks.
+
+4. Applications in Future Engineers Context.
+- Visual Feedback for Actuation: Enables closed loop control based on visual cues (e.g., line following, color based sorting).
+- Environmental Monitoring: Supports detection of objects, terrain features, or visual markers relevant to the engineering challenge.
+- Project Documentation: Used to capture high-quality images and video for technical reports, GitHub logs, and sponsor presentations.
+
+5. Limitations and Engineering Tradeoffs.
+- Lighting Sensitivity: No onboard IR filter or illumination; external LED modules recommended for low light environments.
+- Fixed Focus Lens: Depth estimation requires stereo vision or auxiliary sensors (e.g., ultrasonic or ToF).
+- Bandwidth Constraints: High-resolution streaming may impact CPU load; offloading via hardware acceleration or resolution scaling is advised
 
 
-**Camera placement.**
-The camera was mounted at the front of the robot, with an inclination angle of approximately 20 degrees. This positioning allows the camera to capture a forward-facing field of view that includes both near-ground elements and mid-range obstacles. While the tilt angle contributes to the perspective of the captured image, it is not a critical factor for the implemented algorithm. The vision system is designed to process frames using region-of-interest cropping and perspective normalization, which minimizes the impact of camera orientation. As a result, the algorithm remains robust across slight variations in tilt, ensuring consistent performance in tasks such as line detection, object recognition, or path planning.
+The camera was mounted at the front of the robot, with an inclination angle of approximately 20 degrees. This positioning allows the camera to capture a forward facing field of view that includes both near ground elements and mid range obstacles. While the tilt angle contributes to the perspective of the captured image, it is not a critical factor for the implemented algorithm. The vision system is designed to process frames using region of interest cropping and perspective normalization, which minimizes the impact of camera orientation. As a result, the algorithm remains robust across slight variations in tilt, ensuring consistent performance in tasks such as line detection, object recognition, or path planning.
 
 ![Robot_Camera](https://github.com/user-attachments/assets/ab74c722-2a8a-4ec8-bdf8-405ccfbb29a0)
 
