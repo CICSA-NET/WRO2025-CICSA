@@ -32,6 +32,7 @@ This is the official repository of the Team CICSA for the international final of
 - [Power and Sensor Management](#Power-and-Sensor-Management)
 - [Obstacle management](#Obstacle-management)
 - [Digital Engineering Logbook](https://github.com/CICSA-NET/WRO2025-CICSA/blob/main/other/README.md)
+- [Final Remarks](#Final-remarks)
 - [References](#References)
 
 ___
@@ -845,6 +846,18 @@ This table supports iterative tuning, field testing, and transparent documentati
 [Menu](#Contents)
 ___
 
+
+## Final Remarks.
+====
+
+This repository documents the full engineering journey of our team as we represented México at the Open Championship of América Finals in the Future Engineers category. From initial prototyping to final deployment, every subsystem was designed, tested, and documented with professional rigor and educational purpose.
+We applied systems engineering principles, modular code design, and real-world calibration to build a solution that is not only competition ready but scalable to industrial and educational contexts. Our GitHub reflects this commitment through wiring diagrams, performance tables, and version controlled development.
+Beyond the technical achievements, this journey taught us the value of teamwork, resilience, and clear communication. We thank the judges, sponsors, and WRO community for inspiring us to push boundaries and build with purpose.
+This is not the end—this is a launchpad.
+Our system is ready to evolve, adapt, and serve beyond the competition.
+
+[Menu](#Contents)
+___
 
 ## References.
 ====
