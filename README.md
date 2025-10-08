@@ -741,6 +741,10 @@ By aligning sensor placement with the robot’s direction of travel and control 
 
 **Vision System Integration** Freenove 8MP Camera Module.
 We integrated the Freenove 8MP Camera Module to enable real time visual sensing, environmental awareness, and documentation capabilities. This section outlines the technical rationale, integration strategy, and performance considerations of the camera within our system architecture.
+
+
+
+
 1. Engineering Justification.
 - Sensor Type: 8MP CMOS sensor with support for 1080p and 720p output, suitable for both high-resolution capture and low-latency streaming.
 - Field of View: 120° wide-angle lens enables broad environmental coverage, critical for tasks involving navigation, object detection, or visual inspection.
