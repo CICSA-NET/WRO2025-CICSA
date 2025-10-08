@@ -19,7 +19,7 @@ This is the official repository of the Team CICSA for the international final of
 - [📁 Src](./src/)
 - [📁 T-photos](./t-photos/)
 - [📁 V-photos](./v-photos/)
-- [📁 Video](./video/)
+- [📁 Video](WRO2025-CICSA/video/video.md)
 
 **Index**
 
