@@ -742,6 +742,7 @@ By aligning sensor placement with the robot’s direction of travel and control 
 **Vision System Integration** Freenove 8MP Camera Module.
 We integrated the Freenove 8MP Camera Module to enable real time visual sensing, environmental awareness, and documentation capabilities. This section outlines the technical rationale, integration strategy, and performance considerations of the camera within our system architecture.
 
+<img width="272" height="400" alt="image" src="https://github.com/user-attachments/assets/4954137c-07d9-4cb0-92c0-38163ae18074" />
 
 
 
