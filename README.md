@@ -895,7 +895,7 @@ ___
 ## Performance videos.
 Our videos demonstrating our robot can be found: 
 
-[Open Challenge](https://www.youtube.com/watch?v=p8NMgmHToCY)
+[Open Challenge](https://youtu.be/oQ5xmAe0P_g?si=DkisElCjg06YvkLW)
 
 [Obstacle Challenge](https://youtu.be/EBErAr0Knwo?si=gBmNfuvncpcmxwht)
 
