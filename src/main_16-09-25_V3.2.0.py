@@ -5,7 +5,7 @@
 #              category of the WRO 2025 National Stage.
 # Target Platform: Raspberry Pi 5 (64-bit, Debian-based OS)
 # Language: Python 3.11
-# Interfaces: GPIO (PWM, Digital I/O), UART (Serial), I2C (optional)
+# Interfaces: GPIO (PWM, Digital I/O), UART (Serial)
 # Sensors: 3x URM37 V5.0 Ultrasonic Sensors (PWM mode)
 # Motor Control: Dual H-Bridge (L298N or equivalent)
 # Version: 3.2.0
