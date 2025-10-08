@@ -312,6 +312,25 @@ Activities
 Outcomes
 - 	Steering system restored and recalibrated
 
+
+**September 1–13, 2025:** Technical Documentation Finalization and Software Calibration
+Objective
+Prepare the system and documentation for the National WRO Competition in Rosarito, Baja California (September 19–20, 2025).
+Activities
+- Finalized technical documentation, including:
+- System architecture overview (hardware/software)
+- Wiring diagrams and BOM (Bill of Materials)
+- Integrated performance graphs and comparative tables for motor and sensor analysis
+- Refined Markdown structure for GitHub repository clarity and sponsor readability
+- Calibrated control algorithms for servo response:
+- Tuned PID parameters for smoother actuation
+- Adjusted PWM ranges
+- Conducted functional tests to validate sensor feedback and actuation timing
+Outcomes
+- Documentation ready for national level technical review
+- Software tuned for reliable performance under competition conditions
+- GitHub repository updated, sponsor ready materials
+
 [Principal README](https://github.com/CICSA-NET/WRO2025-CICSA/blob/main/README.md)
 ___
 
