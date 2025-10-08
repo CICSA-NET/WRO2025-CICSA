@@ -809,6 +809,11 @@ MIN_CONTOUR_AREA (rejects tiny blobs/noise),
 CRITICAL_CONTOUR_AREA (marks an object as immediate).
 The decision layer compares red vs. green critical areas and emits a single intent byte over UART (115200): 'R' (right), 'G' (left), or 'C' (continue). The HSV design decouples color from illumination, making thresholds stable in gym lighting; ROI keeps the algorithm fast and focused.
 
+
+<img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/54d435ec-b8f4-43dc-a133-ebbe9c40f5c3" />
+
+
+
 **How vision is mixed with distance sensors (ESP32 sensor fusion).**
 
 
