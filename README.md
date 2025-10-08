@@ -32,7 +32,7 @@ This is the official repository of the Team CICSA for the international final of
 - [Power and Sensor Management](#Power-and-Sensor-Management)
 - [Obstacle management](#Obstacle-management)
 - [Digital Engineering Logbook](https://github.com/CICSA-NET/WRO2025-CICSA/blob/main/other/README.md)
-- [Final Remarks](#Final-remarks)
+- [Final Remarks and future work](#Final-remarks-and-future-work)
 - [References](#References)
 
 ___
@@ -847,7 +847,7 @@ This table supports iterative tuning, field testing, and transparent documentati
 ___
 
 
-## Final Remarks.
+## Final Remarks and future work.
 ====
 
 This repository documents the full engineering journey of our team as we represented México at the Open Championship of América Finals in the Future Engineers category. From initial prototyping to final deployment, every subsystem was designed, tested, and documented with professional rigor and educational purpose.
@@ -855,6 +855,15 @@ We applied systems engineering principles, modular code design, and real-world c
 Beyond the technical achievements, this journey taught us the value of teamwork, resilience, and clear communication. We thank the judges, sponsors, and WRO community for inspiring us to push boundaries and build with purpose.
 This is not the end—this is a launchpad.
 Our system is ready to evolve, adapt, and serve beyond the competition.
+
+Our participation in the Open Championship of América Finals WRO Panamá 2025 marks a milestone,  but not a conclusion. The following technical directions outline how this system can evolve beyond the competition:
+
+- Sensor Expansion: Integrate additional sensing modalities (e.g., ToF, IMU, environmental sensors) for enhanced spatial awareness and adaptive control.
+- Edge AI Deployment: Implement lightweight machine learning models on device for object classification, anomaly detection, or predictive actuation.
+- Industrial Adaptation: Reconfigure the system for real-world applications in local industries such as maquiladoras or logistics.
+- Wireless Communication: Add ESP-NOW or MQTT protocols for multi-node coordination and remote monitoring.
+- Mechanical Modularity: Design interchangeable hardware modules to support task reconfiguration without altering the system core.
+- Educational Replication: Package the system as an open-source STEM kit with bilingual documentation for classroom use and community outreach.
 
 [Menu](#Contents)
 ___
