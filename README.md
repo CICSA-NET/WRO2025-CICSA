@@ -796,17 +796,55 @@ ___
 ## Obstacle management.
 ====
 
-This system pairs a Raspberry Pi 5 vision producer with an ESP32 motion controller for WRO 2025. On the Pi 5, WRO_headless.py captures frames via Picamera2, crops a horizontal ROI to focus compute, converts to HSV, and segments red (two hue bands for wraparound) and green. A 5×5 morphological opening suppresses noise; external contours are extracted and the largest blobs are measured. Detections below a minimum area are ignored; exceeding a “critical” area flags an immediate pillar. The Pi compares critical red vs green and sends a single byte—'R', 'G', or 'C'—over UART at 115200 baud. The ESP32 (MicroPython) reads this on UART2 (TX=GPIO17, RX=GPIO16), drives motors with LEDC PWM, and positions the steering servo at calibrated LEFT/CENTER/RIGHT bounds. Ultrasonic distances (HC-SR04 style via time_pulse_us) refresh continuously. A wall-following PID (tunable KP/KI/KD, DT) steers each cycle; on 'R'/'G', a lane-change primitive boosts speed, steers diagonally with a minimum hold, requires a lateral distance delta or times out, then counter-turns and recovers before PID resumes. A debounced corner routine triggers when front distance stays below threshold. Calibrate HSV, ROI, area gates, PID gains, and maneuver timings.
-The connection diagram is shown in section schemes.
-The source code is in section src.
+**Perception on Raspberry Pi 5.**
+File: vision/WRO.py
 
-**Balancing Detection, Control, and Safety.**
+For each frame, the Pi 5 captures with Picamera2 (low-latency “preview” pipeline), then applies a horizontal Region of Interest (ROI) to reduce false positives and CPU load. The ROI is converted BGR→HSV and thresholded into color masks for red (two hue bands to cover 0/179 wrap-around) and green (one band). A 5×5 morphological opening removes speckle noise. We then extract external contours per color, keep the largest blob for each, and compute its area. Two gates are used:
 
-This parameter set defines the robot’s core behavior in dynamic environments. HSV thresholds are split into two red bands to handle hue wrap-around and lighting variability. Adjusting saturation and value helps maintain detection under dim conditions while avoiding false positives from glare or floor reflections.
-Region of Interest (ROI) and contour thresholds filter spatial noise and optimize latency. A tighter ROI avoids edge clutter, while contour area settings balance between ignoring speckles and detecting distant pillars. Morphological kernel size further tunes noise suppression versus blob preservation.
-Control parameters (PID) must be aligned with loop timing () and physical response. A higher  improves responsiveness but risks oscillation;  mitigates this but may amplify sensor noise. Velocity and boost settings affect lane-change agility and stability—critical for tight maneuvers.
-Timeouts and thresholds for cornering and lane changes ensure safe decision-making. For example,  defines how early the robot reacts to obstacles, while  prevents indefinite waiting and triggers recovery.
-This table supports iterative tuning, field testing, and transparent documentation for sponsors and judges. Each parameter is annotated with its tradeoffs to guide engineering decisions and promote reproducibility.
+MIN_CONTOUR_AREA (rejects tiny blobs/noise),
+
+CRITICAL_CONTOUR_AREA (marks an object as immediate).
+The decision layer compares red vs. green critical areas and emits a single intent byte over UART (115200): 'R' (right), 'G' (left), or 'C' (continue). The HSV design decouples color from illumination, making thresholds stable in gym lighting; ROI keeps the algorithm fast and focused.
+
+How vision is mixed with distance sensors (ESP32 sensor fusion)
+File: controller/main.py
+
+The camera does not command turns directly; it provides intention. The ESP32 fuses that intent with ultrasonic distances (left/right/front) inside a small state machine:
+
+Wall-follow (PID) — default when cmd=='C' and front is clear: a PID loop (REF distance, tunable KP/KI/KD, sample time DT) adjusts the steering servo while motors run at base velocity.
+
+Lane change — when cmd ∈ {R,G} and front is clear: apply a short speed boost, steer diagonally toward the commanded side, enforce a minimum hold time, and require a lateral distance delta (e.g., ≥9 cm) to confirm success; if the delta is not reached before a safety timeout, abort with counter-steer + short recovery and return to PID (integrator/derivative reset).
+
+Corner / frontal obstacle — if front ≤ threshold for N consecutive samples (debounced), run a timed corner-turn routine (reverse+turn, counter-turn, recovery) and then resume PID.
+
+Stuck vehicle detection, collision detection, and error recovery
+
+Stuck detection (any of):
+a) Kinematic timeout during lane change (no lateral delta before MAX_DURATION).
+b) Sensor stagnation: left/right/front variance < ε for X cycles (robot pushing against something).
+c) Optional IMU/encoders: no yaw/odometry change under drive (if available).
+
+Collision detection: hard stop when front ≤ col_thresh, brief reverse, re-evaluate distances. Sudden lateral drop while steering hard can also trigger speed reduction and recentre.
+
+Recovery sequence (bounded): stop → short reverse with opposite steer → check distances → short forward recovery → resume PID. If the lane-change failed, flip intended side (R↔G) once to avoid dead-locks. All recovery paths have timeouts and return deterministically to PID.
+
+Non-trivial combinations of traffic signs
+
+Critical-area priority + temporal hysteresis: we accept a color decision only if it exceeds the critical area and persists for M-of-N frames, which rejects distant/flickering signs.
+
+Ties: if both colors are critical in the same window, apply a deterministic tie-break; if not critical, keep 'C'.
+
+Safety override: a front-obstacle condition always overrides 'R'/'G'; we first handle the corner/obstacle, then resume intent processing.
+
+Calibration notes: green can be light/pale; lower Smin/Vmin for green (HSV) if needed; use narrower H ranges or higher S/V minima to suppress false positives.
+
+Reproducibility & tunables
+
+Vision thresholds: HSV ranges (especially Smin/Vmin), ROI bounds, MIN_CONTOUR_AREA, CRITICAL_CONTOUR_AREA.
+
+Control: PID gains (KP/KI/KD), sampling DT, base velocity, lane-change durations (hold/timeout), corner thresholds/debounce.
+
+All constants are grouped near the top of each file and documented inline for on-site calibration.
 
 **Vision & Control Parameter Table.**
 
