@@ -797,7 +797,8 @@ ___
 ====
 
 **Perception on Raspberry Pi 5.**
-File: vision/WRO.py
+[📁 src](main_16-09-25_V2.2.0.py)
+File: vision/main_16-09-25_V2.2.0.py
 
 For each frame, the Pi 5 captures with Picamera2 (low-latency “preview” pipeline), then applies a horizontal Region of Interest (ROI) to reduce false positives and CPU load. The ROI is converted BGR→HSV and thresholded into color masks for red (two hue bands to cover 0/179 wrap-around) and green (one band). A 5×5 morphological opening removes speckle noise. We then extract external contours per color, keep the largest blob for each, and compute its area. Two gates are used:
 
