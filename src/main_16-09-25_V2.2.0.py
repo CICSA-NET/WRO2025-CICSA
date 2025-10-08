@@ -9,7 +9,6 @@
 # Sensors: 3x URM37 V5.0 Ultrasonic Sensors (PWM mode)
 # Motor Control: Dual H-Bridge (L298N)
 # Version: 2.2.0
-# License: MIT
 
 import _thread
 from machine import Pin, PWM, UART, time_pulse_us
@@ -267,5 +266,6 @@ try:
     main()
 except KeyboardInterrupt:
     stop_motors(); servo.duty(CENTER); led.off()
+
 
 
