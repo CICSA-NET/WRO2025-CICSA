@@ -809,8 +809,11 @@ MIN_CONTOUR_AREA (rejects tiny blobs/noise),
 CRITICAL_CONTOUR_AREA (marks an object as immediate).
 The decision layer compares red vs. green critical areas and emits a single intent byte over UART (115200): 'R' (right), 'G' (left), or 'C' (continue). The HSV design decouples color from illumination, making thresholds stable in gym lighting; ROI keeps the algorithm fast and focused.
 
-How vision is mixed with distance sensors (ESP32 sensor fusion)
-File: controller/main.py
+**How vision is mixed with distance sensors (ESP32 sensor fusion).**
+
+
+File: [📁 src](src/main_16-09-25_V3.2.0.py)
+
 
 The camera does not command turns directly; it provides intention. The ESP32 fuses that intent with ultrasonic distances (left/right/front) inside a small state machine:
 
