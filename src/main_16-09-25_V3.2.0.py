@@ -9,7 +9,6 @@
 # Sensors: 3x URM37 V5.0 Ultrasonic Sensors (PWM mode)
 # Motor Control: Dual H-Bridge (L298N or equivalent)
 # Version: 3.2.0
-# License: MIT
 
 import cv2
 import numpy as np
